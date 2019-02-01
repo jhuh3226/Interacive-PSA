@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D83AEA1C-DF19-9EC0-6E4D-794B2C74AC78}</ProjectGuid>
+    <ProjectGuid>{35319DAB-72D6-7939-DEFF-8B3010FE1DE5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -56,16 +56,16 @@
      <Compile Include="Assets\K2Examples\Standard Assets\Editor\KinectCopyPluginDataHelper.cs" />
      <Compile Include="Assets\K2Examples\Standard Assets\Editor\KinectFacePostBuildCopyPluginData.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -314,13 +314,13 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nuitrack.net">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Assets/K2Examples/KinectScripts/Interfaces/Nuitrack/nuitrack.net.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Assets/K2Examples/KinectScripts/Interfaces/Nuitrack/nuitrack.net.dll</HintPath>
  </Reference>
  <Reference Include="LZ4Sharp">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Assets/K2Examples/KinectScripts/LZ4Sharp/LZ4Sharp.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Assets/K2Examples/KinectScripts/LZ4Sharp/LZ4Sharp.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Assets/K2Examples/KinectScripts/SharpZipLib/ICSharpCode.SharpZipLib.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Assets/K2Examples/KinectScripts/SharpZipLib/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/WonderLab/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -367,7 +367,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{FBF73D48-B07E-7979-0B7C-9D746EC42D42}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{33451463-B5DD-535F-F7C6-ADB0740AFB99}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

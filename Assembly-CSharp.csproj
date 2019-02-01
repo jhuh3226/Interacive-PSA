@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{FBF73D48-B07E-7979-0B7C-9D746EC42D42}</ProjectGuid>
+    <ProjectGuid>{33451463-B5DD-535F-F7C6-ADB0740AFB99}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -360,16 +360,16 @@
      <None Include="Assets\K2Examples\_Readme\致盗版使用者-ToPiracyUsers.txt" />
      <None Include="Assets\K2Examples\Resources\BlurShader1.shader" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -573,13 +573,13 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="nuitrack.net">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Assets/K2Examples/KinectScripts/Interfaces/Nuitrack/nuitrack.net.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Assets/K2Examples/KinectScripts/Interfaces/Nuitrack/nuitrack.net.dll</HintPath>
  </Reference>
  <Reference Include="LZ4Sharp">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Assets/K2Examples/KinectScripts/LZ4Sharp/LZ4Sharp.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Assets/K2Examples/KinectScripts/LZ4Sharp/LZ4Sharp.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_v3/Assets/K2Examples/KinectScripts/SharpZipLib/ICSharpCode.SharpZipLib.dll</HintPath>
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Assets/K2Examples/KinectScripts/SharpZipLib/ICSharpCode.SharpZipLib.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/WonderLab/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
