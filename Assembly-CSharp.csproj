@@ -319,6 +319,7 @@
      <Compile Include="Assets\K2Examples\Standard Assets\Windows\Kinect\TrackingConfidence.cs" />
      <Compile Include="Assets\K2Examples\Standard Assets\Windows\Kinect\TrackingState.cs" />
      <Compile Include="Assets\K2Examples\Standard Assets\Windows\Kinect\Vector4.cs" />
+     <Compile Include="Assets\Scripts\AvatarControllerModify1.cs" />
      <None Include="Assets\K2Examples\Resources\BlurShader.shader" />
      <None Include="Assets\K2Examples\Resources\AstraCoordMapper.compute" />
      <None Include="Assets\K2Examples\Resources\MedianShader.shader" />
