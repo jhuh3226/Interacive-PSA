@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/FaceTrackingTest1.unity
+- path: Assets/K2Examples/KinectDemos/FaceTrackingDemo/KinectFaceTrackingDemo5.unity
   isLoaded: 1
   isActive: 1
