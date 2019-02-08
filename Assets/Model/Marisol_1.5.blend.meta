@@ -158,6 +158,29 @@ ModelImporter:
     2300008: path_004
     2300010: path_005
     2300012: sphere_target
+    2300014: Eye_L
+    2300016: Eye_R
+    2300018: Font
+    2300020: Font_001
+    2300022: Font_002
+    2300024: Font_003
+    2300026: Font_004
+    2300028: Font_005
+    2300030: Font_006
+    2300032: Font_007
+    2300034: Font_008
+    2300036: Font_009
+    2300038: Font_010
+    2300040: Font_011
+    2300042: Font_012
+    2300044: Font_013
+    2300046: Font_014
+    2300048: Font_015
+    2300050: Head
+    2300052: Sphere
+    2300054: Sphere_001
+    2300056: tooth_down
+    2300058: tooth_up
     3300000: path
     3300002: path_001
     3300004: path_002
@@ -165,6 +188,29 @@ ModelImporter:
     3300008: path_004
     3300010: path_005
     3300012: sphere_target
+    3300014: Eye_L
+    3300016: Eye_R
+    3300018: Font
+    3300020: Font_001
+    3300022: Font_002
+    3300024: Font_003
+    3300026: Font_004
+    3300028: Font_005
+    3300030: Font_006
+    3300032: Font_007
+    3300034: Font_008
+    3300036: Font_009
+    3300038: Font_010
+    3300040: Font_011
+    3300042: Font_012
+    3300044: Font_013
+    3300046: Font_014
+    3300048: Font_015
+    3300050: Head
+    3300052: Sphere
+    3300054: Sphere_001
+    3300056: tooth_down
+    3300058: tooth_up
     4300000: sphere_target
     4300002: path_005
     4300004: path_003
@@ -197,6 +243,7 @@ ModelImporter:
     4300058: tooth_down
     7400000: Default Take
     9500000: //RootNode
+    11100000: //RootNode
     13700000: Eye_L
     13700002: Eye_R
     13700004: Font
@@ -221,7 +268,47 @@ ModelImporter:
     13700042: tooth_down
     13700044: tooth_up
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tooth
+    second: {fileID: 2100000, guid: 3105d6b99bab3054bbc966375b6758a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cornea
+    second: {fileID: 2100000, guid: 7ffb9fd483e2f8b44af3194a9589a8a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye
+    second: {fileID: 2100000, guid: 4323da2b843d1d74e914ccfd2cbbffd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: iris__Iris_png
+    second: {fileID: 2100000, guid: 9fd2a778bf9e4e14aa2c87f5ece9d936, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mouth
+    second: {fileID: 2100000, guid: 44a7bbebc4af46f4482be46f491efaae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pupil
+    second: {fileID: 2100000, guid: b67e2130f3187f941ab1794c4a9a65a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {fileID: 2100000, guid: 357e7699353801041bf1ad0054718f24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: unnamed
+    second: {fileID: 2100000, guid: 23dba646fa5407f4bba9d36197531bd8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -231,7 +318,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 0
+    optimizeGameObjects: 1
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -295,10 +382,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

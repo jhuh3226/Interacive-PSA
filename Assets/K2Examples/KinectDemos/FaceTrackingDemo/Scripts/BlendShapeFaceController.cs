@@ -90,11 +90,12 @@ public class BlendShapeFaceController : MonoBehaviour
 
 		if (skinnedMesh != null) 
 		{
-//			// print out the found blend shape names
-//			for (int i = 0; i < skinnedMesh.blendShapeCount; i++) 
-//			{
-//				Debug.Log(i + " - " + skinnedMesh.GetBlendShapeName(i));
-//			}
+            //check
+            //			// print out the found blend shape names
+            for (int i = 0; i < skinnedMesh.blendShapeCount; i++)
+            {
+                Debug.Log(i + " - " + skinnedMesh.GetBlendShapeName(i));
+            }
 		}
 	}
 	
