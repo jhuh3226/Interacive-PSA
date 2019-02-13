@@ -332,7 +332,6 @@
      <None Include="Assets\K2Examples\Resources\Body2ColorShader.shader" />
      <None Include="Assets\K2Examples\Resources\Depth2ColorShaderNN.shader" />
      <None Include="Assets\K2Examples\Resources\Color2BodyShaderNN.shader" />
-     <None Include="Assets\Scripts\BumpedDiffuseOverlay.shader" />
      <None Include="Assets\K2Examples\Resources\Depth2BodyShaderNN.shader" />
      <None Include="Assets\K2Examples\Resources\ForegroundBlendShader.shader" />
      <None Include="Assets\K2Examples\Resources\BlurShader2.shader" />
