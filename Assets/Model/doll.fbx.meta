@@ -1,0 +1,294 @@
+fileFormatVersion: 2
+guid: 9f95715c8ea85ca4784d9267cd8e2861
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: badge
+    100002: badge_2
+    100004: bunnies
+    100006: bunny_1
+    100008: bunny_2
+    100010: CINEMA_4D_Editor
+    100012: cloth
+    100014: cloth_2
+    100016: //RootNode
+    100018: eyes
+    100020: eyes_2
+    100022: flower_1
+    100024: flower_1_2
+    100026: head
+    100028: head_2
+    100030: mouth
+    100032: mouth_2
+    100034: ribbon_1
+    100036: ribbon_1_2
+    400000: badge
+    400002: badge_2
+    400004: bunnies
+    400006: bunny_1
+    400008: bunny_2
+    400010: CINEMA_4D_Editor
+    400012: cloth
+    400014: cloth_2
+    400016: //RootNode
+    400018: eyes
+    400020: eyes_2
+    400022: flower_1
+    400024: flower_1_2
+    400026: head
+    400028: head_2
+    400030: mouth
+    400032: mouth_2
+    400034: ribbon_1
+    400036: ribbon_1_2
+    2000000: CINEMA_4D_Editor
+    2100000: flower
+    2100002: head
+    2100004: ribbon
+    2100006: ribbon.1
+    2100008: sign
+    2100010: head.1
+    2100012: mouth
+    2100014: eye
+    2100016: body
+    2100018: flower.1
+    2100020: head.2
+    2100022: ribbon.2
+    2100024: ribbon.3
+    2100026: mouth.1
+    2100028: head.3
+    2300000: badge
+    2300002: badge_2
+    2300004: cloth
+    2300006: cloth_2
+    2300008: eyes
+    2300010: eyes_2
+    2300012: flower_1
+    2300014: flower_1_2
+    2300016: head
+    2300018: head_2
+    2300020: mouth
+    2300022: mouth_2
+    2300024: ribbon_1
+    2300026: ribbon_1_2
+    3300000: badge
+    3300002: badge_2
+    3300004: cloth
+    3300006: cloth_2
+    3300008: eyes
+    3300010: eyes_2
+    3300012: flower_1
+    3300014: flower_1_2
+    3300016: head
+    3300018: head_2
+    3300020: mouth
+    3300022: mouth_2
+    3300024: ribbon_1
+    3300026: ribbon_1_2
+    4300000: flower_1
+    4300002: ribbon_1
+    4300004: badge
+    4300006: head
+    4300008: mouth
+    4300010: eyes
+    4300012: cloth
+    4300014: flower_1_2
+    4300016: ribbon_1_2
+    4300018: badge_2
+    4300020: eyes_2
+    4300022: mouth_2
+    4300024: cloth_2
+    4300026: head_2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body
+    second: {fileID: 2100000, guid: f3aa1e99da39eb240b6e10b1faface1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye
+    second: {fileID: 2100000, guid: dc22358c8e191b1429cb373a4724f4d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flower
+    second: {fileID: 2100000, guid: 3d1e4e1bd1bddd0489d34de740e07e10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flower.1
+    second: {fileID: 2100000, guid: a42b8a5266face9459adbdc330ffe3ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head
+    second: {fileID: 2100000, guid: da3d548d100008241a7dcd9521d4c16d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head.1
+    second: {fileID: 2100000, guid: 37fba9a47cd1a8843987205f79511f68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head.2
+    second: {fileID: 2100000, guid: ab74e2841b76e5542a7a24ccfff2788c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head.3
+    second: {fileID: 2100000, guid: f278ca77d712b124ebf19c80c2c7c957, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mouth
+    second: {fileID: 2100000, guid: fdaba582984a5234793535f67990060e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mouth.1
+    second: {fileID: 2100000, guid: 8cd14af39526fb84e9e916f7192893d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ribbon
+    second: {fileID: 2100000, guid: 747b07ac9d07584418e6fe4c3510493e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ribbon.1
+    second: {fileID: 2100000, guid: fca9c421cbd2e70409fe5b69dc578e28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ribbon.2
+    second: {fileID: 2100000, guid: ea46bc6d1b0ddf04b864f322e91f1229, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ribbon.3
+    second: {fileID: 2100000, guid: 3a5fd46cfdd8893428467d427718ba7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sign
+    second: {fileID: 2100000, guid: e8a76076fda8ffd4b8077cf21d9a0064, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bunny_fabric_tiny
+    second: {fileID: 2800000, guid: d7eb1d6a3beec8a4fac58a1ef1c72412, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bunny_fabric_tiny_02
+    second: {fileID: 2800000, guid: 94f9e25cb4658d34b96dbd60c490168c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bunny_sign_diffus
+    second: {fileID: 2800000, guid: ac0d21766975e0a4ea4635c1bfd2ef64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: leather_bunny
+    second: {fileID: 2800000, guid: 489928c7d3140cf4eafcdb65e22f9fcc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sock_bunny_head_01
+    second: {fileID: 2800000, guid: 49dab4ff99e0e5b49be6e975a45041de, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sock_bunny_shirt_01
+    second: {fileID: 2800000, guid: 0b5e266cc25361d4ba0e0b8fe8e2e807, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sock_bunny_shirt_02
+    second: {fileID: 2800000, guid: 4439996a4ddfca44899cc15aa4070582, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

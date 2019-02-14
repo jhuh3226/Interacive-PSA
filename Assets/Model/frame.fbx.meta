@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 61677bdc847ff5e4a911b28c035aea1f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Casement Dbl with Trim:48" x 48":300998:1
+    100002: Cube.068
+    100004: Cube.069
+    100006: Cube.070
+    100008: Cube.071
+    100010: Cube.072
+    100012: Cube.073
+    100014: Cube.074
+    100016: Cube.076
+    100018: Cube.077
+    100020: Cube.078
+    100022: Cube.079
+    100024: Cube.080
+    100026: Cube.081
+    100028: Cube.082
+    100030: Cube.083
+    100032: //RootNode
+    400000: Casement Dbl with Trim:48" x 48":300998:1
+    400002: Cube.068
+    400004: Cube.069
+    400006: Cube.070
+    400008: Cube.071
+    400010: Cube.072
+    400012: Cube.073
+    400014: Cube.074
+    400016: Cube.076
+    400018: Cube.077
+    400020: Cube.078
+    400022: Cube.079
+    400024: Cube.080
+    400026: Cube.081
+    400028: Cube.082
+    400030: Cube.083
+    400032: //RootNode
+    2100000: Material.006
+    2100002: Material.001
+    2100004: IfcOpeningElement
+    2300000: Casement Dbl with Trim:48" x 48":300998:1
+    2300002: Cube.068
+    2300004: Cube.069
+    2300006: Cube.070
+    2300008: Cube.071
+    2300010: Cube.072
+    2300012: Cube.073
+    2300014: Cube.074
+    2300016: Cube.076
+    2300018: Cube.077
+    2300020: Cube.078
+    2300022: Cube.079
+    2300024: Cube.080
+    2300026: Cube.081
+    2300028: Cube.082
+    2300030: Cube.083
+    3300000: Casement Dbl with Trim:48" x 48":300998:1
+    3300002: Cube.068
+    3300004: Cube.069
+    3300006: Cube.070
+    3300008: Cube.071
+    3300010: Cube.072
+    3300012: Cube.073
+    3300014: Cube.074
+    3300016: Cube.076
+    3300018: Cube.077
+    3300020: Cube.078
+    3300022: Cube.079
+    3300024: Cube.080
+    3300026: Cube.081
+    3300028: Cube.082
+    3300030: Cube.083
+    4300000: Cube.083
+    4300002: Cube.081
+    4300004: Casement Dbl with Trim:48" x 48":300998:1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IfcOpeningElement
+    second: {fileID: 2100000, guid: 6502b22bdcd6d2d499aa281b7fc44dcb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: b94d8dd8cbadeda4e93f8a7522fb724c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: b06109b9163246442bdf1fa6022a2e62, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
