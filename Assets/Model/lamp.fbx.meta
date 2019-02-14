@@ -10,7 +10,17 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: sconce_02
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_milk_new
+    second: {fileID: 2100000, guid: b517c72e4e0665e48a1e54e24f25fd42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_grey_new
+    second: {fileID: 2100000, guid: 5a824ba14f8a2d349855845247919897, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
