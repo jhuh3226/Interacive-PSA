@@ -346,6 +346,7 @@
      <None Include="Assets\K2Examples\KinectDemos\ProjectorDemo\Resources\calibration-empty.xml" />
      <None Include="Assets\K2Examples\Resources\Dilate.shader" />
      <None Include="Assets\K2Examples\Resources\Body2DepthShaderNN.shader" />
+     <None Include="Assets\Shader\MultipleTexture.shader" />
      <None Include="Assets\K2Examples\KinectDemos\ProjectorDemo\Resources\calibration.xml" />
      <None Include="Assets\K2Examples\Resources\BlurShader5.shader" />
      <None Include="Assets\K2Examples\Plugins\Android\Assets\OSIG_Readme.txt" />
