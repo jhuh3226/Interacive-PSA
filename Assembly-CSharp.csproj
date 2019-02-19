@@ -320,11 +320,15 @@
      <Compile Include="Assets\K2Examples\Standard Assets\Windows\Kinect\TrackingState.cs" />
      <Compile Include="Assets\K2Examples\Standard Assets\Windows\Kinect\Vector4.cs" />
      <Compile Include="Assets\Scripts\AvatarControllerModify1.cs" />
+     <Compile Include="Assets\Scripts\ChangeTexture.cs" />
+     <Compile Include="Assets\Scripts\TrackHandPosture.cs" />
+     <Compile Include="Assets\Scripts\TrackSkeletonPosture.cs" />
      <None Include="Assets\K2Examples\Resources\BlurShader.shader" />
      <None Include="Assets\K2Examples\Resources\AstraCoordMapper.compute" />
      <None Include="Assets\K2Examples\Resources\MedianShader.shader" />
      <None Include="Assets\K2Examples\Resources\Gradient.shader" />
      <None Include="Assets\K2Examples\Resources\DepthShader.shader" />
+     <None Include="Assets\Shader\DecalModify.shader" />
      <None Include="Assets\K2Examples\Resources\Body2DepthShader.shader" />
      <None Include="Assets\K2Examples\Resources\SpeechGrammar.grxml.txt" />
      <None Include="Assets\K2Examples\Resources\BlurShader3.shader" />
@@ -352,6 +356,7 @@
      <None Include="Assets\K2Examples\Plugins\Android\Assets\OSIG_Readme.txt" />
      <None Include="Assets\K2Examples\_Readme\License.txt" />
      <None Include="Assets\K2Examples\KinectDemos\FittingRoomDemo\Resources\Shaders\UserBlendShader.shader" />
+     <None Include="Assets\Shader\MultipleTexture2.shader" />
      <None Include="Assets\K2Examples\Resources\Body2DepthShaderInvNN.shader" />
      <None Include="Assets\K2Examples\KinectDemos\VisualizerDemo\Shaders\HoloTriangles.shader" />
      <None Include="Assets\K2Examples\Resources\Color2BodyShader.shader" />

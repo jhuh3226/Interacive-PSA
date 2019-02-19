@@ -18,7 +18,10 @@ public class JointOverlayer : MonoBehaviour
 	[Tooltip("Kinect joint that is going to be overlayed.")]
 	public KinectInterop.JointType trackedJoint = KinectInterop.JointType.HandRight;
 
-	[Tooltip("Game object used to overlay the joint.")]
+    //added
+    //public KinectInterop.JointType trackedJoint2 = KinectInterop.JointType.HandLeft;
+
+    [Tooltip("Game object used to overlay the joint.")]
 	public Transform overlayObject;
 
 	[Tooltip("Smoothing factor used for joint rotation.")]
@@ -106,7 +109,13 @@ public class JointOverlayer : MonoBehaviour
 					Vector3 posJoint = overlayObject.position;
 					posJoint.z = -10f;
 					overlayObject.position = posJoint;
-				}
+
+                    //added
+                    print("posJoint.x" + posJoint.x);
+                    print("posJoint.y" + posJoint.y);
+                    print("posJoint.z" + posJoint.z);
+
+                }
 			}
 				
 		}

@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 using System.IO;
 using System.Text; 
 
-
 /// <summary>
 /// Avatar controller is the component that transfers the captured user motion to a humanoid model (avatar).
 /// </summary>
@@ -79,9 +78,12 @@ public class AvatarController : MonoBehaviour
 	[NonSerialized]
 	public Int64 playerId = 0;
 
+    //added
+    Vector3 jointPosition;
 
-	// The body root node
-	protected Transform bodyRoot;
+
+    // The body root node
+    protected Transform bodyRoot;
 
 	// Variable to hold all them bones. It will initialize the same size as initialRotations.
 	protected Transform[] bones;
@@ -162,7 +164,7 @@ public class AvatarController : MonoBehaviour
 	/// <param name="index">Index</param>
 	public Transform GetBoneTransform(int index)
 	{
-		if(index >= 0 && index < bones.Length)
+        if (index >= 0 && index < bones.Length)
 		{
 			return bones[index];
 		}
@@ -193,6 +195,12 @@ public class AvatarController : MonoBehaviour
         worldPosition = posRotation * worldPosition;
 
         return bodyRootPosition + worldPosition;
+    }
+
+    void Update()
+    {
+        //added
+        //print(jointPosition.x);
     }
 
 	/// <summary>
