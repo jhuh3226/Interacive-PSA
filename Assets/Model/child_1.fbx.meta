@@ -477,11 +477,11 @@ ModelImporter:
     - boneName: mixamorig:LeftShoulder
       humanName: LeftShoulder
       limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
+        min: {x: 0, y: -15, z: -15}
+        max: {x: 0, y: 15, z: 10}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightShoulder
       humanName: RightShoulder
       limit:
@@ -493,11 +493,11 @@ ModelImporter:
     - boneName: mixamorig:LeftArm
       humanName: LeftUpperArm
       limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
+        min: {x: -30, y: -35, z: -35}
+        max: {x: 30, y: 35, z: 20}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightArm
       humanName: RightUpperArm
       limit:
@@ -509,11 +509,11 @@ ModelImporter:
     - boneName: mixamorig:LeftForeArm
       humanName: LeftLowerArm
       limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
+        min: {x: -30, y: 0, z: -40}
+        max: {x: 30, y: 0, z: 70}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightForeArm
       humanName: RightLowerArm
       limit:
@@ -525,11 +525,11 @@ ModelImporter:
     - boneName: mixamorig:LeftHand
       humanName: LeftHand
       limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
+        min: {x: 0, y: -20, z: -40}
+        max: {x: 0, y: 20, z: 40}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightHand
       humanName: RightHand
       limit:

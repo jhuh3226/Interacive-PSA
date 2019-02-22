@@ -29,7 +29,7 @@ public class ChangeTexture : MonoBehaviour
         //Debug.Log("CurrentTime" + currentTime);
         //Debug.Log("DeltaTime" + Time.fixedTime);
 
-        Debug.Log(decal2Alpha);
+        //Debug.Log(decal2Alpha);
 
         if (Input.GetKeyDown(KeyCode.O))
         {
@@ -40,7 +40,7 @@ public class ChangeTexture : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.T))
         {
-            print("B key was pressed");
+            print("T key was pressed");
             m_Renderer.material.SetTexture("_ThirdTex", m_ThirdTex);
         }
 

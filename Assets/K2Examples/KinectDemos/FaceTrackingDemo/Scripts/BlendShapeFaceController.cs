@@ -141,8 +141,10 @@ public class BlendShapeFaceController : MonoBehaviour
 						{
 							float animValue = dictAnimUnits[faceAnim];
 							string blendShapeName = faceBlendShapes[i];
+                            print("faceBlendShapes[1]: " + faceBlendShapes[1]);
 
-							int blendShapeIndex = !string.IsNullOrEmpty(blendShapeName) ? skinnedMesh.GetBlendShapeIndex(blendShapeName) : -1;
+
+                            int blendShapeIndex = !string.IsNullOrEmpty(blendShapeName) ? skinnedMesh.GetBlendShapeIndex(blendShapeName) : -1;
 							if (blendShapeIndex >= 0) 
 							{
 								if (animValue < 0f) 

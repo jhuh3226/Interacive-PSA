@@ -13,8 +13,14 @@ using System.Text;
 /// </summary>
 [RequireComponent(typeof(Animator))]
 public class AvatarController : MonoBehaviour
-{	
-	[Tooltip("Index of the player, tracked by this component. 0 means the 1st player, 1 - the 2nd one, 2 - the 3rd one, etc.")]
+{
+    //added
+    public float limitSpan = 1;
+    public Vector3 checkNewPosition;
+    float checkXPosition;
+    public Transform BodyRootAvatarController;
+
+    [Tooltip("Index of the player, tracked by this component. 0 means the 1st player, 1 - the 2nd one, 2 - the 3rd one, etc.")]
 	public int playerIndex = 0;
 	
 	[Tooltip("Whether the avatar is facing the player or not.")]
@@ -35,6 +41,7 @@ public class AvatarController : MonoBehaviour
 	[Tooltip("Whether the finger orientations are allowed or not.")]
 	public bool fingerOrientations = false;
 	
+    //check
 	[Tooltip("Rate at which the avatar will move through the scene.")]
 	public float moveRate = 1f;
 	
@@ -200,7 +207,9 @@ public class AvatarController : MonoBehaviour
     void Update()
     {
         //added
-        //print(jointPosition.x);
+        //print("joint position x: " + jointPosition.x);
+        //print("checkXPosition: " + checkXPosition);
+        print("checkNewPosition: " + checkNewPosition);
     }
 
 	/// <summary>
@@ -366,8 +375,9 @@ public class AvatarController : MonoBehaviour
 		// get the animator reference
 		animatorComponent = GetComponent<Animator>();
 
-		// Map bones to the points the Kinect tracks
-		MapBones();
+        //check this code
+        // Map bones to the points the Kinect tracks
+        MapBones();
 
 		// Set model's arms to be in T-pose, if needed
 		SetModelArmsInTpose();
@@ -409,7 +419,7 @@ public class AvatarController : MonoBehaviour
 		}
 	}
 
-
+    //check this code
 	// applies the muscle limits for humanoid avatar
 	private void CheckMuscleLimits()
 	{
@@ -418,7 +428,7 @@ public class AvatarController : MonoBehaviour
 
 		humanPoseHandler.GetHumanPose(ref humanPose);
 
-		//Debug.Log(playerId + " - Trans: " + transform.position + ", body: " + humanPose.bodyPosition);
+		Debug.Log(playerId + " - Trans: " + transform.position + ", body: " + humanPose.bodyPosition);
 
 		bool isPoseChanged = false;
 
@@ -602,14 +612,16 @@ public class AvatarController : MonoBehaviour
 			}
 		}
 
-//		if(bodyRoot != null)
-//		{
-//			bodyRoot.localPosition = Vector3.zero;
-//			bodyRoot.localRotation = Quaternion.identity;
-//		}
+        //added
+        //uncommented
+        if (bodyRoot != null)
+        {
+            bodyRoot.localPosition = Vector3.zero;
+            bodyRoot.localRotation = Quaternion.identity;
+        }
 
-		// Restore the offset's position and rotation
-		if(offsetNode != null)
+        // Restore the offset's position and rotation
+        if (offsetNode != null)
 		{
 			offsetNode.transform.position = offsetNodePos;
 			offsetNode.transform.rotation = offsetNodeRot;
@@ -709,6 +721,7 @@ public class AvatarController : MonoBehaviour
 			boneTransform.rotation = newRotation;
 	}
 	
+    //check this code
 	// Apply the rotations tracked by kinect to a special joint
 	protected void TransformSpecialBone(Int64 userId, KinectInterop.JointType joint, KinectInterop.JointType jointParent, int boneIndex, Vector3 baseDir, bool flip)
 	{
@@ -916,6 +929,7 @@ public class AvatarController : MonoBehaviour
 		}
 	}
 	
+    //check this code
 	// Moves the avatar - gets the tracked position of the user and applies it to avatar.
 	protected void MoveAvatar(Int64 UserID)
 	{
@@ -1140,6 +1154,7 @@ public class AvatarController : MonoBehaviour
 		
 	}
 	
+    //check this code
 	// If the bones to be mapped have been declared, map that bone to the model.
 	protected virtual void MapBones()
 	{
@@ -1177,10 +1192,15 @@ public class AvatarController : MonoBehaviour
 
 			fingerBones[boneIndex] = animatorComponent ? animatorComponent.GetBoneTransform(fingerIndex2MecanimMap[boneIndex]) : null;
 		}
-	}
-	
-	// Capture the initial rotations of the bones
-	protected void GetInitialRotations()
+
+        //added
+        // body root and offset
+        bodyRoot = BodyRootAvatarController;
+        //offsetNode = OffsetNode;
+    }
+
+    // Capture the initial rotations of the bones
+    protected void GetInitialRotations()
 	{
 		// save the initial rotation
 		if(offsetNode != null)
@@ -1285,6 +1305,7 @@ public class AvatarController : MonoBehaviour
 		transform.rotation = initialRotation;
 	}
 	
+    //check this code
 	// Converts kinect joint rotation to avatar joint rotation, depending on joint initial rotation and offset rotation
 	protected Quaternion Kinect2AvatarRot(Quaternion jointRotation, int boneIndex)
 	{
@@ -1304,23 +1325,31 @@ public class AvatarController : MonoBehaviour
 		return newRotation;
 	}
 	
+    //check this code 
+    //check this code
 	// Converts Kinect position to avatar skeleton position, depending on initial position, mirroring and move rate
 	protected Vector3 Kinect2AvatarPos(Vector3 jointPosition, bool bMoveVertically)
 	{
-		float xPos = (jointPosition.x - offsetPos.x) * moveRate;
-		float yPos = (jointPosition.y - offsetPos.y) * moveRate;
-		float zPos = !mirroredMovement && !posRelativeToCamera ? (-jointPosition.z - offsetPos.z) * moveRate : (jointPosition.z - offsetPos.z) * moveRate;
+        //*limitSpan & xPos edited by Jung
+		float xPos = (jointPosition.x - offsetPos.x) * moveRate * limitSpan;
+        checkXPosition = xPos;
+
+        float yPos = (jointPosition.y - offsetPos.y) * moveRate * limitSpan;
+		float zPos = !mirroredMovement && !posRelativeToCamera ? (-jointPosition.z - offsetPos.z) * moveRate : (jointPosition.z - offsetPos.z) * moveRate * limitSpan;
 		
 		Vector3 newPosition = new Vector3(xPos, bMoveVertically ? yPos : 0f, zPos);
 
 		Quaternion posRotation = mirroredMovement ? Quaternion.Euler (0f, 180f, 0f) * initialRotation : initialRotation;
-		newPosition = posRotation * newPosition;
+        
+        newPosition = posRotation * newPosition;
+        checkNewPosition = newPosition;
 
-		if(offsetNode != null)
+        if (offsetNode != null)
 		{
 			//newPosition += offsetNode.transform.position;
 			newPosition = offsetNode.transform.position;
-		}
+
+        }
 		
 		return newPosition;
 	}
@@ -1390,21 +1419,21 @@ public class AvatarController : MonoBehaviour
 		return fDistMin;
 	}
 
-//	protected void OnCollisionEnter(Collision col)
-//	{
-//		Debug.Log("Collision entered");
-//	}
-//
-//	protected void OnCollisionExit(Collision col)
-//	{
-//		Debug.Log("Collision exited");
-//	}
-	
-	// dictionaries to speed up bones' processing
-	// the author of the terrific idea for kinect-joints to mecanim-bones mapping
-	// along with its initial implementation, including following dictionary is
-	// Mikhail Korchun (korchoon@gmail.com). Big thanks to this guy!
-	protected static readonly Dictionary<int, HumanBodyBones> boneIndex2MecanimMap = new Dictionary<int, HumanBodyBones>
+    //	protected void OnCollisionEnter(Collision col)
+    //	{
+    //		Debug.Log("Collision entered");
+    //	}
+    //
+    //	protected void OnCollisionExit(Collision col)
+    //	{
+    //		Debug.Log("Collision exited");
+    //	}
+
+    // dictionaries to speed up bones' processing
+    // the author of the terrific idea for kinect-joints to mecanim-bones mapping
+    // along with its initial implementation, including following dictionary is
+    // Mikhail Korchun (korchoon@gmail.com). Big thanks to this guy!
+    protected static readonly Dictionary<int, HumanBodyBones> boneIndex2MecanimMap = new Dictionary<int, HumanBodyBones>
 	{
 		{0, HumanBodyBones.Hips},
 		{1, HumanBodyBones.Spine},
