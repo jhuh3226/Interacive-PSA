@@ -321,6 +321,7 @@
      <Compile Include="Assets\K2Examples\Standard Assets\Windows\Kinect\Vector4.cs" />
      <Compile Include="Assets\Scripts\AvatarControllerModify1.cs" />
      <Compile Include="Assets\Scripts\ChangeTexture.cs" />
+     <Compile Include="Assets\Scripts\MuscleLimit.cs" />
      <Compile Include="Assets\Scripts\TrackHandPosture.cs" />
      <Compile Include="Assets\Scripts\TrackSkeletonPosture.cs" />
      <None Include="Assets\K2Examples\Resources\BlurShader.shader" />

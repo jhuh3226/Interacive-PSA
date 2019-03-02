@@ -20,7 +20,32 @@ ModelImporter:
     3300002: GeoSphere0
     4300000: _______
     4300002: GeoSphere0
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ___
+    second: {fileID: 2100000, guid: 6358405a1e450294ea44aab73d43c67a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ____
+    second: {fileID: 2100000, guid: 318b4fd73fa129e479b96a5d2859d145, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _____ _ ___
+    second: {fileID: 2100000, guid: 1000faba88d970d40881268af690b847, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _____ _____
+    second: {fileID: 2100000, guid: 78989e1ca66a3984ba768ce527428a7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _______ _______
+    second: {fileID: 2100000, guid: b1f42c383f7e51f45b755899801114ef, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

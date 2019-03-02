@@ -34,7 +34,12 @@ public class AvatarControllerClassic : AvatarController
 	public Transform ElbowRight;
 	public Transform HandRight;
 	public Transform FingersRight;
-//	private Transform FingerTipsRight = null;
+    //added
+    //eddited
+    public Transform FingerTipsRight;
+    public Transform FingerTipsLeft;
+
+    //private Transform FingerTipsRight = null;
 	public Transform ThumbRight;
 	
 	public Transform HipLeft;
@@ -66,18 +71,21 @@ public class AvatarControllerClassic : AvatarController
 		bones[5] = ShoulderLeft;
 		bones[6] = ElbowLeft;
 		bones[7] = HandLeft;
-//		bones[8] = FingersLeft;
-//		bones[9] = FingerTipsLeft;
+        //		bones[8] = FingersLeft;
+        bones[9] = FingerTipsLeft;
 //		bones[10] = ThumbLeft;
 	
 		bones[11] = ShoulderRight;
 		bones[12] = ElbowRight;
 		bones[13] = HandRight;
-//		bones[14] = FingersRight;
-//		bones[15] = FingerTipsRight;
-//		bones[16] = ThumbRight;
-	
-		bones[17] = HipLeft;
+
+        //adding
+        //uncommented
+        //bones[14] = FingersRight;
+        bones[15] = FingerTipsRight;
+        //bones[16] = ThumbRight;
+
+        bones[17] = HipLeft;
 		bones[18] = KneeLeft;
 		bones[19] = FootLeft;
 //		bones[20] = ToesLeft;
