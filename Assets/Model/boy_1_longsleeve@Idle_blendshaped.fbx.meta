@@ -783,7 +783,7 @@ ModelImporter:
         max: {x: 0, y: 0, z: 0}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightUpLeg
       humanName: RightUpperLeg
       limit:
@@ -791,7 +791,7 @@ ModelImporter:
         max: {x: 0, y: 0, z: 0}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:LeftLeg
       humanName: LeftLowerLeg
       limit:
@@ -799,7 +799,7 @@ ModelImporter:
         max: {x: 0, y: 0, z: 0}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightLeg
       humanName: RightLowerLeg
       limit:
@@ -807,7 +807,7 @@ ModelImporter:
         max: {x: 0, y: 0, z: 0}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:LeftFoot
       humanName: LeftFoot
       limit:
@@ -815,7 +815,7 @@ ModelImporter:
         max: {x: 0, y: 0, z: 0}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightFoot
       humanName: RightFoot
       limit:
@@ -823,7 +823,7 @@ ModelImporter:
         max: {x: 0, y: 0, z: 0}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:Spine
       humanName: Spine
       limit:
@@ -860,7 +860,7 @@ ModelImporter:
       humanName: LeftShoulder
       limit:
         min: {x: 0, y: -15, z: -6.290324}
-        max: {x: 0, y: 15, z: 24.193539}
+        max: {x: 0, y: 15, z: 15.483863}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 1
@@ -868,39 +868,39 @@ ModelImporter:
       humanName: RightShoulder
       limit:
         min: {x: 0, y: -15, z: -6.2903233}
-        max: {x: 0, y: 15, z: 24.193546}
+        max: {x: 0, y: 15, z: 18.387094}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 1
     - boneName: mixamorig:LeftArm
       humanName: LeftUpperArm
       limit:
-        min: {x: -46.451614, y: -36.129036, z: -28.064516}
-        max: {x: 46.451614, y: 56.451614, z: 56.451614}
+        min: {x: -20.322582, y: -18.709682, z: -19.35484}
+        max: {x: 46.45162, y: 33.225807, z: 44.83871}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 1
     - boneName: mixamorig:RightArm
       humanName: RightUpperArm
       limit:
-        min: {x: -46.451614, y: -36.129032, z: -25.161293}
-        max: {x: 46.451614, y: 56.45161, z: 56.451614}
+        min: {x: -23.22581, y: -18.709679, z: -19.354841}
+        max: {x: 46.451614, y: 33.225803, z: 47.741936}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 1
     - boneName: mixamorig:LeftForeArm
       humanName: LeftLowerArm
       limit:
-        min: {x: -55.161293, y: 0, z: -39.35484}
-        max: {x: 69.677414, y: 0, z: 91.6129}
+        min: {x: -14.516136, y: 0, z: -13.225807}
+        max: {x: 29.032242, y: 0, z: 74.19355}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 1
     - boneName: mixamorig:RightForeArm
       humanName: RightLowerArm
       limit:
-        min: {x: -63.870968, y: 0, z: -39.35484}
-        max: {x: 66.7742, y: 0, z: 91.6129}
+        min: {x: -11.612904, y: 0, z: -13.225807}
+        max: {x: 23.225815, y: 0, z: 74.19355}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 1
@@ -927,7 +927,7 @@ ModelImporter:
         max: {x: 0, y: 0, z: 0}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:RightToeBase
       humanName: RightToes
       limit:
@@ -935,7 +935,7 @@ ModelImporter:
         max: {x: 0, y: 0, z: 0}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: mixamorig:LeftEye
       humanName: LeftEye
       limit:
@@ -1195,11 +1195,11 @@ ModelImporter:
     - boneName: mixamorig:Spine2
       humanName: UpperChest
       limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
+        min: {x: -20, y: -8.387097, z: -20}
+        max: {x: 20, y: 5.4838705, z: 20}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     skeleton:
     - name: boy_1_longsleeve@Idle_blendshaped(Clone)
       parentName: 
@@ -2079,10 +2079,10 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
-    upperLegTwist: 0.5
-    legTwist: 0.5
+    upperLegTwist: 0
+    legTwist: 0
     armStretch: 0.05
-    legStretch: 0.05
+    legStretch: 0
     feetSpacing: 0
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}

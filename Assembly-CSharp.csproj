@@ -53,6 +53,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\iRobi\UVPaint\Character Controllers\Sources\Scripts\CharacterMotor.cs" />
+     <Compile Include="Assets\iRobi\UVPaint\Character Controllers\Sources\Scripts\FPSInputController.cs" />
+     <Compile Include="Assets\iRobi\UVPaint\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\iRobi\UVPaint\Plugin\bugFix.cs" />
+     <Compile Include="Assets\iRobi\UVPaint\Scripts\DecalProperties.cs" />
+     <Compile Include="Assets\iRobi\UVPaint\Scripts\Painter.cs" />
+     <Compile Include="Assets\iRobi\UVPaint\Scripts\UIScaller.cs" />
      <Compile Include="Assets\K2Examples\KinectDemos\AvatarsDemo\Scripts\CameraPitchCorrector.cs" />
      <Compile Include="Assets\K2Examples\KinectDemos\AvatarsDemo\Scripts\OffsetNodeMover.cs" />
      <Compile Include="Assets\K2Examples\KinectDemos\AvatarsDemo\Scripts\UserAvatarMatcher.cs" />
@@ -321,12 +328,14 @@
      <Compile Include="Assets\K2Examples\Standard Assets\Windows\Kinect\Vector4.cs" />
      <Compile Include="Assets\Scripts\AvatarControllerModify1.cs" />
      <Compile Include="Assets\Scripts\ChangeTexture.cs" />
+     <Compile Include="Assets\Scripts\HumanoidCtrl.cs" />
      <Compile Include="Assets\Scripts\MuscleLimit.cs" />
      <Compile Include="Assets\Scripts\TrackHandPosture.cs" />
      <Compile Include="Assets\Scripts\TrackSkeletonPosture.cs" />
      <None Include="Assets\K2Examples\Resources\BlurShader.shader" />
      <None Include="Assets\K2Examples\Resources\AstraCoordMapper.compute" />
      <None Include="Assets\K2Examples\Resources\MedianShader.shader" />
+     <None Include="Assets\iRobi\UVPaint\Resources\Ign.shader" />
      <None Include="Assets\K2Examples\Resources\Gradient.shader" />
      <None Include="Assets\K2Examples\Resources\DepthShader.shader" />
      <None Include="Assets\Shader\DecalModify.shader" />
@@ -334,25 +343,32 @@
      <None Include="Assets\K2Examples\Resources\SpeechGrammar.grxml.txt" />
      <None Include="Assets\K2Examples\Resources\BlurShader3.shader" />
      <None Include="Assets\K2Examples\KinectDemos\ProjectorDemo\Scripts\RoomAliveToolkit\Attribution.txt" />
+     <None Include="Assets\iRobi\UVPaint\ReadMe.txt" />
+     <None Include="Assets\iRobi\UVPaint\Shaders\Mobile-DiffuseCullOff.shader" />
      <None Include="Assets\K2Examples\Resources\Body2ColorShader.shader" />
      <None Include="Assets\K2Examples\Resources\Depth2ColorShaderNN.shader" />
      <None Include="Assets\K2Examples\Resources\Color2BodyShaderNN.shader" />
      <None Include="Assets\K2Examples\Resources\Depth2BodyShaderNN.shader" />
      <None Include="Assets\K2Examples\Resources\ForegroundBlendShader.shader" />
      <None Include="Assets\K2Examples\Resources\BlurShader2.shader" />
+     <None Include="Assets\iRobi\UVPaint\Resources\emptyShader.shader" />
      <None Include="Assets\K2Examples\Resources\Body2ColorShaderInv.shader" />
      <None Include="Assets\K2Examples\Resources\Body2DepthShaderInv.shader" />
      <None Include="Assets\K2Examples\KinectDemos\RecorderDemo\Resources\PlayerGrammar.grxml.txt" />
      <None Include="Assets\K2Examples\Plugins\UWP\Attribution.txt" />
      <None Include="Assets\K2Examples\Resources\CoordMapper.compute" />
+     <None Include="Assets\iRobi\UVPaint\Shaders\Unlit.shader" />
      <None Include="Assets\K2Examples\Resources\Depth2ColorShader.shader" />
      <None Include="Assets\K2Examples\Resources\Erode.shader" />
+     <None Include="Assets\iRobi\UVPaint\Shaders\paintPC.shader" />
      <None Include="Assets\K2Examples\Resources\BodyShader.shader" />
      <None Include="Assets\K2Examples\KinectDemos\ProjectorDemo\Resources\calibration-empty.xml" />
      <None Include="Assets\K2Examples\Resources\Dilate.shader" />
      <None Include="Assets\K2Examples\Resources\Body2DepthShaderNN.shader" />
+     <None Include="Assets\iRobi\UVPaint\Shaders\CustomDissolve.shader" />
      <None Include="Assets\Shader\MultipleTexture.shader" />
      <None Include="Assets\K2Examples\KinectDemos\ProjectorDemo\Resources\calibration.xml" />
+     <None Include="Assets\iRobi\UVPaint\Shaders\paintPCTwoSides.shader" />
      <None Include="Assets\K2Examples\Resources\BlurShader5.shader" />
      <None Include="Assets\K2Examples\Plugins\Android\Assets\OSIG_Readme.txt" />
      <None Include="Assets\K2Examples\_Readme\License.txt" />
@@ -360,6 +376,7 @@
      <None Include="Assets\Shader\MultipleTexture2.shader" />
      <None Include="Assets\K2Examples\Resources\Body2DepthShaderInvNN.shader" />
      <None Include="Assets\K2Examples\KinectDemos\VisualizerDemo\Shaders\HoloTriangles.shader" />
+     <None Include="Assets\iRobi\UVPaint\Shaders\RestorePC.shader" />
      <None Include="Assets\K2Examples\Resources\Color2BodyShader.shader" />
      <None Include="Assets\K2Examples\Resources\BlurShader4.shader" />
      <None Include="Assets\K2Examples\Plugins\Android\AndroidManifest.xml" />
@@ -579,6 +596,9 @@
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="iRobi">
+ <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Assets/iRobi/UVPaint/Plugins/iRobi.dll</HintPath>
  </Reference>
  <Reference Include="nuitrack.net">
  <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Assets/K2Examples/KinectScripts/Interfaces/Nuitrack/nuitrack.net.dll</HintPath>

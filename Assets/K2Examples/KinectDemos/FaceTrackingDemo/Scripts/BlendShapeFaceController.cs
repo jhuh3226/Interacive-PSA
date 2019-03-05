@@ -94,7 +94,9 @@ public class BlendShapeFaceController : MonoBehaviour
             //			// print out the found blend shape names
             for (int i = 0; i < skinnedMesh.blendShapeCount; i++)
             {
-                Debug.Log(i + " - " + skinnedMesh.GetBlendShapeName(i));
+                //check 
+                //uncommented
+                //Debug.Log(i + " - " + skinnedMesh.GetBlendShapeName(i));
             }
 		}
 	}
@@ -141,7 +143,7 @@ public class BlendShapeFaceController : MonoBehaviour
 						{
 							float animValue = dictAnimUnits[faceAnim];
 							string blendShapeName = faceBlendShapes[i];
-                            print("faceBlendShapes[1]: " + faceBlendShapes[1]);
+                            //print("faceBlendShapes[1]: " + faceBlendShapes[1]);
 
 
                             int blendShapeIndex = !string.IsNullOrEmpty(blendShapeName) ? skinnedMesh.GetBlendShapeIndex(blendShapeName) : -1;

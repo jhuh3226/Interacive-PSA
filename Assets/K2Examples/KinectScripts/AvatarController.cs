@@ -209,7 +209,7 @@ public class AvatarController : MonoBehaviour
         //added
         //print("joint position x: " + jointPosition.x);
         //print("checkXPosition: " + checkXPosition);
-        print("checkNewPosition: " + checkNewPosition);
+        //print("checkNewPosition: " + checkNewPosition);
     }
 
 	/// <summary>

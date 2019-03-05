@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class MuscleLimit : MonoBehaviour
 {
+    //added
+    public Vector3 min;
 
     //   Human muscle stuff
     HumanPoseHandler humanPoseHandler;
     HumanPose humanPose;
+    HumanLimit humanLimit;
     Animator anim;
 
     // Indexes to muscles
@@ -33,6 +36,7 @@ public class MuscleLimit : MonoBehaviour
                 " min: " + HumanTrait.GetMuscleDefaultMin(i) + " max: " + HumanTrait.GetMuscleDefaultMax(i));
             i++;
         }
+       
     }
 
     // Set character in fetus position
@@ -47,7 +51,7 @@ public class MuscleLimit : MonoBehaviour
     }
 
 
-    //   !!! Human Pose approach !!!
+    ////   !!! Human Pose approach !!!
     void Start()
     {
         // https://forum.unity.com/threads/humanposehandler.430354/
@@ -73,16 +77,18 @@ public class MuscleLimit : MonoBehaviour
         humanPoseHandler.GetHumanPose(ref humanPose);
 
         // set a specific musle; 9: Neck Nod Down-Up
-        humanPose.muscles[9] = -20f;
+        humanPose.muscles[39] = 0f;
         Debug.Log(humanPose.muscles[9]);
 
         // use pose information to actually set the pose; doesn't work so far
-        humanPoseHandler.SetHumanPose(ref humanPose);
+        //humanPoseHandler.SetHumanPose(ref humanPose);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        //humanPose.muscles[39] = 0f;
         //humanPoseHandler.SetHumanPose(ref humanPose);
     }
 }
