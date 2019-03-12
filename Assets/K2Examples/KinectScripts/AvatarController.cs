@@ -19,6 +19,10 @@ public class AvatarController : MonoBehaviour
     public Vector3 checkNewPosition;
     float checkXPosition;
     public Transform BodyRootAvatarController;
+    public float interpolateValue;
+    public float maxDegreesDelta;
+    private Quaternion printNewRotation;
+    private Quaternion printNewRotation2;
 
     [Tooltip("Index of the player, tracked by this component. 0 means the 1st player, 1 - the 2nd one, 2 - the 3rd one, etc.")]
 	public int playerIndex = 0;
@@ -210,6 +214,8 @@ public class AvatarController : MonoBehaviour
         //print("joint position x: " + jointPosition.x);
         //print("checkXPosition: " + checkXPosition);
         //print("checkNewPosition: " + checkNewPosition);
+        //print("newRotation: " + printNewRotation);
+        //print("printNewRotation: " + printNewRotation2);
     }
 
 	/// <summary>
@@ -428,7 +434,7 @@ public class AvatarController : MonoBehaviour
 
 		humanPoseHandler.GetHumanPose(ref humanPose);
 
-		Debug.Log(playerId + " - Trans: " + transform.position + ", body: " + humanPose.bodyPosition);
+		//Debug.Log(playerId + " - Trans: " + transform.position + ", body: " + humanPose.bodyPosition);
 
 		bool isPoseChanged = false;
 
@@ -706,19 +712,30 @@ public class AvatarController : MonoBehaviour
 		if(jointRotation == Quaternion.identity)
 			return;
 
+        //check this code
+        //think can change x,y,z value
 		// calculate the new orientation
 		Quaternion newRotation = Kinect2AvatarRot(jointRotation, boneIndex);
+        //added
+        //printNewRotation = newRotation;
+        //printNewRotation2 = printNewRotation*Quaternion.Euler(Vector3.up * 20);
 
-		if(externalRootMotion)
+        if (externalRootMotion)
 		{
 			newRotation = transform.rotation * newRotation;
 		}
 
-		// Smoothly transition to the new rotation
-		if(smoothFactor != 0f)
-        	boneTransform.rotation = Quaternion.Slerp(boneTransform.rotation, newRotation, smoothFactor * Time.deltaTime);
-		else
-			boneTransform.rotation = newRotation;
+        //check this code
+        //edited code
+        // Smoothly transition to the new rotation
+        if (smoothFactor != 0f)
+            boneTransform.rotation = Quaternion.Slerp(boneTransform.rotation, newRotation, interpolateValue);
+        //if (smoothFactor != 0f)
+        //    boneTransform.rotation = Quaternion.RotateTowards(boneTransform.rotation, newRotation, maxDegreesDelta);
+        //if (smoothFactor != 0f)
+        //    boneTransform.rotation = Quaternion.Slerp(boneTransform.rotation, newRotation, smoothFactor * Time.deltaTime);
+        else
+            boneTransform.rotation = newRotation;
 	}
 	
     //check this code
@@ -861,9 +878,17 @@ public class AvatarController : MonoBehaviour
 			if(!boneTransform)
 				continue;
 
-			if(smoothFactor != 0f)
-				boneTransform.rotation = Quaternion.Slerp(boneTransform.rotation, newRotation, smoothFactor * Time.deltaTime);
-			else
+            //original code
+            //if (smoothFactor != 0f)
+            //    boneTransform.rotation = Quaternion.Slerp(boneTransform.rotation, newRotation, smoothFactor * Time.deltaTime);
+
+            //check this code
+            //addited
+            if (smoothFactor != 0f)
+                boneTransform.rotation = Quaternion.Slerp(boneTransform.rotation, newRotation, interpolateValue);
+            //if (smoothFactor != 0f)
+            //    boneTransform.rotation = Quaternion.RotateTowards(boneTransform.rotation, newRotation, maxDegreesDelta);
+            else
 				boneTransform.rotation = newRotation;
 		}
 	}
