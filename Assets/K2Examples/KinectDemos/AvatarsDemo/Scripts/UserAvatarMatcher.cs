@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class UserAvatarMatcher : MonoBehaviour 
 {
+    //added
+    public bool firstCharacterTracked = false;
+    bool instiateSecondCharacter = false;
 
-	[Tooltip("Humanoid model used for avatar instatiation.")]
+    [Tooltip("Humanoid model used for avatar instatiation.")]
 	public GameObject avatarModel;
+    public GameObject avatarModelSecond;
 
-	[Tooltip("Smooth factor used by the avatar controller.")]
-	public float smoothFactor = 10f;
+    [Tooltip("Smooth factor used by the avatar controller.")]
+	public float smoothFactor = 0f;
 
 	[Tooltip("If enabled, makes the avatar position relative to this camera to be the same as the player's position to the sensor.")]
 	public Camera posRelativeToCamera;
@@ -41,7 +45,15 @@ public class UserAvatarMatcher : MonoBehaviour
 	
 	void Update () 
 	{
-		long checksum = GetUserChecksum(out maxUserCount);
+        //added
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            print("right arrow key pressed");
+            instiateSecondCharacter = true;
+        }
+        //
+         
+            long checksum = GetUserChecksum(out maxUserCount);
 
 		if (userChecksum != checksum) 
 		{
@@ -125,8 +137,21 @@ public class UserAvatarMatcher : MonoBehaviour
 			Vector3 userPos = new Vector3(userIndex, 0, 0);
 			Quaternion userRot = Quaternion.Euler(!mirroredMovement ? Vector3.zero : new Vector3(0, 180, 0));
 
-			avatarObj = Instantiate(avatarModel, userPos, userRot);
+            //added
+            firstCharacterTracked = true;
+            //
+
+            avatarObj = Instantiate(avatarModel, userPos, userRot);
 			avatarObj.name = "User-" + userId;
+
+            //added
+            if(instiateSecondCharacter == true)
+            {
+                Destroy(GameObject.FindWithTag("SadBoy3"));
+                avatarObj = Instantiate(avatarModelSecond, userPos, userRot);
+                avatarObj.name = "User-" + userId;
+            }
+            //
 
 			AvatarController ac = avatarObj.GetComponent<AvatarController>();
 			if (ac == null) 
