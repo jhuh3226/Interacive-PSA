@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 1b63df830d5d2994e8ac12075265c744
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Circle_015
+    100004: Circle_016
+    100006: Circle_017
+    100008: Circle_018
+    100010: Circle_019
+    100012: Circle_020
+    100014: Circle_021
+    100016: Circle_022
+    100018: Circle_023
+    100020: Circle_024
+    100022: Circle_025
+    100024: Circle_026
+    100026: Circle_027
+    100028: Circle_028
+    100030: Circle_029
+    100032: Circle_030
+    100034: Cylinder_002
+    100036: Cylinder_003
+    100038: Gear_001
+    100040: kreis_005
+    100042: kreis_006
+    100044: kreis_007
+    100046: kreis_008
+    100048: kreis_009
+    100050: middle_001
+    100052: Plane_002
+    100054: Plane_003
+    400000: //RootNode
+    400002: Circle_015
+    400004: Circle_016
+    400006: Circle_017
+    400008: Circle_018
+    400010: Circle_019
+    400012: Circle_020
+    400014: Circle_021
+    400016: Circle_022
+    400018: Circle_023
+    400020: Circle_024
+    400022: Circle_025
+    400024: Circle_026
+    400026: Circle_027
+    400028: Circle_028
+    400030: Circle_029
+    400032: Circle_030
+    400034: Cylinder_002
+    400036: Cylinder_003
+    400038: Gear_001
+    400040: kreis_005
+    400042: kreis_006
+    400044: kreis_007
+    400046: kreis_008
+    400048: kreis_009
+    400050: middle_001
+    400052: Plane_002
+    400054: Plane_003
+    2100000: Aluminium
+    2100002: DarkMetal
+    2100004: unnamed
+    2100006: LEATHER
+    2300000: Circle_015
+    2300002: Circle_016
+    2300004: Circle_017
+    2300006: Circle_018
+    2300008: Circle_019
+    2300010: Circle_020
+    2300012: Circle_021
+    2300014: Circle_022
+    2300016: Circle_023
+    2300018: Circle_024
+    2300020: Circle_025
+    2300022: Circle_026
+    2300024: Circle_027
+    2300026: Circle_028
+    2300028: Circle_029
+    2300030: Circle_030
+    2300032: Cylinder_002
+    2300034: Cylinder_003
+    2300036: Gear_001
+    2300038: kreis_005
+    2300040: kreis_006
+    2300042: kreis_007
+    2300044: kreis_008
+    2300046: kreis_009
+    2300048: middle_001
+    2300050: Plane_002
+    2300052: Plane_003
+    3300000: Circle_015
+    3300002: Circle_016
+    3300004: Circle_017
+    3300006: Circle_018
+    3300008: Circle_019
+    3300010: Circle_020
+    3300012: Circle_021
+    3300014: Circle_022
+    3300016: Circle_023
+    3300018: Circle_024
+    3300020: Circle_025
+    3300022: Circle_026
+    3300024: Circle_027
+    3300026: Circle_028
+    3300028: Circle_029
+    3300030: Circle_030
+    3300032: Cylinder_002
+    3300034: Cylinder_003
+    3300036: Gear_001
+    3300038: kreis_005
+    3300040: kreis_006
+    3300042: kreis_007
+    3300044: kreis_008
+    3300046: kreis_009
+    3300048: middle_001
+    3300050: Plane_002
+    3300052: Plane_003
+    4300000: Gear_001
+    4300002: kreis_009
+    4300004: Circle_030
+    4300006: kreis_008
+    4300008: Circle_029
+    4300010: kreis_007
+    4300012: Circle_028
+    4300014: kreis_006
+    4300016: Circle_027
+    4300018: kreis_005
+    4300020: Circle_026
+    4300022: Circle_024
+    4300024: middle_001
+    4300026: Circle_025
+    4300028: Circle_023
+    4300030: Circle_022
+    4300032: Circle_021
+    4300034: Circle_020
+    4300036: Circle_019
+    4300038: Circle_018
+    4300040: Circle_017
+    4300042: Circle_016
+    4300044: Circle_015
+    4300046: Plane_002
+    4300048: Cylinder_003
+    4300050: Cylinder_002
+    4300052: Plane_003
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,11 +6,9 @@ public class UserAvatarMatcher : MonoBehaviour
 {
     //added
     public bool firstCharacterTracked = false;
-    bool instiateSecondCharacter = false;
 
     [Tooltip("Humanoid model used for avatar instatiation.")]
 	public GameObject avatarModel;
-    public GameObject avatarModelSecond;
 
     [Tooltip("Smooth factor used by the avatar controller.")]
 	public float smoothFactor = 0f;
@@ -45,14 +43,6 @@ public class UserAvatarMatcher : MonoBehaviour
 	
 	void Update () 
 	{
-        //added
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            print("right arrow key pressed");
-            instiateSecondCharacter = true;
-        }
-        //
-         
             long checksum = GetUserChecksum(out maxUserCount);
 
 		if (userChecksum != checksum) 
@@ -143,15 +133,6 @@ public class UserAvatarMatcher : MonoBehaviour
 
             avatarObj = Instantiate(avatarModel, userPos, userRot);
 			avatarObj.name = "User-" + userId;
-
-            //added
-            if(instiateSecondCharacter == true)
-            {
-                Destroy(GameObject.FindWithTag("SadBoy3"));
-                avatarObj = Instantiate(avatarModelSecond, userPos, userRot);
-                avatarObj.name = "User-" + userId;
-            }
-            //
 
 			AvatarController ac = avatarObj.GetComponent<AvatarController>();
 			if (ac == null) 

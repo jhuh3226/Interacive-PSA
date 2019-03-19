@@ -7,10 +7,9 @@ Shader "iRobi/PaintOneSide"
 {
     Properties
     {
-        _Dec ("Decal", 2D) = "gray" { }
+        _Dec ("Decal", 2D) = "gray" { }//TexGen ObjectLinear }
         _Color ("Main Color", Color) = (1,1,1,0.5)
         _DeepAngle ("Deep Angle", Range(0,1)) =0.5
-        _UVPosition ("UV Position", Vector) = (0,0,1,1)
 //   _FalloffTex ("FallOff", 2D) = "gray" { TexGen ObjectLinear   }
 //    _MainTex ("Base Texture", 2D) = "white" { }
    // [HideInInspector]
@@ -109,13 +108,13 @@ Shader "iRobi/PaintOneSide"
 
   {
 
-   Lighting Off
+//   Lighting Off
 
    Cull Off
 
-   ZWrite Off
+//   ZWrite Off
 
-   Offset -1, -1
+//   Offset -10000, -10000
 
    
 
@@ -135,7 +134,7 @@ Shader "iRobi/PaintOneSide"
 
    #pragma fragmentoption ARB_precision_hint_fastest
 
-//   #pragma glsl_no_auto_normalization
+   #pragma glsl_no_auto_normalization
 
    #include "UnityCG.cginc"
    struct Input
@@ -147,17 +146,16 @@ Shader "iRobi/PaintOneSide"
    struct v2f
    {
     float4 pos : SV_POSITION;
-    float2 uv_Main  : TEXCOORD0;
-    float3 normalDir : TEXCOORD1;
-			float dpth : TEXCOORD2;
-			float4 sh : TEXCOORD3;  
+    float2 uv_Main  : TEXCOORD8;
+    float3 normalDir : TEXCOORD9;
+			float dpth : fixed;
+			float4 sh : TEXCOORD10;
    };
    sampler2D _Dec;
    float4 _Color;
    float4x4 unity_Projector;
    float d;
         float _DeepAngle;
-   float4 _UVPosition;
    sampler2D _FalloffTex;
 
 		float4x4 _ShadowProjectionMatrix;
@@ -215,12 +213,12 @@ Shader "iRobi/PaintOneSide"
 
    half4 frag (v2f i) : COLOR
    {
-    float Depth = sampleShadowmap( i.sh.xy, 1-i.dpth*0.97 );
+    float Depth = sampleShadowmap( i.sh.xy, 1-i.dpth*0.995 );
    float3 normView = normalize(-float3(unity_Projector[2][0],unity_Projector[2][1], unity_Projector[2][2]));
     half4 falloff = tex2D(_FalloffTex, i.uv_Main);
     d = dot(i.normalDir, normView);
 //    d = sampleShadowmap( i.sh.xy, i.dpth*1.001 );
-    half4 comp = tex2D(_Dec, float2( i.uv_Main.x*_UVPosition.z+_UVPosition.x, i.uv_Main.y*_UVPosition.w+_UVPosition.y))*_Color;
+    half4 comp = tex2D(_Dec, i.uv_Main)*_Color;
 //    return fixed4(comp.rgb,comp.a*min(d + _DeepAngle,1)*falloff.r);
     return fixed4(comp.rgb,comp.a*(1-Depth)*min(d + _DeepAngle,1)*falloff.r);
    }

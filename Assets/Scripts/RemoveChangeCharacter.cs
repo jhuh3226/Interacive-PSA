@@ -16,13 +16,18 @@ public class RemoveChangeCharacter : MonoBehaviour
     void Update()
     {
         UserAvatarMatcher userAvatarMatcherScript = gameObContainingScript.GetComponent<UserAvatarMatcher>();
-
-        //on clicking R for removed, the current character dissapears
+        //on clicking R for removed, certian chracter dissapears
         if (userAvatarMatcherScript.firstCharacterTracked == true)
         {
             Destroy(GameObject.FindWithTag("InjuredBoy1"));
             userAvatarMatcherScript.firstCharacterTracked = false;
         }
 
+        ScriptEnableDisable ScriptEnableDisableScript = gameObContainingScript.GetComponent<ScriptEnableDisable>();
+        if(ScriptEnableDisableScript.script1Disabled == true)
+        {
+            Destroy(GameObject.FindWithTag("SadBoy3"));
+            ScriptEnableDisableScript.script1Disabled = false;
+        }
     }
 }

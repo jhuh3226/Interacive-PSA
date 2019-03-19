@@ -12,7 +12,6 @@ Shader "iRobi/RestorePC"
         _DeepAngle ("Deep Angle", Range(0,1)) =0.5
     _MainTex ("Base Texture", 2D) = "white" { }
     _OrigTex ("Original Texture", 2D) = "white" { }
-        _UVPosition ("UV Position", Vector) = (0,0,1,1)
 //    _ShadowMapTex ("Original Texture2", 2D) = "white" { }
    // [HideInInspector]
     }
@@ -180,8 +179,8 @@ Shader "iRobi/RestorePC"
     float2 uv_Main  : TEXCOORD0;
     float3 normalDir : TEXCOORD1;
     float2 scrPos: TEXCOORD2;
-			float dpth : TEXCOORD3;
-			float4 sh : TEXCOORD4;
+			float dpth : fixed;
+			float4 sh : TEXCOORD3;
    };
    ////////////////////////////////
    sampler2D _Dec;
@@ -197,7 +196,6 @@ Shader "iRobi/RestorePC"
 		float4x4 _ShadowProjectionMatrix;
 
 		sampler2D _ShadowMapTex;
-   			float4 _UVPosition;
 		///////////////////////////
    v2f vert(appdata_img g,Input i)
    {
@@ -247,10 +245,10 @@ Shader "iRobi/RestorePC"
 
    half4 frag (v2f i) : COLOR
    {
-    float Depth = sampleShadowmap( i.sh.xy, 1-i.dpth*0.97 );
+    float Depth = sampleShadowmap( i.sh.xy, 1-i.dpth*0.995 );
    float3 normView = normalize(-float3(unity_Projector[2][0],unity_Projector[2][1], unity_Projector[2][2]));
     d = dot(i.normalDir, normView);
-    half4 comp = tex2D(_Dec, float2( i.uv_Main.x*_UVPosition.z+_UVPosition.x, i.uv_Main.y*_UVPosition.w+_UVPosition.y))*_Color; 
+    half4 comp = tex2D(_Dec, i.uv_Main)*_Color; 
 
     	half4 falloff = tex2D(_FalloffTex, i.uv_Main);
     

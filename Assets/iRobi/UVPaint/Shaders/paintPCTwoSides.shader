@@ -6,7 +6,6 @@ Shader "iRobi/PaintTwoSides"
     {
         _Dec ("Decal", 2D) = "gray" { }//TexGen ObjectLinear }
         _Color ("Main Color", Color) = (1,1,1,0.5)
-        _UVPosition ("UV Position", Vector) = (0,0,1,1)
 //    _MainTex ("Base Texture", 2D) = "white" { }
    // [HideInInspector]
     }
@@ -128,8 +127,7 @@ Shader "iRobi/PaintTwoSides"
            float4 _Color;
            float4x4 unity_Projector;
    			sampler2D _FalloffTex;
-   			float4 _UVPosition;
-   			 
+
            v2f vert(appdata_tan v)
            {
              v2f o;
@@ -164,7 +162,7 @@ Shader "iRobi/PaintTwoSides"
            half4 frag (v2f i) : COLOR
            {
     		 half4 falloff = tex2D(_FalloffTex, i.uv_Main);
-             half4 tex = tex2D(_Dec, float2( i.uv_Main.x*_UVPosition.z+_UVPosition.x, i.uv_Main.y*_UVPosition.w+_UVPosition.y));
+             half4 tex = tex2D(_Dec, i.uv_Main);
              return half4(tex.rgb*_Color,tex.a*falloff.r);
            }
            ENDCG
