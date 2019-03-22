@@ -6,6 +6,9 @@ TagManager:
   tags:
   - InjuredBoy1
   - SadBoy3
+  - concrete
+  - girl4yearsHappy
+  - girl12yearsHappy
   layers:
   - Default
   - TransparentFX

@@ -337,8 +337,11 @@
      <Compile Include="Assets\K2Examples\Standard Assets\Windows\Kinect\TrackingState.cs" />
      <Compile Include="Assets\K2Examples\Standard Assets\Windows\Kinect\Vector4.cs" />
      <Compile Include="Assets\Scripts\AudioScript.cs" />
+     <Compile Include="Assets\Scripts\AudioScriptScene2.cs" />
      <Compile Include="Assets\Scripts\AvatarControllerModify1.cs" />
      <Compile Include="Assets\Scripts\ChangeTexture.cs" />
+     <Compile Include="Assets\Scripts\EnableDisableScene1.cs" />
+     <Compile Include="Assets\Scripts\EnableDisableScene2.cs" />
      <Compile Include="Assets\Scripts\FlickerLight.cs" />
      <Compile Include="Assets\Scripts\HumanoidCtrl.cs" />
      <Compile Include="Assets\Scripts\MuscleLimit.cs" />
