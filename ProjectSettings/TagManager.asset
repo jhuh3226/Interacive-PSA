@@ -9,6 +9,15 @@ TagManager:
   - concrete
   - girl4yearsHappy
   - girl12yearsHappy
+  - Book
+  - FloorScene2
+  - metal
+  - girlMiddleAgedHappy
+  - girlAgedHappy
+  - scene1
+  - scene2
+  - scene3
+  - scene4
   layers:
   - Default
   - TransparentFX

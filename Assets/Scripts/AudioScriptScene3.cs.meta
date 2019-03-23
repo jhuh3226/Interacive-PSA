@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: f973e5fcf4426544696141f750527379
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - clipScene3Typing: {fileID: 8300000, guid: 76bb0145fb0e2ef40b335b709e851150, type: 3}
+  - clipScene3MeetingBg: {fileID: 8300000, guid: 7b07b5e5b5806284caa008ebb05b684e,
+      type: 3}
+  - clipScene3BrightBg: {instanceID: 0}
+  - clipScene3GloomyBg: {fileID: 8300000, guid: 51446031df6522b4ca7cc8d794e5b1f3,
+      type: 3}
+  - clipScene3Sigh: {fileID: 8300000, guid: ace511afc9d8bdb4a8c62c850b6c5894, type: 3}
+  - audioScene3Typing: {instanceID: 0}
+  - audioScene3MeetingBg: {instanceID: 0}
+  - audioScene3BrightBg: {instanceID: 0}
+  - audioScene3GloomyBg: {instanceID: 0}
+  - audioScene3Sigh: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
