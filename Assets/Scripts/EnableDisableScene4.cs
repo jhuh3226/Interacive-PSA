@@ -15,12 +15,27 @@ public class EnableDisableScene4 : MonoBehaviour
     public GameObject doll;
 
     public GameObject gameObContainingScript;
+    public GameObject gameObContainingRenderLightScript;
 
     void Update()
     {
+        RenderLight RenderLightScript = gameObContainingRenderLightScript.GetComponent<RenderLight>();
         EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingScript.GetComponent<EnableDisableSceneOverall>();
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if (EnableDisableSceneOverallScript.scene4On == true)
+            {
+                RenderLightScript.renderIntensity = 1;
+            }
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            RenderLightScript.renderIntensity = 0;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             if (EnableDisableSceneOverallScript.scene4On == true)
             {
@@ -28,7 +43,7 @@ public class EnableDisableScene4 : MonoBehaviour
                 pointLight1.SetActive(false);
                 pointLight2.SetActive(true);
                 //pointLightLamp.SetActive(true);
-                AgedSitting.SetActive(true);
+                //AgedSitting.SetActive(true);
 
                 //destory
                 Destroy(GameObject.FindWithTag("girlAgedHappy"));

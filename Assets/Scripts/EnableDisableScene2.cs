@@ -16,19 +16,39 @@ public class EnableDisableScene2 : MonoBehaviour
     public GameObject gameObContainingScript;
     public GameObject gameObjectContainingScriptToEnble; //drag the gameobject which have that script you want to disable, in the inspector.
 
+    //    
+    public GameObject gameObContainingRenderLightScript;
+
+
 
     void Update()
     {
+        RenderLight RenderLightScript = gameObContainingRenderLightScript.GetComponent<RenderLight>();
         EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingScript.GetComponent<EnableDisableSceneOverall>();
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if (EnableDisableSceneOverallScript.scene2On == true)
             {
+                RenderLightScript.renderIntensity = 1;
+            }
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            RenderLightScript.renderIntensity = 0;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if (EnableDisableSceneOverallScript.scene2On == true)
+            {
+                RenderLightScript.renderIntensity = 1;
+
                 directionalLight.SetActive(false);
                 pointLight1.SetActive(false);
                 pointLight2.SetActive(true);
-                childLeaning.SetActive(true);
+                // childLeaning.SetActive(true);
 
                 //destory
                 Destroy(GameObject.FindWithTag("girl12yearsHappy"));
@@ -42,5 +62,7 @@ public class EnableDisableScene2 : MonoBehaviour
                 FlickerLightScene2Script.enabled = true;
             }
         }
+
+
     }
 }

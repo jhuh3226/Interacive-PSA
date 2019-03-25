@@ -8,12 +8,15 @@ public class AudioScriptScene2 : MonoBehaviour {
     public AudioClip clipScene2BrightBg;
     public AudioClip clipScene2GloomyBg;
     public AudioClip clipScene2BookFall;
-
+    public AudioClip clipScene2MenVoice;
+    public AudioClip clipScene2MenLaugh;
 
     public AudioSource audioScene2Hum;
     public AudioSource audioScene2BrightBg;
     public AudioSource audioScene2GloomyBg;
     public AudioSource audioScene2BookFall;
+    public AudioSource audioScene2MenVoice;
+    public AudioSource audioScene2MenLaugh;
 
     public GameObject gameObContainingScript;
 
@@ -40,6 +43,8 @@ public class AudioScriptScene2 : MonoBehaviour {
         audioScene2BrightBg = AddAudio(clipScene2BrightBg, true, true, 0.2f);
         audioScene2GloomyBg = AddAudio(clipScene2GloomyBg, false, true, 1.0f);
         audioScene2BookFall = AddAudio(clipScene2BookFall, false, true, 0.5f);
+        audioScene2MenVoice = AddAudio(clipScene2MenVoice, false, true, 1.0f);
+        audioScene2MenLaugh = AddAudio(clipScene2MenLaugh, false, true, 1.0f);
 
     }
 
@@ -57,11 +62,19 @@ public class AudioScriptScene2 : MonoBehaviour {
             Invoke("PlayAudioScene1Laugh", 4.0f);
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            audioScene2GloomyBg.Play();
+            audioScene2MenLaugh.Play();
+            audioScene2MenVoice.Play();
             audioScene2BrightBg.Stop();
             audioScene2Hum.Stop();
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            audioScene2GloomyBg.Play();
+            audioScene2MenLaugh.Stop();
+            audioScene2MenVoice.Stop();
         }
 
         CollisionScene2 CollisionScene2Script = gameObContainingScript.GetComponent<CollisionScene2>();

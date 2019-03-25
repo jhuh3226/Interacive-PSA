@@ -18,6 +18,9 @@ TagManager:
   - scene2
   - scene3
   - scene4
+  - girl4yearsSad
+  - girlMiddleAgedSad
+  - girl12yearsSad
   layers:
   - Default
   - TransparentFX

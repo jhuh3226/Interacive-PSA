@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Slash002_forward
+  m_Shader: {fileID: 4800000, guid: f2e1044bd4f4713458363e00c38d3031, type: 3}
+  m_ShaderKeywords: _ALPHABLEND_ON _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AOMap:
+        m_Texture: {fileID: 2800000, guid: 44b83932739d36541b967271668fdfa8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 3d0ecce1db28e8743ae82107a2fca5e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 8dace0ac7e29cb043833d0b7640eca31, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: 75a37910a17ba9947bfb781c0f6995e7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OpacityMap:
+        m_Texture: {fileID: 10305, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 2800000, guid: dcdb07c1bbf6b7245ac8c1ab0d29cfaf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SmoothessMap:
+        m_Texture: {fileID: 2800000, guid: d5560af32a4a95344891a1509485a855, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SmoothnessMap:
+        m_Texture: {fileID: 2800000, guid: fdce9839b3b7be6468a96fa9604deab3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 2800000, guid: 8e7fa30755d311e42bb23b97f8513d10, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularMap:
+        m_Texture: {fileID: 2800000, guid: ea3a6626a69200042b1961c367e81259, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _V_WIRE_Tessellation_DispTex:
+        m_Texture: {fileID: 2800000, guid: c262daa97b1468b4e963e3cf1130ab1b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaClip: 0.2
+    - _BumpScale: 1
+    - _Clipping: 0.01
+    - _ColorEmissionMultiplier: 1
+    - _ContributionCavity: 1
+    - _ContributionDiffuseSpecular: 0
+    - _ContributionEmission: 0
+    - _ContributionEmissionMask: 0
+    - _ContributionNormal: 1
+    - _ContributionOcclusion: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _Displacement: 0.015
+    - _DoubleColor: 0
+    - _DstBlend: 10
+    - _GlossMapScale: 1
+    - _Glossiness: 1
+    - _GlossyReflections: 1
+    - _MaskAlphaPower: 1
+    - _MaskAlphaShift: 0
+    - _MaskAlphaUsingAO: 0
+    - _MaxDistance: 20
+    - _Metallic: 0.125
+    - _Metalness: 0
+    - _MinDistance: 10
+    - _Mode: 2
+    - _NormalBlend: 0.5
+    - _NormalClip: 0.3
+    - _OcclusionBlend: 1
+    - _OcclusionStrength: 1
+    - _Parallax: 0.08
+    - _ParallaxHeight: 0.02
+    - _Shininess: 1
+    - _Smoothness: 0.5
+    - _SmoothnessHigh: 0.5
+    - _SmoothnessLow: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 5
+    - _StencilRef: 1
+    - _StencilRefAdd1: 1
+    - _Tess: 5
+    - _UVSec: 0
+    - _UseAdditiveColor: 0
+    - _UseOcclusionTransparency: 0
+    - _UseWorldNormals: 0
+    - _V_WIRE_TEssellation_Phong: 0.5
+    - _V_WIRE_Tessellation_DispStrength: 0.06
+    - _V_WIRE_Tessellation_DispTex_Source: 0
+    - _V_WIRE_Tessellation_DispTex_UVSet: 0
+    - _V_WIRE_Tessellation_EdgeLength: 16
+    - _V_WIRE_Tessellation_Factor: 16
+    - _V_WIRE_Tessellation_MaxDistance: 35
+    - _V_WIRE_Tessellation_MinDistance: 10
+    - _V_WIRE_Tessellation_NormalCoef: 1
+    - _V_WIRE_Tessellation_ShadowCasterLOD: 0.5
+    - _V_WIRE_Tessellation_TangentCoef: 1
+    - _V_WIRE_Tessellation_Type: 0
+    - _ZWrite: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorEmission: {r: 0, g: 0, b: 0, a: 0}
+    - _ColorMain: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}

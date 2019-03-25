@@ -60,7 +60,7 @@ public class AudioScriptScene3 : MonoBehaviour {
             audioScene3MeetingBg.Play();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             audioScene3GloomyBg.Play();
             Invoke("PlayAudioScene1Sigh", 2.0f);

@@ -14,21 +14,37 @@ public class EnableDisableScene3 : MonoBehaviour {
     //public GameObject book;
 
     public GameObject gameObContainingScript;
-
+    public GameObject gameObContainingRenderLightScript;
 
     void Update()
     {
+        RenderLight RenderLightScript = gameObContainingRenderLightScript.GetComponent<RenderLight>();
         EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingScript.GetComponent<EnableDisableSceneOverall>();
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if (EnableDisableSceneOverallScript.scene3On == true)
             {
+                RenderLightScript.renderIntensity = 1;
+            }
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            RenderLightScript.renderIntensity = 0;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if (EnableDisableSceneOverallScript.scene3On == true)
+            {
+                RenderLightScript.renderIntensity = 1;
+
                 directionalLight.SetActive(false);
                 pointLight1.SetActive(false);
                 pointLight2.SetActive(true);
                 //pointLightLamp.SetActive(true);
-                middleAgedSitting.SetActive(true);
+                //middleAgedSitting.SetActive(true);
 
                 //destory
                 Destroy(GameObject.FindWithTag("girlMiddleAgedHappy"));

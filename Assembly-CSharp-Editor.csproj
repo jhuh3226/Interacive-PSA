@@ -53,9 +53,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\iRobi\UVPaint\Editor\UVPaintLoad.cs" />
      <Compile Include="Assets\K2Examples\Standard Assets\Editor\KinectCopyPluginDataHelper.cs" />
      <Compile Include="Assets\K2Examples\Standard Assets\Editor\KinectFacePostBuildCopyPluginData.cs" />
+     <Compile Include="Assets\SkinnedDecal\Scripts\Editor\SkinnedDecalEditor.cs" />
+     <Compile Include="Assets\SkinnedDecal\Scripts\Editor\SkinnedDecalMeshEditor.cs" />
+     <Compile Include="Assets\SkinnedDecal\Scripts\Editor\SkinnedDecalSystemEditor.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
@@ -313,9 +315,6 @@
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="iRobi">
- <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Assets/iRobi/UVPaint/Plugins/iRobi.dll</HintPath>
  </Reference>
  <Reference Include="nuitrack.net">
  <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Assets/K2Examples/KinectScripts/Interfaces/Nuitrack/nuitrack.net.dll</HintPath>
