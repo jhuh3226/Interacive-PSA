@@ -9587,7 +9587,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1780905771472874}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b38f8c0e60334143a1b54003b3a0ae5, type: 3}
   m_Name: 
@@ -9595,7 +9595,7 @@ MonoBehaviour:
   limitSpan: 1
   checkNewPosition: {x: 0, y: 0, z: 0}
   BodyRootAvatarController: {fileID: 0}
-  interpolateValue: 0.3
+  interpolateValue: 0.4
   maxDegreesDelta: 0
   playerIndex: 0
   mirroredMovement: 1
@@ -9605,7 +9605,7 @@ MonoBehaviour:
   externalHandRotations: 0
   fingerOrientations: 1
   moveRate: 1
-  smoothFactor: 0.02
+  smoothFactor: 20
   offsetNode: {fileID: 1754432828810594, guid: 7c9734fe87d613f4eb5f726c589bd3f5, type: 2}
   posRelativeToCamera: {fileID: 0}
   posRelOverlayColor: 0
@@ -10057,7 +10057,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 73b52ff4279387a4fbe2be4c9add3c50, type: 2}
+  - {fileID: 2100000, guid: 04e0746c2785fb04bbbc109f52fff55c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

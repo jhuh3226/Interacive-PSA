@@ -7,12 +7,14 @@ public class AudioScriptScene2 : MonoBehaviour {
     public AudioClip clipScene2Hum;
     public AudioClip clipScene2BrightBg;
     public AudioClip clipScene2GloomyBg;
+    public AudioClip clipScene2SpeakingBg;
     public AudioClip clipScene2BookFall;
     public AudioClip clipScene2MenVoice;
     public AudioClip clipScene2MenLaugh;
 
     public AudioSource audioScene2Hum;
     public AudioSource audioScene2BrightBg;
+    public AudioSource audioScene2SpeakinBg;
     public AudioSource audioScene2GloomyBg;
     public AudioSource audioScene2BookFall;
     public AudioSource audioScene2MenVoice;
@@ -41,6 +43,8 @@ public class AudioScriptScene2 : MonoBehaviour {
         // add the necessary AudioSources:
         audioScene2Hum = AddAudio(clipScene2Hum, false, true, 1.0f);
         audioScene2BrightBg = AddAudio(clipScene2BrightBg, true, true, 0.2f);
+        audioScene2SpeakinBg = AddAudio(clipScene2BrightBg, true, true, 0.2f);
+
         audioScene2GloomyBg = AddAudio(clipScene2GloomyBg, false, true, 1.0f);
         audioScene2BookFall = AddAudio(clipScene2BookFall, false, true, 0.5f);
         audioScene2MenVoice = AddAudio(clipScene2MenVoice, false, true, 1.0f);
@@ -59,6 +63,7 @@ public class AudioScriptScene2 : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             audioScene2BrightBg.Play();
+            audioScene2SpeakinBg.Play();
             Invoke("PlayAudioScene1Laugh", 4.0f);
         }
 
@@ -66,6 +71,7 @@ public class AudioScriptScene2 : MonoBehaviour {
         {
             audioScene2MenLaugh.Play();
             audioScene2MenVoice.Play();
+            audioScene2SpeakinBg.Stop();
             audioScene2BrightBg.Stop();
             audioScene2Hum.Stop();
         }

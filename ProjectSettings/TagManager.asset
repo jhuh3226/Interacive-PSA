@@ -21,6 +21,7 @@ TagManager:
   - girl4yearsSad
   - girlMiddleAgedSad
   - girl12yearsSad
+  - Wall
   layers:
   - Default
   - TransparentFX

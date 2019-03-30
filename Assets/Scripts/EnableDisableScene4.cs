@@ -26,13 +26,13 @@ public class EnableDisableScene4 : MonoBehaviour
         {
             if (EnableDisableSceneOverallScript.scene4On == true)
             {
-                RenderLightScript.renderIntensity = 1;
+                //RenderLightScript.renderIntensity = 1;
             }
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            RenderLightScript.renderIntensity = 0;
+            //RenderLightScript.renderIntensity = 0;
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha3))

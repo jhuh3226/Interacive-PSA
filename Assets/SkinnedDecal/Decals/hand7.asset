@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7150125d37794494b80c847faae76c09, type: 3}
+  m_Name: hand7
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: af9f229278569d34ab5c964e43fddbe0, type: 2}
+  size: 0.2
+  randomSize: 1
+  minSize: 0.1
+  maxSize: 0.2
+  normalClip: -1
+  randomRotation: 1
+  selectedAtlasItem: 0
+  atlasItemCount: 0
+  randomFromAtlas: 0

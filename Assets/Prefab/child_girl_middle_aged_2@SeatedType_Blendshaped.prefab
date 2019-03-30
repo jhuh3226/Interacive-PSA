@@ -4217,7 +4217,7 @@ Transform:
   m_GameObject: {fileID: 1245598678178474}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: -0.195}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.05, y: 1.05, z: 1.05}
   m_Children:
   - {fileID: 4436923988595236}
   - {fileID: 4840972342640280}
@@ -9503,7 +9503,7 @@ Animator:
   m_GameObject: {fileID: 1245598678178474}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 42b7c06a5cfe08e42b0ebff992843cb0, type: 3}
-  m_Controller: {fileID: 9100000, guid: c6e712ae25356fa42b736ce674bb8c56, type: 2}
+  m_Controller: {fileID: 9100000, guid: 58248934edbb559439262b2d66d40fb7, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 1
   m_ApplyRootMotion: 1
@@ -9518,7 +9518,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1245598678178474}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b38f8c0e60334143a1b54003b3a0ae5, type: 3}
   m_Name: 
@@ -9536,7 +9536,7 @@ MonoBehaviour:
   externalHandRotations: 0
   fingerOrientations: 1
   moveRate: 1
-  smoothFactor: 0
+  smoothFactor: 20
   offsetNode: {fileID: 1754432828810594, guid: 7c9734fe87d613f4eb5f726c589bd3f5, type: 2}
   posRelativeToCamera: {fileID: 0}
   posRelOverlayColor: 0

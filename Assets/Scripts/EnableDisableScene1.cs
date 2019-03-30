@@ -18,36 +18,41 @@ public class EnableDisableScene1 : MonoBehaviour
 
     //
     public GameObject gameObContainingRenderLightScript;
+    public GameObject gameObContainingAvatarControllerScript;
+
 
     //light
-    public float intensity;
-    public float intensityMax = 0f;
-    public float intensityMin = 1f;
-    public bool startDecreasing = false;
-    static float t = 0.0f;
+    //public float intensity;
+    //public float intensityMax = 0f;
+    //public float intensityMin = 1f;
+    //public bool startDecreasing = false;
+    //static float t = 0.0f;
 
     void Update()
     {
-        print(intensity);
+        //print(intensity);
         //lighting increasing over time
         RenderLight RenderLightScript = gameObContainingRenderLightScript.GetComponent<RenderLight>();
 
-        if (startDecreasing == true)
-        {
-            intensity = Mathf.Lerp(intensityMax, intensityMin, t);
-            t += 0.7f * Time.deltaTime;
-            RenderLightScript.renderIntensity = intensity;
+        //interpolation
+        AvatarController AvatarControllerScript = gameObContainingAvatarControllerScript.GetComponent<AvatarController>();
 
-            if(intensity >=1f)
-            {
-                startDecreasing = false;
-            }
-        }
+        //if (startDecreasing == true)
+        //{
+        //    intensity = Mathf.Lerp(intensityMax, intensityMin, t);
+        //    t += 0.7f * Time.deltaTime;
+        //    RenderLightScript.renderIntensity = intensity;
+
+        //    if(intensity >=1f)
+        //    {
+        //        startDecreasing = false;
+        //    }
+        //}
         //
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            RenderLightScript.renderIntensity = 0;
+           // RenderLightScript.renderIntensity = 0;
 
             Destroy(GameObject.FindWithTag("girl4yearsHappy"));
 
@@ -57,7 +62,11 @@ public class EnableDisableScene1 : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            startDecreasing = true;
+            //interpolation
+            AvatarControllerScript.interpolateValue = 0.2f;
+
+            //startDecreasing = true;
+            RenderLightScript.turnOff = true;
 
             directLightFlicker.SetActive(false);
             pointLight1.SetActive(false);

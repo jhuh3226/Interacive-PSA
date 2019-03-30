@@ -14,6 +14,7 @@ using System.Text;
 /// </summary>
 public class AvatarControllerClassic : AvatarController
 {	
+
 	// Public variables that will get matched to bones. If empty, the Kinect will simply not track it.
 	public Transform HipCenter;
 	public Transform Spine;

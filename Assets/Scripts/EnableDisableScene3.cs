@@ -25,20 +25,23 @@ public class EnableDisableScene3 : MonoBehaviour {
         {
             if (EnableDisableSceneOverallScript.scene3On == true)
             {
-                RenderLightScript.renderIntensity = 1;
+                //RenderLightScript.renderIntensity = 1;
             }
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            RenderLightScript.renderIntensity = 0;
+           // RenderLightScript.renderIntensity = 0;
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             if (EnableDisableSceneOverallScript.scene3On == true)
             {
-                RenderLightScript.renderIntensity = 1;
+                //RenderLightScript.renderIntensity = 1;
+
+                //camera
+                //GameObject.Find("Main Camera2").transform.position = new Vector3(0, 1.3f, -0.72f);
 
                 directionalLight.SetActive(false);
                 pointLight1.SetActive(false);

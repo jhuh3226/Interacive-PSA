@@ -9519,7 +9519,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1318603086684184}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b38f8c0e60334143a1b54003b3a0ae5, type: 3}
   m_Name: 
@@ -9537,7 +9537,7 @@ MonoBehaviour:
   externalHandRotations: 0
   fingerOrientations: 1
   moveRate: 1
-  smoothFactor: 0.1
+  smoothFactor: 0
   offsetNode: {fileID: 1754432828810594, guid: 7c9734fe87d613f4eb5f726c589bd3f5, type: 2}
   posRelativeToCamera: {fileID: 0}
   posRelOverlayColor: 0
