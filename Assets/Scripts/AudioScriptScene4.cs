@@ -17,7 +17,10 @@ public class AudioScriptScene4 : MonoBehaviour
     public AudioSource audioScene4GloomyBg;
     public AudioSource audioScene4DropDoll;
 
-    // public GameObject gameObContainingScript;
+    public GameObject gameObContainingEnableDisableSceneOverallScript;
+
+    bool turnOn1st = false;
+    bool turnOn2nd = false;
 
     public void Start()
     {
@@ -54,21 +57,33 @@ public class AudioScriptScene4 : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingEnableDisableSceneOverallScript.GetComponent<EnableDisableSceneOverall>();
+
+        if (EnableDisableSceneOverallScript.scene4AOn == true)
         {
-            audioScene4ChildRunning.Play();
-            audioScene4BrightBg.Play();
-            Invoke("PlayAudioScene1Sigh", 2.0f);
+            if (turnOn1st == false)
+            {
+                audioScene4ChildRunning.Play();
+                //audioScene4BrightBg.Play();
+                Invoke("PlayAudioScene1BabySound", 2.0f);
+
+                turnOn1st = true;
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        else if (EnableDisableSceneOverallScript.scene4BOn == true)
         {
-            audioScene4GloomyBg.Play();
-            audioScene4DropDoll.Play();
+            if (turnOn2nd == false)
+            {
+                audioScene4GloomyBg.Play();
+                audioScene4DropDoll.Play();
 
-            audioScene4ChildRunning.Stop();
-            audioScene4BabySound.Stop();
-            audioScene4BrightBg.Stop();
+                audioScene4ChildRunning.Stop();
+                audioScene4BabySound.Stop();
+                //audioScene4BrightBg.Stop();
+
+                turnOn2nd = true;
+            }
         }
 
         //CollisionScene2 CollisionScene2Script = gameObContainingScript.GetComponent<CollisionScene2>();

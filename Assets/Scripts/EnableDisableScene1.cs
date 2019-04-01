@@ -9,7 +9,7 @@ public class EnableDisableScene1 : MonoBehaviour
     public GameObject pointLight1;
     public GameObject pointLight2;
     public GameObject pointLightLamp;
-    public GameObject childBreathing;
+    //public GameObject childBreathing;
     public GameObject directLightFlicker;
 
     //isKinemetic turn on and off
@@ -17,9 +17,8 @@ public class EnableDisableScene1 : MonoBehaviour
     public GameObject ballHittingBear;
 
     //
+    public GameObject gameObContainingEnableDisableSceneOverallScript;
     public GameObject gameObContainingRenderLightScript;
-    public GameObject gameObContainingAvatarControllerScript;
-
 
     //light
     //public float intensity;
@@ -33,9 +32,7 @@ public class EnableDisableScene1 : MonoBehaviour
         //print(intensity);
         //lighting increasing over time
         RenderLight RenderLightScript = gameObContainingRenderLightScript.GetComponent<RenderLight>();
-
-        //interpolation
-        AvatarController AvatarControllerScript = gameObContainingAvatarControllerScript.GetComponent<AvatarController>();
+        EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingEnableDisableSceneOverallScript.GetComponent<EnableDisableSceneOverall>();
 
         //if (startDecreasing == true)
         //{
@@ -50,23 +47,18 @@ public class EnableDisableScene1 : MonoBehaviour
         //}
         //
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (EnableDisableSceneOverallScript.scene1BOn == true)
         {
-           // RenderLightScript.renderIntensity = 0;
-
-            Destroy(GameObject.FindWithTag("girl4yearsHappy"));
+            // RenderLightScript.renderIntensity = 0;
 
             directionalLight.SetActive(false);
             directLightFlicker.SetActive(true);
         }
 
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        else if (EnableDisableSceneOverallScript.scene1COn == true)
         {
-            //interpolation
-            AvatarControllerScript.interpolateValue = 0.2f;
-
             //startDecreasing = true;
-            RenderLightScript.turnOff = true;
+            //RenderLightScript.turnOff = true;
 
             directLightFlicker.SetActive(false);
             pointLight1.SetActive(false);

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class RenderLight : MonoBehaviour
 {
-    public float renderIntensity;
+    public float renderIntensity = 1;
 
-    //public float intensity;
-    public float intensityMax = 0f;
-    public float intensityMin = 1f;
+    public float intensity;
+    public float intensityMax = 1f;
+    public float intensityMin = 0.4f;
 
     public bool startDecreasing = false;
     public bool turnOff = false;
@@ -16,27 +16,62 @@ public class RenderLight : MonoBehaviour
 
     static float t = 0.0f;
 
+    //
+    public GameObject gameObContainingCanvasAppear;
+    public GameObject gameObContainingEnableDisableSceneOverall;
+
     // Update is called once per frame
     void Update()
     {
+        //get info from other script
+        CanvasAppear CanvasAppearScript = gameObContainingCanvasAppear.GetComponent<CanvasAppear>();
+        EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingEnableDisableSceneOverall.GetComponent<EnableDisableSceneOverall>();
+        //
+
         RenderSettings.ambientIntensity = renderIntensity;
 
         //lighting increasing over time
-        if (startDecreasing == true)
+        if (CanvasAppearScript.startDecreasing == true || Input.GetKey(KeyCode.DownArrow))
         {
-            renderIntensity = Mathf.Lerp(intensityMax, intensityMin, t);
-            t += 0.7f * Time.deltaTime;
+            startDecrease();
         }
 
-        else if (turnOff == true)
+        else if (EnableDisableSceneOverallScript.scene1BOn == true)
         {
-            renderIntensity = 0;
+            turnOffLight();
         }
 
-        else if (turnOn == true)
+        else if ((EnableDisableSceneOverallScript.timePassed > 23 && EnableDisableSceneOverallScript.timePassed <25) || Input.GetKey(KeyCode.UpArrow))
         {
-            renderIntensity = 1;
+            startDecreaseFast();
         }
 
+        else
+        {
+            turnOnLight();
+        }
+
+    }
+
+    void startDecrease()
+    {
+        renderIntensity = Mathf.Lerp(intensityMin, intensityMax, t);
+        t += 0.5f * Time.deltaTime;
+    }
+
+    void startDecreaseFast()
+    {
+        renderIntensity = Mathf.Lerp(intensityMin, intensityMax, t);
+        t += 0.8f * Time.deltaTime;
+    }
+
+    void turnOffLight()
+    {
+        renderIntensity = 0;
+    }
+
+    void turnOnLight()
+    {
+        renderIntensity = 1;
     }
 }

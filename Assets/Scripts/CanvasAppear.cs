@@ -6,14 +6,17 @@ public class CanvasAppear : MonoBehaviour
 {
     public Canvas UICanvas;
 
-    public float intensity;
-    public float intensityMax = 1.0f;
-    public float intensityMin = 0.4f;
+    //public float intensity;
+    //public float intensityMax = 1.0f;
+    //public float intensityMin = 0.4f;
 
     public bool startDecreasing = false;
 
-    static float t = 0.0f;
-    public GameObject gameObContainingRenderLightScript;
+    //static float t = 0.0f;
+    //public GameObject gameObContainingRenderLightScript;
+    public GameObject gameObContainingEnableDisableSceneOverallScript;
+
+    bool canvasTurnedOn = false;
 
     // Use this for initialization
     void Start()
@@ -24,22 +27,27 @@ public class CanvasAppear : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RenderLight RenderLightScript = gameObContainingRenderLightScript.GetComponent<RenderLight>();
+        //RenderLight RenderLightScript = gameObContainingRenderLightScript.GetComponent<RenderLight>();
+        EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingEnableDisableSceneOverallScript.GetComponent<EnableDisableSceneOverall>();
 
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (EnableDisableSceneOverallScript.canvasOn == true)
         {
-            startDecreasing = true;
-            UICanvas.enabled = true;
+            if (canvasTurnedOn == false)
+            {
+                startDecreasing = true;
+                UICanvas.enabled = true;
+                //print(UICanvas.enabled);
+
+                canvasTurnedOn = true;
+            }
         }
 
-        if (startDecreasing == true)
-        {
-            intensity = Mathf.Lerp(intensityMax, intensityMin, t);
-            t += 0.5f * Time.deltaTime;
-        }
+        //if (startDecreasing == true)
+        //{
+        //    intensity = Mathf.Lerp(intensityMax, intensityMin, t);
+        //    t += 0.5f * Time.deltaTime;
 
-        RenderLightScript.renderIntensity = intensity;
-
-        //print(UICanvas.enabled);
+        //    RenderLightScript.renderIntensity = intensity;
+        //}
     }
 }

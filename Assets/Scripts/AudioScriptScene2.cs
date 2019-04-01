@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioScriptScene2 : MonoBehaviour {
+public class AudioScriptScene2 : MonoBehaviour
+{
 
     public AudioClip clipScene2Hum;
     public AudioClip clipScene2BrightBg;
@@ -21,6 +22,9 @@ public class AudioScriptScene2 : MonoBehaviour {
     public AudioSource audioScene2MenLaugh;
 
     public GameObject gameObContainingScript;
+    public GameObject gameObContainingEnableDisableSceneOverallScript;
+
+    bool turnOn1st = false;
 
     public void Start()
     {
@@ -60,28 +64,47 @@ public class AudioScriptScene2 : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingEnableDisableSceneOverallScript.GetComponent<EnableDisableSceneOverall>();
+
+        if (EnableDisableSceneOverallScript.scene2On == true)
         {
-            audioScene2BrightBg.Play();
-            audioScene2SpeakinBg.Play();
-            Invoke("PlayAudioScene1Laugh", 4.0f);
+            if (turnOn1st == false)
+            {
+                audioScene2BrightBg.Play();
+                audioScene2SpeakinBg.Play();
+                Invoke("PlayAudioScene1Laugh", 4.0f);
+
+                turnOn1st = true;
+            }
         }
 
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        //turn of on scene3
+        else if (EnableDisableSceneOverallScript.scene3On == true)
         {
-            audioScene2MenLaugh.Play();
-            audioScene2MenVoice.Play();
             audioScene2SpeakinBg.Stop();
-            audioScene2BrightBg.Stop();
             audioScene2Hum.Stop();
         }
-
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        //turn of on scene4B
+        else if (EnableDisableSceneOverallScript.scene4BOn == true)
         {
-            audioScene2GloomyBg.Play();
-            audioScene2MenLaugh.Stop();
-            audioScene2MenVoice.Stop();
+            audioScene2BrightBg.Stop();
         }
+
+        //else if (Input.GetKeyDown(KeyCode.Alpha2))
+        //{
+        //    audioScene2MenLaugh.Play();
+        //    audioScene2MenVoice.Play();
+        //    audioScene2SpeakinBg.Stop();
+        //    audioScene2BrightBg.Stop();
+        //    audioScene2Hum.Stop();
+        //}
+
+        //else if (Input.GetKeyDown(KeyCode.Alpha3))
+        //{
+        //    audioScene2GloomyBg.Play();
+        //    audioScene2MenLaugh.Stop();
+        //    audioScene2MenVoice.Stop();
+        //}
 
         CollisionScene2 CollisionScene2Script = gameObContainingScript.GetComponent<CollisionScene2>();
         if (CollisionScene2Script.bookFallen == true)

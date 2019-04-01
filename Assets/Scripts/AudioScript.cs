@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AudioScript : MonoBehaviour
 {
-
     public AudioClip clipScene1Laugh;
     public AudioClip clipScene1BrightBg;
     public AudioClip clipScene1GloomyBg;
@@ -22,8 +21,12 @@ public class AudioScript : MonoBehaviour
     public AudioSource audioScene1Struggle;
     public AudioSource audioScene1Tradegy;
 
-
     public GameObject gameObContainingScript;
+    public GameObject gameObContainingEnableDisableSceneOverallScript;
+
+    bool turnOn1st = false;
+    bool turnOn2nd = false;
+    bool turnOn3rd = false;
 
     public void Start()
     {
@@ -60,33 +63,50 @@ public class AudioScript : MonoBehaviour
 
     void Update()
     {
+        EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingEnableDisableSceneOverallScript.GetComponent<EnableDisableSceneOverall>();
+
         //1st
-        if (Input.GetKeyDown(KeyCode.Alpha1))   
+        if (EnableDisableSceneOverallScript.scene1AOn == true)
         {
-            audioScene1BrightBg.Play();
-            Invoke("PlayAudioScene1Laugh", 2.0f);
-            //Invoke("PlayAudioScene1Laugh", 5.0f);
+            if (turnOn1st == false)
+            {
+                audioScene1BrightBg.Play();
+                Invoke("PlayAudioScene1Laugh", 2.0f);
+                //Invoke("PlayAudioScene1Laugh", 5.0f);
+
+                turnOn1st = true;
+            }
         }
 
         //2nd
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        else if (EnableDisableSceneOverallScript.scene1BOn == true)
         {
-            audioScene1Struggle.Play();
-            audioScene1Tradegy.Play();
+            if (turnOn2nd == false)
+            {
+                audioScene1Struggle.Play();
+                audioScene1Tradegy.Play();
 
-            audioScene1BrightBg.Stop();
-            audioScene1Laugh.Stop();
+                audioScene1BrightBg.Stop();
+                audioScene1Laugh.Stop();
+
+                turnOn2nd = true;
+            }
         }
 
         //3rd
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        else if (EnableDisableSceneOverallScript.scene1COn == true)
         {
-            audioScene1GloomyBg.Play();
+            if (turnOn3rd == false)
+            {
+                audioScene1GloomyBg.Play();
 
-            audioScene1Struggle.Stop();
-            audioScene1Tradegy.Stop();
+                audioScene1Struggle.Stop();
+                audioScene1Tradegy.Stop();
+
+                turnOn3rd = true;
+            }
         }
-
+            
         CollisionScene1 CollisionScene1Script = gameObContainingScript.GetComponent<CollisionScene1>();
         if (CollisionScene1Script.frameFallen == true)
         {

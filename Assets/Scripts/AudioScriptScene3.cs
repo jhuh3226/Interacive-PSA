@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioScriptScene3 : MonoBehaviour {
+public class AudioScriptScene3 : MonoBehaviour
+{
     public AudioClip clipScene3Typing;
     public AudioClip clipScene3MeetingBg;
     public AudioClip clipScene3BrightBg;
@@ -16,7 +17,9 @@ public class AudioScriptScene3 : MonoBehaviour {
     public AudioSource audioScene3GloomyBg;
     public AudioSource audioScene3Sigh;
 
-   // public GameObject gameObContainingScript;
+    public GameObject gameObContainingEnableDisableSceneOverallScript;
+
+    bool turnOn1st = false;
 
     public void Start()
     {
@@ -41,7 +44,7 @@ public class AudioScriptScene3 : MonoBehaviour {
         audioScene3MeetingBg = AddAudio(clipScene3MeetingBg, false, true, 0.3f);
         audioScene3BrightBg = AddAudio(clipScene3BrightBg, true, true, 0.2f);
         audioScene3GloomyBg = AddAudio(clipScene3GloomyBg, false, true, 1.0f);
-        audioScene3Sigh = AddAudio(clipScene3Sigh, false, true,1.0f);
+        audioScene3Sigh = AddAudio(clipScene3Sigh, false, true, 1.0f);
 
     }
 
@@ -53,22 +56,36 @@ public class AudioScriptScene3 : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingEnableDisableSceneOverallScript.GetComponent<EnableDisableSceneOverall>();
+
+        if (EnableDisableSceneOverallScript.scene3On == true)
         {
-            audioScene3BrightBg.Play();
-            audioScene3Typing.Play();
-            audioScene3MeetingBg.Play();
+            if (turnOn1st == false)
+            {
+                //audioScene3BrightBg.Play();
+                audioScene3Typing.Play();
+                audioScene3MeetingBg.Play();
+
+                turnOn1st = true;
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        else if (EnableDisableSceneOverallScript.scene4AOn == true)
         {
-            audioScene3GloomyBg.Play();
-            Invoke("PlayAudioScene1Sigh", 2.0f);
-
-            audioScene3BrightBg.Stop();
             audioScene3Typing.Stop();
             audioScene3MeetingBg.Stop();
         }
+
+
+        //if (Input.GetKeyDown(KeyCode.Alpha3))
+        //{
+        //    audioScene3GloomyBg.Play();
+        //    Invoke("PlayAudioScene1Sigh", 2.0f);
+
+        //    audioScene3BrightBg.Stop();
+        //    audioScene3Typing.Stop();
+        //    audioScene3MeetingBg.Stop();
+        //}
 
         //CollisionScene2 CollisionScene2Script = gameObContainingScript.GetComponent<CollisionScene2>();
         //if (CollisionScene2Script.bookFallen == true)

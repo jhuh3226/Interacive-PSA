@@ -324,6 +324,8 @@
      <Compile Include="Assets\Scripts\AudioScriptScene3.cs" />
      <Compile Include="Assets\Scripts\AudioScriptScene4.cs" />
      <Compile Include="Assets\Scripts\AvatarControllerModify1.cs" />
+     <Compile Include="Assets\Scripts\BodySmoothController.cs" />
+     <Compile Include="Assets\Scripts\BodySourceManager.cs" />
      <Compile Include="Assets\Scripts\CanvasAppear.cs" />
      <Compile Include="Assets\Scripts\ChangeTexture.cs" />
      <Compile Include="Assets\Scripts\CollisionScene1.cs" />
@@ -340,6 +342,8 @@
      <Compile Include="Assets\Scripts\RemoveChangeCharacter.cs" />
      <Compile Include="Assets\Scripts\RenderLight.cs" />
      <Compile Include="Assets\Scripts\ScriptEnableDisable.cs" />
+     <Compile Include="Assets\Scripts\ScriptEnableDisableModify.cs" />
+     <Compile Include="Assets\Scripts\SmoothJoint.cs" />
      <Compile Include="Assets\Scripts\TrackHandPosture.cs" />
      <Compile Include="Assets\Scripts\TrackSkeletonPosture.cs" />
      <Compile Include="Assets\Scripts\UserAvatarMatcher1A.cs" />
@@ -350,6 +354,7 @@
      <Compile Include="Assets\Scripts\UserAvatarMatcher3B.cs" />
      <Compile Include="Assets\Scripts\UserAvatarMatcher4A.cs" />
      <Compile Include="Assets\Scripts\UserAvatarMatcher4B.cs" />
+     <Compile Include="Assets\Scripts\Utils.cs" />
      <Compile Include="Assets\SkinnedDecal\Scripts\Core\SkinnedDecal.cs" />
      <Compile Include="Assets\SkinnedDecal\Scripts\Core\SkinnedDecalBuilder.cs" />
      <Compile Include="Assets\SkinnedDecal\Scripts\Core\SkinnedDecalMesh.cs" />
