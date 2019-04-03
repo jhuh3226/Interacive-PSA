@@ -1,8 +1,8 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/WonderLab/Desktop/1/Unity-kinect_v3.exe
+C:/Users/WonderLab/Desktop/5/Unity-kinect_v3.exe
 SceneListBegin?
-Assets/Scenes/ChildSexualAbuseAD1.unity
+Assets/Scenes/ChildSexualAbuseAD2.unity
 SceneListEnd?
 71b0e6f7686de51368d3db0f516538c0 Assembly-CSharp.dll:.LoadLevelWhenNoUser
 9574c9145f75641e6ba3eaa4e9632b46 Assembly-CSharp.dll:SkinnedDecals.SkinnedDecalBuilder
@@ -26,7 +26,7 @@ c7dd12c15208b0447e101f80038706df UnityEngine.Timeline.dll:UnityEngine.Timeline.A
 f9c47d662a2b6a86cfbe2ba119110baf Assembly-CSharp.dll:.ProjectorCamera
 82e2b86c81dc9101beabb4a671a6c593 Assembly-CSharp.dll:.BarrelTrigger
 48e258952448a6ee8971474b4c4d564f Assembly-CSharp.dll:.AvatarControllerModify1
-af50fc3c23b0d8437076bc2bc8d04531 Assembly-CSharp.dll:.AvatarControllerClassic
+f957477c06c71c02d80eb9825afb9954 Assembly-CSharp.dll:.AvatarControllerClassic
 51f748e89aef9dc8144bcd3b22b10a57 Assembly-CSharp.dll:.ModelHatController
 e5a5ea49a057f9c3d95f997a8046187d Assembly-CSharp.dll:.LinePainter
 f6637497451c9a030c421de4a1ad5cdb Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
@@ -150,12 +150,14 @@ fc061f3ae8a876c0687e86378d4a447c UnityEngine.Networking.dll:UnityEngine.Networki
 f922f13b1435628873ebc7f0f090f27d Assembly-CSharp.dll:.UserMovieSequence
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 d7ffad1054d981df072efbe3d957d938 Assembly-CSharp.dll:.HandObjectChecker
-f493d069fc575707c53c30b5e9a8b755 Assembly-CSharp.dll:.EnableDisableScene2
+c88e01fdfca3f786fe363e4477e386d2 Assembly-CSharp.dll:.EnableDisableScene2
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.EggMover
 8214dda54f8553bfe789f308e361d473 Assembly-CSharp.dll:.ViewFaceProperties
-94c637b269ac617408a02d03b7a22d1e Assembly-CSharp.dll:.EnableDisableScene1
+67c860bbc857068bd7861adcd4790591 Assembly-CSharp.dll:.EnableDisableScene1
 8dffa0d16aa6cf3a429b6f1b274127ca Assembly-CSharp.dll:.PlaneJointOverlayer
 b8c1d08cfcec3e948fd728b79ffd0e90 Assembly-CSharp.dll:.KinectDataServer
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.BodySmoothController
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.BodySourceManager
 382b8ef512fa8d6108723a01b57af65b UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 d22c788799ee45d8676254eccf20e8b8 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 b42509c7152eb2cf58e4e87fe8fd6fcd Assembly-CSharp.dll:.EggSpawner
@@ -246,12 +248,11 @@ f16835701e71dd5d6fb1fed4b7aff1d8 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 b1338c1cce2c83db7e90f87e25d4b213 Assembly-CSharp.dll:.MuscleLimit
 3c4842084e310a9502646f8f717a2e35 Assembly-CSharp.dll:.UserHeadCamera
 0adeaddf417bce0fbc1f893b9cf02ee9 Assembly-CSharp.dll:SkinnedDecals.SkinnedDecalMesh
-551eb36dc60a4f5094a7be21b7096250 Assembly-CSharp.dll:.AvatarController
+68fb21e9262ba71095f5f81a85674d6a Assembly-CSharp.dll:.AvatarController
 af899fa28a8a7453a286c1ea14a392ed Assembly-CSharp.dll:.DepthImageViewer
 ccea11b4e11881c986deb9ba6f180a7a Assembly-CSharp.dll:.FollowUserRotation
 076b8e7e6f15bd7f5cb777ffc4ab46ca Assembly-CSharp.dll:.CubemanController
 891ca5a9e1c04eede357b06bd749320f Assembly-CSharp.dll:.JointOverlayer
-d26945075473be01c484718b45b81550 Assembly-CSharp.dll:.RemoveChangeCharacter
 569ca144f928e4795e9668cd1841905b Assembly-CSharp.dll:.JointPositionView
 16d3129017d04a16c7eb326ea0869689 Assembly-CSharp.dll:.MousePointOverlayer
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:Helper.EventPump
@@ -269,6 +270,7 @@ eaf0bcdb10d442a4029d615f41d09957 Unity.TextMeshPro.dll:TMPro.TextContainer
 dc06f10f58ce1e5c27cad77045872dcf Assembly-CSharp.dll:.SimpleInteractionListener
 a3d548ca1cc6c30c9fe2cc1ef9b0e4ab Assembly-CSharp.dll:SkinnedDecals.OrbitCamera
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:SkinnedDecals.ThreadPooler
+abcc0643d5ca1cae796304503ad0fbe2 Assembly-CSharp.dll:.ScriptEnableDisableModify
 79491067d9d3fb0405c62699c5f696e2 Assembly-CSharp.dll:.UserHandVisualizer
 a913bec14151286987eb4149416922dd Assembly-CSharp.dll:.LoadLevelWithDelay
 44c20e7eec67ef569db5fddcd3ccfee4 Assembly-CSharp.dll:.PointmanController
@@ -291,7 +293,7 @@ fc061f3ae8a876c0687e86378d4a447c UnityEngine.Networking.dll:UnityEngine.Networki
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.PoseModelHelper
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.LoadFirstLevel
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ForegroundToRenderer
-b3a142846cebaaebbdb4f0e83af80599 Assembly-CSharp.dll:.RenderLight
+534be152714237efa054b13266a1a3bc Assembly-CSharp.dll:.RenderLight
 c6147e638a5e7a9d057a5343b5da12aa Assembly-CSharp.dll:.GetFacePointsDemo
 72a8523b432c0a5317826b7a9e0a0e79 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
 067e7255550f3c207a6fba765c8a6368 Assembly-CSharp.dll:.CloudFaceManager
@@ -332,7 +334,7 @@ e1ea12ca952c81d81a9a21fdf34446ed UnityEngine.HoloLens.dll:UnityEngine.EventSyste
 dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 955b281aca1f732a4e051216c975e438 Assembly-CSharp.dll:.HeadMover
 aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
-95a7b3314cdd440c79ebfd3f826874d2 Assembly-CSharp.dll:.AudioScriptScene2
+975c42a3a13f68bce69c95f675910b6f Assembly-CSharp.dll:.AudioScriptScene2
 66dc89de1ad74f24f8b6072f9d3083a7 Assembly-CSharp.dll:.BackgroundRemovalManager
 823af2a1b7f5dd03f2c47e23b05aba9d Assembly-CSharp.dll:.PhotoShooter
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
@@ -340,20 +342,20 @@ d557660bc15abbf3c5c32ca6963fa17e Assembly-CSharp.dll:.TrackHandPosture
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.HumanoidCtrl
 976e8175196aa4c54166969675e53863 Assembly-CSharp.dll:.UserBodyBlender
 f28230d8db5641ba0754ad68a20a4ca1 Assembly-CSharp.dll:.BodySlicer
-af258dcec07d83c7d013d08efece0322 Assembly-CSharp.dll:.AudioScript
+d6afd8c21b0111e6ec1bf357fbcb3733 Assembly-CSharp.dll:.AudioScript
 56b4ff975c36ca4c0885994d35de8a03 Assembly-CSharp.dll:.CubeGestureListener
-6cc4661600ca250a123aebaa0e86491a Assembly-CSharp.dll:.AudioScriptScene3
+182d4cd9a710210c455658eabc0b4918 Assembly-CSharp.dll:.AudioScriptScene3
 7683434d88023bab265dcf06f1a4878f Assembly-CSharp.dll:.WebcamSource
-24a801c75f5641fb98da59aaf192155a Assembly-CSharp.dll:.CanvasAppear
+5b10000e2f6e94306e6a73adb4df9083 Assembly-CSharp.dll:.CanvasAppear
 c8fb983062c4534b5657222b2a820e6a Assembly-CSharp.dll:.UserAvatarMatcher3A
-8b6fb1075cb5f92beb9d36c23521f242 Assembly-CSharp.dll:.EnableDisableScene3
+1b3d1f1f199323be2505aa2175efc1fa Assembly-CSharp.dll:.EnableDisableScene3
 f3ded089ccd0fea01991c38e7a711bdb Assembly-CSharp.dll:.FacetrackingManager
 36efe5b96601ff75da206850846c90a0 Assembly-CSharp.dll:SkinnedDecals.SkinnedDecal
 405b680ef0c567ebdeeba9d533adbd12 Assembly-CSharp.dll:.SkeletonProjection
 78a87c575e4004515550985eeb3d93eb Assembly-CSharp.dll:.SetBackgroundRemovalImage
 56b4ff975c36ca4c0885994d35de8a03 Assembly-CSharp.dll:.SimplePoseListener
 d46f55efc3cf5822212fe654db238b4f Assembly-CSharp.dll:.AvatarScaler
-93ad96e44012c79bac0e70541fb4c5aa Assembly-CSharp.dll:.AudioScriptScene4
+305fa0d8af9eb3a9e6956dbf48cdae36 Assembly-CSharp.dll:.AudioScriptScene4
 e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 f1bb619d15f09d3e954ccbed466c9308 Assembly-CSharp.dll:.TrackSkeletonPosture
 c6147e638a5e7a9d057a5343b5da12aa Assembly-CSharp.dll:.FacePointOverlayer
@@ -401,13 +403,12 @@ c31ff9acb65f7a15b5c6fd77c3314d83 Vuforia.UnityExtensions.dll:Vuforia.WireframeBe
 486cd95c82d8305219c352c06b776e1f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 c8fb983062c4534b5657222b2a820e6a Assembly-CSharp.dll:.UserAvatarMatcher3B
 beb0575c4a437f60e74b69de37ad61ec Assembly-CSharp.dll:.SceneMeshVisualizer
-62ba68ef61ac5b77f611891abe1998e2 Assembly-CSharp.dll:.EnableDisableSceneOverall
+b9da778ce3fe9cc63673999fd9180be0 Assembly-CSharp.dll:.EnableDisableSceneOverall
 8d00a553f3c2182c2481f3be9517a3e0 Assembly-CSharp.dll:.CloudFaceDetector
 673f47dc68e22a887da2040474a51bfa Assembly-CSharp.dll:.InteractionManager
 343f747967c141aefb70132f859dc213 Assembly-CSharp.dll:.SimpleHolographicCamera
-abcc0643d5ca1cae796304503ad0fbe2 Assembly-CSharp.dll:.ScriptEnableDisable
 56b4ff975c36ca4c0885994d35de8a03 Assembly-CSharp.dll:.ModelGestureListener
-a4c68a1df4948cf59e651d52b527b49f Assembly-CSharp.dll:.EnableDisableScene4
+f100812bf16b525225187a0f3fa312cf Assembly-CSharp.dll:.EnableDisableScene4
 e1d857d18ed44a4cbde5ad46ff1de401 Assembly-CSharp.dll:.InteractionInputModule
 58d396484a1e34eaf4212603a3d2e2fd Assembly-CSharp.dll:.GrabDropScript
 55bb41869ccfc59122f3006f9880aaa0 Assembly-CSharp.dll:.UserAvatarMatcher

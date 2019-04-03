@@ -21,6 +21,7 @@ public class EnableDisableSceneOverall : MonoBehaviour
 
     //timer
     public float timePassed = 0;
+    float timePassedOnSpace;
 
     void Start()
     {
@@ -30,8 +31,17 @@ public class EnableDisableSceneOverall : MonoBehaviour
     void Update()
     {
         //timer
-        timePassed += Time.deltaTime;
-        print("timePassed: " + timePassed);
+        //if (Input.GetKeyUp(KeyCode.Space))
+        //{
+        //    timePassedOnSpace= Time.deltaTime;
+        //    print("space key pressed");
+        //}
+
+        //timePassed = Time.deltaTime - timePassedOnSpace;
+
+        //time original
+        //timePassed += Time.deltaTime;
+        //print("timePassed: " + timePassed);
 
         //scene1-a
         if ((timePassed > 0 && timePassed < 0.3))

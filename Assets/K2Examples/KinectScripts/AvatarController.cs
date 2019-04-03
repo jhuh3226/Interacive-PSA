@@ -23,6 +23,9 @@ public class AvatarController : MonoBehaviour
     public float maxDegreesDelta;
     private Quaternion printNewRotation;
     private Quaternion printNewRotation2;
+    public float x;
+    public float y;
+    public float z;
 
     [Tooltip("Index of the player, tracked by this component. 0 means the 1st player, 1 - the 2nd one, 2 - the 3rd one, etc.")]
     public int playerIndex = 0;
@@ -729,13 +732,37 @@ public class AvatarController : MonoBehaviour
         //edited code
         // Smoothly transition to the new rotation
         if (smoothFactor != 0f)
-            boneTransform.rotation = Quaternion.Slerp(boneTransform.rotation, newRotation, interpolateValue);
-        //if (smoothFactor != 0f)
-        //    boneTransform.rotation = Quaternion.RotateTowards(boneTransform.rotation, newRotation, maxDegreesDelta);
-        //if (smoothFactor != 0f)
-        //    boneTransform.rotation = Quaternion.Slerp(boneTransform.rotation, newRotation, smoothFactor * Time.deltaTime);
+        {
+
+            //boneTransform.rotation = Quaternion.Slerp(boneTransform.rotation, newRotation, interpolateValue);
+
+            //suggested from forum 
+
+            Quaternion boneInitialRot = initialRotation * initialRotations[boneIndex];
+
+            //initialRotations[11] = Quaternion.AngleAxis(z, Vector3.forward);
+            //initialRotations[12] = Quaternion.AngleAxis(z, Vector3.forward);
+            //initialRotations[13] = Quaternion.AngleAxis(z, Vector3.forward);
+            //no sign of change seen
+            //initialRotations[11] = Quaternion.AngleAxis(x, Vector3.right);
+            //initialRotations[12] = Quaternion.AngleAxis(x, Vector3.right);
+            //initialRotations[13] = Quaternion.AngleAxis(x, Vector3.right);
+
+            initialRotations[11] = Quaternion.Euler(x, y, z);
+            initialRotations[12] = Quaternion.Euler(x, y, z);
+            initialRotations[13] = Quaternion.Euler(x, y, z);
+
+            boneTransform.rotation = Quaternion.Slerp(boneInitialRot, newRotation, interpolateValue);
+
+            //if (smoothFactor != 0f)
+            //    boneTransform.rotation = Quaternion.RotateTowards(boneTransform.rotation, newRotation, maxDegreesDelta);
+            //if (smoothFactor != 0f)
+            //    boneTransform.rotation = Quaternion.Slerp(boneTransform.rotation, newRotation, smoothFactor * Time.deltaTime);
+        }
         else
+        {
             boneTransform.rotation = newRotation;
+        }
     }
 
     //check this code

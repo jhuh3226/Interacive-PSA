@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ChildSexualAbuseAD1.unity
     guid: 72319d7e779c4294286351093e6b77e5
+  - enabled: 1
+    path: Assets/Scenes/ChildSexualAbuseAD2.unity
+    guid: 4060cd4e899b6014197027fa0b9781c2
   m_configObjects: {}

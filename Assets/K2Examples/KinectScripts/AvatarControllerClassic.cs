@@ -107,25 +107,34 @@ public class AvatarControllerClassic : AvatarController
 		
 		// body root and offset
 		bodyRoot = BodyRoot;
-		//offsetNode = OffsetNode;
+        //offsetNode = OffsetNode;
 
-//		if(offsetNode == null)
-//		{
-//			offsetNode = new GameObject(name + "Ctrl") { layer = transform.gameObject.layer, tag = transform.gameObject.tag };
-//			offsetNode.transform.position = transform.position;
-//			offsetNode.transform.rotation = transform.rotation;
-//			offsetNode.transform.parent = transform.parent;
-//			
-//			transform.parent = offsetNode.transform;
-//			transform.localPosition = Vector3.zero;
-//			transform.localRotation = Quaternion.identity;
-//		}
+        //		if(offsetNode == null)
+        //		{
+        //			offsetNode = new GameObject(name + "Ctrl") { layer = transform.gameObject.layer, tag = transform.gameObject.tag };
+        //			offsetNode.transform.position = transform.position;
+        //			offsetNode.transform.rotation = transform.rotation;
+        //			offsetNode.transform.parent = transform.parent;
+        //			
+        //			transform.parent = offsetNode.transform;
+        //			transform.localPosition = Vector3.zero;
+        //			transform.localRotation = Quaternion.identity;
+        //		}
 
-//		if(bodyRoot == null)
-//		{
-//			bodyRoot = transform;
-//		}
-	}
-	
+        //		if(bodyRoot == null)
+        //		{
+        //			bodyRoot = transform;
+        //		}
+
+    }
+
+
+    void Update()
+    {
+        //print bone 11
+        //Vector3 eulerAngles = bones[11].transform.rotation.eulerAngles;
+        //Debug.Log("transform.rotation angles x: " + eulerAngles.x + " y: " + eulerAngles.y + " z: " + eulerAngles.z);
+    }
+
 }
 
