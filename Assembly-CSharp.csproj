@@ -319,6 +319,7 @@
      <Compile Include="Assets\K2Examples\Standard Assets\Windows\Kinect\TrackingConfidence.cs" />
      <Compile Include="Assets\K2Examples\Standard Assets\Windows\Kinect\TrackingState.cs" />
      <Compile Include="Assets\K2Examples\Standard Assets\Windows\Kinect\Vector4.cs" />
+     <Compile Include="Assets\Scripts\AnimationHolder.cs" />
      <Compile Include="Assets\Scripts\AudioScript.cs" />
      <Compile Include="Assets\Scripts\AudioScriptScene2.cs" />
      <Compile Include="Assets\Scripts\AudioScriptScene3.cs" />
@@ -344,6 +345,7 @@
      <Compile Include="Assets\Scripts\ScriptEnableDisable.cs" />
      <Compile Include="Assets\Scripts\ScriptEnableDisableModify.cs" />
      <Compile Include="Assets\Scripts\SmoothJoint.cs" />
+     <Compile Include="Assets\Scripts\StopMovement.cs" />
      <Compile Include="Assets\Scripts\TrackHandPosture.cs" />
      <Compile Include="Assets\Scripts\TrackSkeletonPosture.cs" />
      <Compile Include="Assets\Scripts\UserAvatarMatcher1A.cs" />

@@ -22,6 +22,7 @@ public class EnableDisableSceneOverall : MonoBehaviour
     //timer
     public float timePassed = 0;
     float timePassedOnSpace;
+    bool startTimer = false;
 
     void Start()
     {
@@ -40,8 +41,17 @@ public class EnableDisableSceneOverall : MonoBehaviour
         //timePassed = Time.deltaTime - timePassedOnSpace;
 
         //time original
-        //timePassed += Time.deltaTime;
-        //print("timePassed: " + timePassed);
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            startTimer = true;
+            //print("Time.deltaTime: " + Time.deltaTime);
+        }
+
+        if (startTimer == true)
+        {
+            timePassed += Time.deltaTime;
+            print("timePassed: " + timePassed);
+        }
 
         //scene1-a
         if ((timePassed > 0 && timePassed < 0.3))
@@ -133,8 +143,8 @@ public class EnableDisableSceneOverall : MonoBehaviour
             Destroy(GameObject.FindWithTag("girl4yearsSad"));
 
             //camera position
-            GameObject.Find("Main Camera2").transform.position = new Vector3(0, 1.5f, -0.8f);
-            GameObject.Find("Main Camera2").transform.rotation = Quaternion.Euler(16.0f, 0f, 0f);
+            GameObject.Find("Main Camera2").transform.position = new Vector3(0, 1.281f, -0.8f);
+            GameObject.Find("Main Camera2").transform.rotation = Quaternion.Euler(0.0f, 0f, 0f);
             GameObject.Find("WallBackLeft").transform.rotation = Quaternion.Euler(-74.0f, 0f, 0f);
             GameObject.Find("WallBackRight").transform.rotation = Quaternion.Euler(-75.0f, 0f, 0f);
 
@@ -149,8 +159,8 @@ public class EnableDisableSceneOverall : MonoBehaviour
             Destroy(GameObject.FindWithTag("girl12yearsHappy"));
 
             //camera position
-            GameObject.Find("Main Camera2").transform.position = new Vector3(0, 1.3f, -0.8f);
-            GameObject.Find("Main Camera2").transform.rotation = Quaternion.Euler(10.0f, 0f, 0f);
+            GameObject.Find("Main Camera2").transform.position = new Vector3(0, 1.44f, -0.8f);
+            GameObject.Find("Main Camera2").transform.rotation = Quaternion.Euler(0.0f, 0f, 0f);
             GameObject.Find("WallBackLeft").transform.rotation = Quaternion.Euler(-90.0f, 0f, 0f);
             GameObject.Find("WallBackRight").transform.rotation = Quaternion.Euler(-90.0f, 0f, 0f);
         }
@@ -164,7 +174,8 @@ public class EnableDisableSceneOverall : MonoBehaviour
             Destroy(GameObject.FindWithTag("girlMiddleAgedHappy"));
 
             //camera position
-            GameObject.Find("Main Camera2").transform.position = new Vector3(0, 1.27f, -0.72f);
+            GameObject.Find("Main Camera2").transform.position = new Vector3(0, 1.44f, -0.8f);
+            GameObject.Find("Main Camera2").transform.rotation = Quaternion.Euler(0.0f, 0f, 0f);
         }
 
         else if (scene4BOn == true)
@@ -173,7 +184,6 @@ public class EnableDisableSceneOverall : MonoBehaviour
             Destroy(GameObject.FindWithTag("girlAgedHappy"));
 
             //camera position
-            GameObject.Find("Main Camera2").transform.position = new Vector3(0, 1.27f, -0.72f);
         }
     }
 }

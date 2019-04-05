@@ -9504,7 +9504,7 @@ Animator:
   m_GameObject: {fileID: 1049568380847662}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: bd2273d1cf234e44c9576675a7138039, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9489c63d81d28294eb380dbaaa8dcfed, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 1
   m_ApplyRootMotion: 1
@@ -9563,10 +9563,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limitSpan: 1
-  checkNewPosition: {x: 0, y: 0, z: 0}
+  checkNewPosition: {x: 0.016060028, y: 0, z: -0.11764848}
   BodyRootAvatarController: {fileID: 4474232806784772}
-  interpolateValue: 1
+  interpolateValue: 0.8
   maxDegreesDelta: 0
+  xRight: 65
+  yRight: -23.4
+  zRight: -115.59
+  xLeft: 65
+  yLeft: 23.4
+  zLeft: 115.59
+  xClavicleLeft: 0
   playerIndex: 0
   mirroredMovement: 1
   verticalMovement: 0
@@ -9589,7 +9596,7 @@ MonoBehaviour:
   HipCenter: {fileID: 0}
   Spine: {fileID: 4451318139576030}
   ShoulderCenter: {fileID: 0}
-  Neck: {fileID: 4406323511750028}
+  Neck: {fileID: 0}
   ClavicleLeft: {fileID: 4487116024389584}
   ShoulderLeft: {fileID: 4348165807952914}
   ElbowLeft: {fileID: 4544776453903980}
@@ -9815,6 +9822,8 @@ SkinnedMeshRenderer:
   - 30
   - 0
   - 0
+  - 30
+  - 30
   - 0
   - 0
   - 0
@@ -9837,8 +9846,6 @@ SkinnedMeshRenderer:
   - 0
   - 0
   - 0
-  - 0
-  - 5
   - 0
   - 0
   - 0

@@ -19,6 +19,7 @@ public class RenderLight : MonoBehaviour
     //
     public GameObject gameObContainingCanvasAppear;
     public GameObject gameObContainingEnableDisableSceneOverall;
+    public GameObject gameObContainingEnableDisableScene1;
 
     // Update is called once per frame
     void Update()
@@ -26,6 +27,8 @@ public class RenderLight : MonoBehaviour
         //get info from other script
         CanvasAppear CanvasAppearScript = gameObContainingCanvasAppear.GetComponent<CanvasAppear>();
         EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingEnableDisableSceneOverall.GetComponent<EnableDisableSceneOverall>();
+        EnableDisableScene1 EnableDisableScene1Script = gameObContainingEnableDisableScene1.GetComponent<EnableDisableScene1>();
+
         //
 
         RenderSettings.ambientIntensity = renderIntensity;
@@ -41,9 +44,10 @@ public class RenderLight : MonoBehaviour
             turnOffLight();
         }
 
-        else if ((EnableDisableSceneOverallScript.timePassed > 23 && EnableDisableSceneOverallScript.timePassed <25) || Input.GetKey(KeyCode.UpArrow))
+        else if ((EnableDisableSceneOverallScript.timePassed > 22 && EnableDisableSceneOverallScript.timePassed <25) || Input.GetKey(KeyCode.UpArrow))
         {
             startDecreaseFast();
+            EnableDisableScene1Script.pointLight2.SetActive(false);
         }
 
         else

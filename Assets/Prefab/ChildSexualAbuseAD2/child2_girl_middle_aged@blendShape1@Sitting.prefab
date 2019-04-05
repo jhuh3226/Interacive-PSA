@@ -9504,7 +9504,7 @@ Animator:
   m_GameObject: {fileID: 1617990225194374}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 00055c50c51f3a3448842e36f91058e0, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9489c63d81d28294eb380dbaaa8dcfed, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 1
   m_ApplyRootMotion: 1
@@ -9527,8 +9527,15 @@ MonoBehaviour:
   limitSpan: 1
   checkNewPosition: {x: 0, y: 0, z: 0}
   BodyRootAvatarController: {fileID: 4586418159324376}
-  interpolateValue: 1
+  interpolateValue: 0.8
   maxDegreesDelta: 0
+  xRight: 65
+  yRight: -23.4
+  zRight: -115.59
+  xLeft: 65
+  yLeft: 23.4
+  zLeft: 115.59
+  xClavicleLeft: 0
   playerIndex: 0
   mirroredMovement: 1
   verticalMovement: 0
@@ -9551,7 +9558,7 @@ MonoBehaviour:
   HipCenter: {fileID: 0}
   Spine: {fileID: 4202782699049254}
   ShoulderCenter: {fileID: 0}
-  Neck: {fileID: 4788355278746522}
+  Neck: {fileID: 0}
   ClavicleLeft: {fileID: 4970478185009820}
   ShoulderLeft: {fileID: 4241085031173206}
   ElbowLeft: {fileID: 4684704996301090}

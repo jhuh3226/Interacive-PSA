@@ -104,9 +104,9 @@ public class AvatarControllerClassic : AvatarController
 		bones[28] = FingersRight;
 		bones[29] = ThumbLeft;
 		bones[30] = ThumbRight;
-		
-		// body root and offset
-		bodyRoot = BodyRoot;
+
+        // body root and offset
+        bodyRoot = BodyRoot;
         //offsetNode = OffsetNode;
 
         //		if(offsetNode == null)
@@ -132,8 +132,9 @@ public class AvatarControllerClassic : AvatarController
     void Update()
     {
         //print bone 11
-        //Vector3 eulerAngles = bones[11].transform.rotation.eulerAngles;
-        //Debug.Log("transform.rotation angles x: " + eulerAngles.x + " y: " + eulerAngles.y + " z: " + eulerAngles.z);
+        //Vector3 eulerAngles = bones[25].transform.rotation.eulerAngles;
+        //Debug.Log("angles x: " + eulerAngles.x + " y: " + eulerAngles.y + " z: " + eulerAngles.z);
+        //initialRotations[25] = Quaternion.AngleAxis(xClavicleLeft, Vector3.forward);
     }
 
 }

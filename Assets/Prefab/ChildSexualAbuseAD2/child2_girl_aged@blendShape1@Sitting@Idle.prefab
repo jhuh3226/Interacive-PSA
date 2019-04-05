@@ -3920,7 +3920,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1151340826981072}
-  m_LocalRotation: {x: 0.5374204, y: -0.4761524, z: 0.51345843, w: 0.46991336}
+  m_LocalRotation: {x: 0.53742045, y: -0.47615242, z: 0.5134585, w: 0.4699134}
   m_LocalPosition: {x: -0.045136828, y: 0.11069715, z: -0.010828416}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4533,7 +4533,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1223887777569464}
-  m_LocalRotation: {x: 0.0556607, y: 0.018918462, z: 0.24703921, w: 0.96722054}
+  m_LocalRotation: {x: 0.055660702, y: 0.018918462, z: 0.24703923, w: 0.96722054}
   m_LocalPosition: {x: -0.028595435, y: 0.02112248, z: 0.014457787}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9534,7 +9534,7 @@ Animator:
   m_GameObject: {fileID: 1210519319429888}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 0db9374a22d3c3d458818a8511310a20, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9489c63d81d28294eb380dbaaa8dcfed, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 1
   m_ApplyRootMotion: 1
@@ -9595,8 +9595,15 @@ MonoBehaviour:
   limitSpan: 1
   checkNewPosition: {x: 0, y: 0, z: 0}
   BodyRootAvatarController: {fileID: 4295815267919228}
-  interpolateValue: 1
+  interpolateValue: 0.8
   maxDegreesDelta: 0
+  xRight: 65
+  yRight: -23.4
+  zRight: -115.59
+  xLeft: 65
+  yLeft: 23.4
+  zLeft: 115.59
+  xClavicleLeft: 0
   playerIndex: 0
   mirroredMovement: 1
   verticalMovement: 0
@@ -9619,7 +9626,7 @@ MonoBehaviour:
   HipCenter: {fileID: 0}
   Spine: {fileID: 4332479306493428}
   ShoulderCenter: {fileID: 0}
-  Neck: {fileID: 4971518305056530}
+  Neck: {fileID: 0}
   ClavicleLeft: {fileID: 4408754460210782}
   ShoulderLeft: {fileID: 4911029781253850}
   ElbowLeft: {fileID: 4365334765736678}
@@ -9747,6 +9754,8 @@ SkinnedMeshRenderer:
   - 30
   - 0
   - 0
+  - 30
+  - 30
   - 0
   - 0
   - 0
@@ -9769,8 +9778,6 @@ SkinnedMeshRenderer:
   - 0
   - 0
   - 0
-  - 0
-  - 10
   - 0
   - 0
   - 0

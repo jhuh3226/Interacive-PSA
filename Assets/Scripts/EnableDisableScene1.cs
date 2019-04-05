@@ -52,6 +52,7 @@ public class EnableDisableScene1 : MonoBehaviour
             // RenderLightScript.renderIntensity = 0;
 
             directionalLight.SetActive(false);
+            pointLight1.SetActive(false);
             directLightFlicker.SetActive(true);
         }
 

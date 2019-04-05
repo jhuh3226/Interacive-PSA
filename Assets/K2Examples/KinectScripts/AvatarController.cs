@@ -23,9 +23,9 @@ public class AvatarController : MonoBehaviour
     public float maxDegreesDelta;
     private Quaternion printNewRotation;
     private Quaternion printNewRotation2;
-    public float x;
-    public float y;
-    public float z;
+    public float xRight, yRight, zRight;
+    public float xLeft, yLeft, zLeft;
+    //public float xClavicleLeft;
 
     [Tooltip("Index of the player, tracked by this component. 0 means the 1st player, 1 - the 2nd one, 2 - the 3rd one, etc.")]
     public int playerIndex = 0;
@@ -748,9 +748,13 @@ public class AvatarController : MonoBehaviour
             //initialRotations[12] = Quaternion.AngleAxis(x, Vector3.right);
             //initialRotations[13] = Quaternion.AngleAxis(x, Vector3.right);
 
-            initialRotations[11] = Quaternion.Euler(x, y, z);
-            initialRotations[12] = Quaternion.Euler(x, y, z);
-            initialRotations[13] = Quaternion.Euler(x, y, z);
+            initialRotations[11] = Quaternion.Euler(xRight, yRight, zRight);
+            initialRotations[12] = Quaternion.Euler(xRight, yRight, zRight);
+            initialRotations[13] = Quaternion.Euler(xRight, yRight, zRight);
+
+            initialRotations[5] = Quaternion.Euler(xLeft, yLeft, zLeft);
+            initialRotations[6] = Quaternion.Euler(xLeft, yLeft, zLeft);
+            initialRotations[7] = Quaternion.Euler(xLeft, yLeft, zLeft);
 
             boneTransform.rotation = Quaternion.Slerp(boneInitialRot, newRotation, interpolateValue);
 
