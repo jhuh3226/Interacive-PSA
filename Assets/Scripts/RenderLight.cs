@@ -9,12 +9,18 @@ public class RenderLight : MonoBehaviour
     public float intensity;
     public float intensityMax = 1f;
     public float intensityMin = 0.4f;
+    public float intensityMin2 = 0.0f;
 
     public bool startDecreasing = false;
     public bool turnOff = false;
     public bool turnOn = false;
 
-    static float t = 0.0f;
+    //bool to control lightRangeScene1
+    public bool fadeOutScene1C = false;
+
+    static float tDecrease, t2Decrease, t3Decrease, t4Decrease, t5Decrease = 0.0f;
+    static float t, t2, t3, t4, t5 = 0.0f;
+    float increaseValue;
 
     //
     public GameObject gameObContainingCanvasAppear;
@@ -44,10 +50,36 @@ public class RenderLight : MonoBehaviour
             turnOffLight();
         }
 
-        else if ((EnableDisableSceneOverallScript.timePassed > 22 && EnableDisableSceneOverallScript.timePassed <25) || Input.GetKey(KeyCode.UpArrow))
+        else if ((EnableDisableSceneOverallScript.timePassed > 22 && EnableDisableSceneOverallScript.timePassed < 25))
         {
             startDecreaseFast();
-            EnableDisableScene1Script.pointLight2.SetActive(false);
+            fadeOutScene1C = true;
+            //EnableDisableScene1Script.pointLight2.SetActive(false);
+        }
+
+        else if (EnableDisableSceneOverallScript.scene2On == true && !((EnableDisableSceneOverallScript.timePassed > 34 && EnableDisableSceneOverallScript.timePassed < 35)))
+        {
+            startIncreaseFast();
+        }
+
+        else if ((EnableDisableSceneOverallScript.timePassed > 34 && EnableDisableSceneOverallScript.timePassed < 35))
+        {
+            startDecreaseFastHard();
+        }
+
+        else if (EnableDisableSceneOverallScript.scene3On == true && !((EnableDisableSceneOverallScript.timePassed > 44 && EnableDisableSceneOverallScript.timePassed < 45)))
+        {
+            startIncreaseFast2();
+        }
+
+        else if ((EnableDisableSceneOverallScript.timePassed > 44 && EnableDisableSceneOverallScript.timePassed < 45))
+        {
+            startDecreaseFastHard2();
+        }
+
+        else if (EnableDisableSceneOverallScript.scene4AOn == true)
+        {
+            startIncreaseFast3();
         }
 
         else
@@ -59,15 +91,48 @@ public class RenderLight : MonoBehaviour
 
     void startDecrease()
     {
-        renderIntensity = Mathf.Lerp(intensityMin, intensityMax, t);
+        renderIntensity = Mathf.Lerp(intensityMax, intensityMin, t);
         t += 0.5f * Time.deltaTime;
     }
 
     void startDecreaseFast()
     {
-        renderIntensity = Mathf.Lerp(intensityMin, intensityMax, t);
-        t += 0.8f * Time.deltaTime;
+        renderIntensity = Mathf.Lerp(intensityMax, intensityMin, t);
+        t += 1.0f * Time.deltaTime;
     }
+
+    void startDecreaseFastHard()
+    {
+        renderIntensity = Mathf.Lerp(intensityMax, intensityMin2, tDecrease);
+        tDecrease += 1.5f * Time.deltaTime;
+    }
+
+    void startDecreaseFastHard2()
+    {
+        renderIntensity = Mathf.Lerp(intensityMax, intensityMin2, t2Decrease);
+        t2Decrease += 1.5f * Time.deltaTime;
+    }
+
+    //
+
+    void startIncreaseFast()
+    {
+        renderIntensity = Mathf.Lerp(intensityMin2, intensityMax, t2);
+        t2 += 1.0f * Time.deltaTime; ;
+    }
+
+    void startIncreaseFast2()
+    {
+        renderIntensity = Mathf.Lerp(intensityMin2, intensityMax, t3);
+        t3 += 1.0f * Time.deltaTime; ;
+    }
+
+    void startIncreaseFast3()
+    {
+        renderIntensity = Mathf.Lerp(intensityMin2, intensityMax, t4);
+        t4 += 1.0f * Time.deltaTime; ;
+    }
+
 
     void turnOffLight()
     {

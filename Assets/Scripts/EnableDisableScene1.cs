@@ -9,6 +9,7 @@ public class EnableDisableScene1 : MonoBehaviour
     public GameObject pointLight1;
     public GameObject pointLight2;
     public GameObject pointLightLamp;
+    public GameObject manAnimation;
     //public GameObject childBreathing;
     public GameObject directLightFlicker;
 
@@ -54,6 +55,7 @@ public class EnableDisableScene1 : MonoBehaviour
             directionalLight.SetActive(false);
             pointLight1.SetActive(false);
             directLightFlicker.SetActive(true);
+            manAnimation.SetActive(true);
         }
 
         else if (EnableDisableSceneOverallScript.scene1COn == true)
@@ -65,6 +67,8 @@ public class EnableDisableScene1 : MonoBehaviour
             pointLight1.SetActive(false);
             pointLight2.SetActive(true);
             pointLightLamp.SetActive(true);
+            manAnimation.SetActive(false);
+
             //childBreathing.SetActive(true);
 
             //destory

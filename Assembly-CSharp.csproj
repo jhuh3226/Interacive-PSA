@@ -340,6 +340,7 @@
      <Compile Include="Assets\Scripts\FlickerLight.cs" />
      <Compile Include="Assets\Scripts\FlickerLightScene2.cs" />
      <Compile Include="Assets\Scripts\HumanoidCtrl.cs" />
+     <Compile Include="Assets\Scripts\lightRangeScene1.cs" />
      <Compile Include="Assets\Scripts\MuscleLimit.cs" />
      <Compile Include="Assets\Scripts\RemoveChangeCharacter.cs" />
      <Compile Include="Assets\Scripts\RenderLight.cs" />

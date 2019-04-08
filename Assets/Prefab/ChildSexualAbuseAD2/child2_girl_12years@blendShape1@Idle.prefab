@@ -1343,7 +1343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1523129707138928
 GameObject:
   m_ObjectHideFlags: 0
@@ -9573,7 +9573,6 @@ MonoBehaviour:
   xLeft: 65
   yLeft: 23.4
   zLeft: 115.59
-  xClavicleLeft: 0
   playerIndex: 0
   mirroredMovement: 1
   verticalMovement: 0
@@ -9683,7 +9682,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 9c1bdb4c41355064799ff33fb2e2afac, type: 2}
+  - {fileID: 2100000, guid: 5da5e4737b6dd0046898a7c4c501854d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

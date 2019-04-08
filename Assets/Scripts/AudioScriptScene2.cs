@@ -47,7 +47,7 @@ public class AudioScriptScene2 : MonoBehaviour
         // add the necessary AudioSources:
         audioScene2Hum = AddAudio(clipScene2Hum, false, true, 1.0f);
         audioScene2BrightBg = AddAudio(clipScene2BrightBg, true, true, 0.2f);
-        audioScene2SpeakinBg = AddAudio(clipScene2BrightBg, true, true, 0.2f);
+        audioScene2SpeakinBg = AddAudio(clipScene2SpeakingBg, true, true, 0.2f);
 
         audioScene2GloomyBg = AddAudio(clipScene2GloomyBg, false, true, 1.0f);
         audioScene2BookFall = AddAudio(clipScene2BookFall, false, true, 0.5f);
@@ -56,7 +56,7 @@ public class AudioScriptScene2 : MonoBehaviour
 
     }
 
-    void PlayAudioScene1Laugh()
+    void PlayAudioScene2Laugh()
     {
         audioScene2Hum.Play();
     }
@@ -72,7 +72,8 @@ public class AudioScriptScene2 : MonoBehaviour
             {
                 audioScene2BrightBg.Play();
                 audioScene2SpeakinBg.Play();
-                Invoke("PlayAudioScene1Laugh", 4.0f);
+                Invoke("PlayAudioScene2Laugh", 2.0f);
+                Invoke("PlayAudioScene2Laugh", 5.0f);
 
                 turnOn1st = true;
             }
