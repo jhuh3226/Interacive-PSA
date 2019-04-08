@@ -4,54 +4,45 @@ using UnityEngine;
 
 public class AnimationHolder : MonoBehaviour
 {
-    // This var will determine if the animation is started
-    public bool animation_started = false;
-    // This var will determine if the animation is finished
-    public bool animation_finished = true;
+    //public GameObject gameObContainingScript;
 
-    public GameObject animator;
+    Animator m_Animator;
+
+    bool pettingStarted = false;
+    bool positionUpdated = false;
+
+    void Start()
+    {
+        //Get the Animator, which you attach to the GameObject you intend to animate.
+        m_Animator = gameObject.GetComponent<Animator>();
+    }
 
     void Update()
     {
-
-        //// if user triggers Fire1
-        //if (Input.GetButtonUp('Fire1'))
-        //{
-
-        //    // initialize the flags
-        //    animation_started = true;
-        //    animation_finished = false;
-
-        //    // Start the animation
-        //    // this animation moves the box from local X = 0 to X = 10 using a curve to deaccelerate
-        //    animation.Play("boxanim");
-        //}
-
+        Debug.Log(m_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+        Debug.Log("2: " + m_Animator.GetCurrentAnimatorStateInfo(0).length);
+        //When entering the Jump state in the Animator, output the message in the console
+        if (m_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9061469f)
+        {
+            Debug.Log("Petting");
+            pettingStarted = true;
+        }
     }
 
-    /* This function is trigger at the end of the animation */
-    public void animationFinished()
-    {
-        animation_finished = true;
-    }
-
-    /*  
-        At the end of the frame if the animation is finished
-        we update the position of the parent to the last position of the child
-        and set the position of the child to zero inside the parent.
-    */
     void LateUpdate()
     {
         // if the animation is finished and it was started
-        if (animation_finished && animation_started)
+        if (pettingStarted == true)
         {
-            // set the flag
-            animation_started = false;
-            // update the parent position
-            //transform.parent.position = transform.position;
-            animator.transform.parent.position = animator.transform.position;
-            // update the box position to zero inside the parent
-            transform.localPosition = Vector3.zero;
+            if (positionUpdated == false)
+            {
+                // update the parent position
+                transform.parent.position  = new Vector3(-1.79f, 0f, 0f);
+                m_Animator.Play("Petting Animal", 0, 0);
+                // update the box position to zero inside the parent
+                //transform.localPosition = Vector3.zero;
+                positionUpdated = true;
+            }
         }
     }
 }
