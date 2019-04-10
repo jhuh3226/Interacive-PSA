@@ -58,6 +58,9 @@
      <Compile Include="Assets\SkinnedDecal\Scripts\Editor\SkinnedDecalEditor.cs" />
      <Compile Include="Assets\SkinnedDecal\Scripts\Editor\SkinnedDecalMeshEditor.cs" />
      <Compile Include="Assets\SkinnedDecal\Scripts\Editor\SkinnedDecalSystemEditor.cs" />
+     <Compile Include="Assets\TrueClouds\Scripts\Editor\CloudCameraEditor.cs" />
+     <Compile Include="Assets\TrueClouds\Scripts\Editor\NoiseGenerator.cs" />
+     <Compile Include="Assets\TrueClouds\Scripts\Editor\TrueCloudsReadonlyDrawer.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/WonderLab/Documents/Unity-kinect_3/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
