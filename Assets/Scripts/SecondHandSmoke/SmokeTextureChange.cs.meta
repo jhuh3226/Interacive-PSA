@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a04da34cc0a423d4cb3f030daf85f774
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_MainTexture: {fileID: 2800000, guid: d4c47c487d80e6b4eaed38f82e3c968a, type: 3}
+  - m_30: {fileID: 2800000, guid: ed8b15f9ac144b24385d145563c4c39d, type: 3}
+  - m_50: {fileID: 2800000, guid: 4922f5e3134c9644ba622f54c0be8ccc, type: 3}
+  - m_70: {instanceID: 0}
+  - m_100: {instanceID: 0}
+  - m_100Dark: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

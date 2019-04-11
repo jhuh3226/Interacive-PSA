@@ -10,7 +10,10 @@ public class SmokeEnableDisableScene1 : MonoBehaviour
     //public GameObject pointLight2;
     //public GameObject pointLightLamp;
     public GameObject manAnimation;
+    public GameObject smokeAroundMouth;
+    public GameObject topLung;
     public GameObject smokeAroundNeck;
+    
     //public GameObject childBreathing;
     //public GameObject directLightFlicker;
 
@@ -61,8 +64,10 @@ public class SmokeEnableDisableScene1 : MonoBehaviour
             //pointLight2.SetActive(true);
             //pointLightLamp.SetActive(true);
             manAnimation.SetActive(false);
+            smokeAroundMouth.SetActive(true);
             smokeAroundNeck.SetActive(true);
-
+            topLung.SetActive(true);
+            
             //childBreathing.SetActive(true);
 
             //isKinemetic

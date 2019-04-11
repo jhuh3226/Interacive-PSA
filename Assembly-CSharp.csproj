@@ -348,10 +348,12 @@
      <Compile Include="Assets\Scripts\ScriptEnableDisableModify.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeAudioScript1.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeCanvasAppear.cs" />
+     <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeChangeAlphaLevel.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeEnableDisableScene1.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeEnableDisableSceneOverall.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeRenderLight.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeScriptEnableDisableModify.cs" />
+     <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeTextureChange.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeUserAvatarMatcher1A.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeUserAvatarMatcher1B.cs" />
      <Compile Include="Assets\Scripts\SmokeAroundNeck.cs" />

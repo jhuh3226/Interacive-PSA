@@ -56,13 +56,13 @@ public class SmokeEnableDisableSceneOverall : MonoBehaviour
             scene1BOn = true;
         }
 
-        ////scene1-c
-        //else if ((timePassed > 15 && timePassed < 15.3))
-        //{
-        //    scene1AOn = false;
-        //    scene1BOn = false;
-        //    scene1COn = true;
-        //}
+        //scene1-c
+        else if ((timePassed > 15 && timePassed < 15.3) || Input.GetKeyUp(KeyCode.DownArrow))
+        {
+            scene1AOn = false;
+            scene1BOn = false;
+            scene1COn = true;
+        }
 
         ////scene2
         //else if ((timePassed > 25 && timePassed < 25.3))
@@ -120,7 +120,7 @@ public class SmokeEnableDisableSceneOverall : MonoBehaviour
 
         else if (scene1BOn == true)
         {
-            Destroy(GameObject.FindWithTag("girl4yearsHappy"));
+            //Destroy(GameObject.FindWithTag("girl4yearsHappy"));
         }
 
 
