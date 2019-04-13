@@ -7,10 +7,13 @@ public class SmokeChangeAlphaLevel : MonoBehaviour
     //public Material topLung;
     Renderer m_Renderer;
 
-    float newAlpha;
+    float newAlpha = 0;
     float lerpTime = 2f;
     float currentLerpTime = 0;
     float timeTaken;
+
+    float a0, a1;
+    int oddOrEven = 0;
 
     bool gettingTransparent = false;
 
@@ -19,6 +22,7 @@ public class SmokeChangeAlphaLevel : MonoBehaviour
     {
         m_Renderer = GetComponent<Renderer>();
         m_Renderer.material.EnableKeyword("_MainTex");
+        m_Renderer.material.color = new Color(m_Renderer.material.color.r, m_Renderer.material.color.g, m_Renderer.material.color.b, 0);
     }
 
     // Update is called once per frame
@@ -40,34 +44,32 @@ public class SmokeChangeAlphaLevel : MonoBehaviour
         //currentTime = Time.fixedTime;
 
         //Debug.Log("1: " + currentLerpTime + " 2: " + Time.deltaTime + " 3: " + timeTaken);
+        Debug.Log(timeTaken);
 
         currentLerpTime += Time.deltaTime;
+
         if (currentLerpTime >= lerpTime)
         {
             currentLerpTime = 0;
             //currentLerpTime = lerpTime;
+            oddOrEven = oddOrEven + 1;
         }
-
 
         timeTaken = currentLerpTime / lerpTime;
 
-        if (gettingTransparent == false)
+        if(oddOrEven % 2 == 0)
         {
-            newAlpha = Mathf.Lerp(0, 1, timeTaken);
-            if(currentLerpTime == 0)
-            {
-                gettingTransparent = true;
-            }
+            a0 = 0;
+            a1 = 1;
+        }
+        else if(oddOrEven % 2 == 1)
+        {
+            a0 = 1;
+            a1 = 0;
         }
 
-        else if (gettingTransparent == true)
-        {
-            newAlpha = Mathf.Lerp(1, 0, timeTaken);
-            if (currentLerpTime == 0)
-            {
-                gettingTransparent = false;
-            }
-        }
+        newAlpha = Mathf.Lerp(a0, a1, timeTaken);
+
         //else if (newAlpha == 1)
         //{
         //    gettingTransparent = true;

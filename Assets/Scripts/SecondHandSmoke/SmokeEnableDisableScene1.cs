@@ -10,6 +10,7 @@ public class SmokeEnableDisableScene1 : MonoBehaviour
     //public GameObject pointLight2;
     //public GameObject pointLightLamp;
     public GameObject manAnimation;
+    public GameObject smokeOverall;
     public GameObject smokeAroundMouth;
     public GameObject topLung;
     public GameObject smokeAroundNeck;
@@ -21,7 +22,7 @@ public class SmokeEnableDisableScene1 : MonoBehaviour
     //public GameObject frame;
     //public GameObject ballHittingBear;
 
-    float lerpTime = 100f;
+    float lerpTime = 170f;
     float currentLerpTime = 0;
 
     //
@@ -47,8 +48,7 @@ public class SmokeEnableDisableScene1 : MonoBehaviour
             Debug.Log("turn on man animation");
             manAnimation.SetActive(true);
             manAnimation.transform.position = Vector3.Lerp(manAnimation.transform.position, new Vector3(-3.744f, 0.36f, -0.43f), step);
-
-
+            
             //directionalLight.SetActive(false);
             //pointLight1.SetActive(false);
             //directLightFlicker.SetActive(true);
@@ -64,9 +64,6 @@ public class SmokeEnableDisableScene1 : MonoBehaviour
             //pointLight2.SetActive(true);
             //pointLightLamp.SetActive(true);
             manAnimation.SetActive(false);
-            smokeAroundMouth.SetActive(true);
-            smokeAroundNeck.SetActive(true);
-            topLung.SetActive(true);
             
             //childBreathing.SetActive(true);
 
@@ -76,6 +73,28 @@ public class SmokeEnableDisableScene1 : MonoBehaviour
 
             //Rigidbody ballHittingBearRigidbody = ballHittingBear.GetComponent<Rigidbody>();
             //ballHittingBearRigidbody.isKinematic = false;
+        }
+
+        else if (EnableDisableSceneOverallScript.scene1COverallSmokeOn == true)
+        {
+            Debug.Log("turn on smokeOverall");
+            smokeOverall.SetActive(true);
+        }
+
+        else if (EnableDisableSceneOverallScript.scene1CSmokeAroundMouthOn == true)
+        {
+            smokeAroundMouth.SetActive(true);
+        }
+
+        else if (EnableDisableSceneOverallScript.scene1CTopLungOn == true)
+        {
+            topLung.SetActive(true);
+
+        }
+
+        else if (EnableDisableSceneOverallScript.scene1CSmokeAroundNeckOn == true)
+        {
+            smokeAroundNeck.SetActive(true);
         }
     }
 }

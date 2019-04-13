@@ -13,6 +13,11 @@ public class SmokeEnableDisableSceneOverall : MonoBehaviour
     public bool scene1AOn = false;
     public bool scene1BOn = false;
     public bool scene1COn = false;
+    public bool scene1CSmokeAroundMouthOn = false;
+    public bool scene1CSmokeAroundNeckOn = false;
+    public bool scene1CTopLungOn = false;
+    public bool scene1COverallSmokeOn = false;
+
     //public bool scene2On = false;
     //public bool scene3On = false;
     //public bool scene4AOn = false;
@@ -62,6 +67,22 @@ public class SmokeEnableDisableSceneOverall : MonoBehaviour
             scene1AOn = false;
             scene1BOn = false;
             scene1COn = true;
+            scene1COverallSmokeOn = true;
+        }
+
+        else if((timePassed > 18 && timePassed < 18.3) || Input.GetKeyUp(KeyCode.M))
+        {
+            scene1CSmokeAroundMouthOn = true;
+        }
+
+        else if ((timePassed > 40 && timePassed < 40.3) || Input.GetKeyUp(KeyCode.N))
+        {
+            scene1CSmokeAroundNeckOn = true;
+        }
+
+        else if ((timePassed > 25 && timePassed < 25.3) || Input.GetKeyUp(KeyCode.L))
+        {
+            scene1CTopLungOn = true;
         }
 
         ////scene2

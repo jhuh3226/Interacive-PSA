@@ -7,7 +7,7 @@ public class AudioScript : MonoBehaviour
     public AudioClip clipScene1Laugh;
     public AudioClip clipScene1BrightBg;
     public AudioClip clipScene1GloomyBg;
-    public AudioClip clipScene1frameFall;
+    //public AudioClip clipScene1frameFall;
 
     public AudioClip clipScene1Struggle;
     public AudioClip clipScene1Tradegy;
@@ -17,7 +17,7 @@ public class AudioScript : MonoBehaviour
     public AudioSource audioScene1Laugh;
     public AudioSource audioScene1BrightBg;
     public AudioSource audioScene1GloomyBg;
-    public AudioSource audioScene1frameFall;
+    //public AudioSource audioScene1frameFall;
 
     public AudioSource audioScene1Struggle;
     public AudioSource audioScene1Tradegy;
@@ -53,7 +53,7 @@ public class AudioScript : MonoBehaviour
         audioScene1Laugh = AddAudio(clipScene1Laugh, false, true, 0.5f);
         audioScene1BrightBg = AddAudio(clipScene1BrightBg, false, true, 0.4f);
         audioScene1GloomyBg = AddAudio(clipScene1GloomyBg, false, true, 1.0f);
-        audioScene1frameFall = AddAudio(clipScene1frameFall, false, true, 0.2f);
+        //audioScene1frameFall = AddAudio(clipScene1frameFall, false, true, 0.2f);
 
         audioScene1Struggle = AddAudio(clipScene1Struggle, false, true, 0.8f);
         audioScene1Tradegy = AddAudio(clipScene1Tradegy, false, true, 1.0f);
@@ -128,7 +128,7 @@ public class AudioScript : MonoBehaviour
         CollisionScene1 CollisionScene1Script = gameObContainingScript.GetComponent<CollisionScene1>();
         if (CollisionScene1Script.frameFallen == true)
         {
-            audioScene1frameFall.Play();
+            //audioScene1frameFall.Play();
             CollisionScene1Script.frameFallen = false;
         }
     }
