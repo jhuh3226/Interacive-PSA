@@ -16697,7 +16697,6 @@ MonoBehaviour:
   clipScene1Laugh: {fileID: 8300000, guid: 981186be267d66f4e8209b612d253dc7, type: 3}
   clipScene1BrightBg: {fileID: 8300000, guid: dbc9f96fdd87f7243ad342bec5b6d4a3, type: 3}
   clipScene1GloomyBg: {fileID: 8300000, guid: 51446031df6522b4ca7cc8d794e5b1f3, type: 3}
-  clipScene1frameFall: {fileID: 8300000, guid: 2cb0cefae3261ff42a0362f153d4e081, type: 3}
   clipScene1Struggle: {fileID: 8300000, guid: 446fc8b869cde624bac7d20ca59ed90e, type: 3}
   clipScene1Tradegy: {fileID: 8300000, guid: 890e77fb017043246bed507c3b6b704a, type: 3}
   clipScene1menVoice: {fileID: 8300000, guid: d4913daf91236c74fbc54a4aac63952f, type: 3}
@@ -16705,7 +16704,6 @@ MonoBehaviour:
   audioScene1Laugh: {fileID: 1465877944}
   audioScene1BrightBg: {fileID: 1465877944}
   audioScene1GloomyBg: {fileID: 1465877944}
-  audioScene1frameFall: {fileID: 1465877944}
   audioScene1Struggle: {fileID: 1465877944}
   audioScene1Tradegy: {fileID: 1465877944}
   audioScene1menVoice: {fileID: 1465877944}
