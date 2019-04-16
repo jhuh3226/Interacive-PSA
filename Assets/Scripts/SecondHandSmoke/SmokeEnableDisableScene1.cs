@@ -9,12 +9,16 @@ public class SmokeEnableDisableScene1 : MonoBehaviour
     //public GameObject pointLight1;
     //public GameObject pointLight2;
     //public GameObject pointLightLamp;
-    public GameObject manAnimation;
+    public GameObject manBeforeSmokingAnimation;
+    public GameObject manSmokingAnimation;
+    public GameObject manWalkingAnimation;
+
     public GameObject smokeOverall;
     public GameObject smokeAroundMouth;
+    public GameObject smokeAroundBody;
     public GameObject topLung;
     public GameObject smokeAroundNeck;
-    
+
     //public GameObject childBreathing;
     //public GameObject directLightFlicker;
 
@@ -22,7 +26,8 @@ public class SmokeEnableDisableScene1 : MonoBehaviour
     //public GameObject frame;
     //public GameObject ballHittingBear;
 
-    float lerpTime = 170f;
+    float lerpTimeA = 8f;
+    float lerpTimeB = 130f;
     float currentLerpTime = 0;
 
     //
@@ -38,63 +43,80 @@ public class SmokeEnableDisableScene1 : MonoBehaviour
         if (EnableDisableSceneOverallScript.scene1BOn == true)
         {
             currentLerpTime += Time.deltaTime;
-            if (currentLerpTime >= lerpTime)
+            if (currentLerpTime >= lerpTimeA)
             {
-                currentLerpTime = lerpTime;
+                currentLerpTime = lerpTimeA;
             }
 
-            float step = currentLerpTime / lerpTime;
+            float step = currentLerpTime / lerpTimeA;
             //turn the script on and move the men
             Debug.Log("turn on man animation");
-            manAnimation.SetActive(true);
-            manAnimation.transform.position = Vector3.Lerp(manAnimation.transform.position, new Vector3(-3.744f, 0.36f, -0.43f), step);
-            
+            manBeforeSmokingAnimation.SetActive(true);
+            manBeforeSmokingAnimation.transform.position = Vector3.Lerp(manBeforeSmokingAnimation.transform.position, new Vector3(0.98f, 0.36f, -0.43f), step);
+
+            //manAnimation.transform.position = Vector3.Lerp(manAnimation.transform.position, new Vector3(-3.744f, 0.36f, -0.43f), step);
+
             //directionalLight.SetActive(false);
             //pointLight1.SetActive(false);
             //directLightFlicker.SetActive(true);
         }
 
-        else if (EnableDisableSceneOverallScript.scene1COn == true)
+        if (EnableDisableSceneOverallScript.scene1BSmoking == true)
         {
-            //startDecreasing = true;
-            //RenderLightScript.turnOff = true;
-
-            //directLightFlicker.SetActive(false);
-            //pointLight1.SetActive(false);
-            //pointLight2.SetActive(true);
-            //pointLightLamp.SetActive(true);
-            manAnimation.SetActive(false);
-            
-            //childBreathing.SetActive(true);
-
-            //isKinemetic
-            //Rigidbody frameRigidbody = frame.GetComponent<Rigidbody>();
-            //frameRigidbody.isKinematic = false;
-
-            //Rigidbody ballHittingBearRigidbody = ballHittingBear.GetComponent<Rigidbody>();
-            //ballHittingBearRigidbody.isKinematic = false;
+            manBeforeSmokingAnimation.SetActive(false);
+            manSmokingAnimation.SetActive(true);
         }
 
-        else if (EnableDisableSceneOverallScript.scene1COverallSmokeOn == true)
+        if (EnableDisableSceneOverallScript.scene1BWalkOn == true)
+        {
+            manSmokingAnimation.SetActive(false);
+
+            currentLerpTime += Time.deltaTime;
+            if (currentLerpTime >= lerpTimeB)
+            {
+                currentLerpTime = lerpTimeB;
+            }
+
+            float step = currentLerpTime / lerpTimeB;
+            //turn the script on and move the men
+            Debug.Log("turn on man animation");
+            manWalkingAnimation.SetActive(true);
+            manWalkingAnimation.transform.position = Vector3.Lerp(manWalkingAnimation.transform.position, new Vector3(-2.88f, 0.36f, -0.43f), step);
+
+            //manAnimation.transform.position = Vector3.Lerp(manAnimation.transform.position, new Vector3(-3.744f, 0.36f, -0.43f), step);
+
+            //directionalLight.SetActive(false);
+            //pointLight1.SetActive(false);
+            //directLightFlicker.SetActive(true);
+        }
+
+        if (EnableDisableSceneOverallScript.scene1COn == true)
+        {
+            //manWalkingAnimation.SetActive(false);
+        }
+
+        if (EnableDisableSceneOverallScript.scene1COverallSmokeOn == true)
         {
             Debug.Log("turn on smokeOverall");
             smokeOverall.SetActive(true);
         }
 
-        else if (EnableDisableSceneOverallScript.scene1CSmokeAroundMouthOn == true)
+        if (EnableDisableSceneOverallScript.scene1CSmokeAroundMouthOn == true)
         {
             smokeAroundMouth.SetActive(true);
+            smokeAroundBody.SetActive(true);
         }
 
-        else if (EnableDisableSceneOverallScript.scene1CTopLungOn == true)
+        if (EnableDisableSceneOverallScript.scene1CTopLungOn == true)
         {
             topLung.SetActive(true);
 
         }
 
-        else if (EnableDisableSceneOverallScript.scene1CSmokeAroundNeckOn == true)
+        if (EnableDisableSceneOverallScript.scene1CSmokeAroundNeckOn == true)
         {
             smokeAroundNeck.SetActive(true);
+            manWalkingAnimation.SetActive(false);
         }
     }
 }

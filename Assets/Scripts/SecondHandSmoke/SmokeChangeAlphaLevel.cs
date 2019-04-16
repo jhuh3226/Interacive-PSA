@@ -44,7 +44,7 @@ public class SmokeChangeAlphaLevel : MonoBehaviour
         //currentTime = Time.fixedTime;
 
         //Debug.Log("1: " + currentLerpTime + " 2: " + Time.deltaTime + " 3: " + timeTaken);
-        Debug.Log(timeTaken);
+        //Debug.Log(timeTaken);
 
         currentLerpTime += Time.deltaTime;
 

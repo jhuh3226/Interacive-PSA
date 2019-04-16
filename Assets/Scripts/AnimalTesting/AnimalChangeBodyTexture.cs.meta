@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 1b3a45432f87f614b8b3adb24222ac9d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_MainTexture: {fileID: 2800000, guid: 0b1a0cbac31cb0d4ab1f971264876276, type: 3}
+  - m1: {fileID: 2800000, guid: 808fdac1954d5614199686e7ee3ab661, type: 3}
+  - m2: {fileID: 2800000, guid: 4792cbb34de4c754cb66275ba248c9bf, type: 3}
+  - m3: {fileID: 2800000, guid: 643b44f9efd69ac43a61adebdbf270c4, type: 3}
+  - m4: {fileID: 2800000, guid: cb014e6c833f0084db9a44687ca22204, type: 3}
+  - m5: {fileID: 2800000, guid: 589ab5f7b8577e6459bb2148e69a9fbd, type: 3}
+  - m6: {fileID: 2800000, guid: 75b3c2021932b9447a865303254b83c9, type: 3}
+  - m7: {fileID: 2800000, guid: 31a5de0a821d7fb4aa106cd2605d63f3, type: 3}
+  - m8: {fileID: 2800000, guid: fc39a1932db10db4d897558df90d96c3, type: 3}
+  - m9: {fileID: 2800000, guid: 22bf04537e03096479e148fe0e8c2eaa, type: 3}
+  - m10: {fileID: 2800000, guid: 526d0d1cefed35140a543a693b233d82, type: 3}
+  - m11: {fileID: 2800000, guid: 9de435b00ebbf89499e695d47d9fa9d9, type: 3}
+  - m12: {fileID: 2800000, guid: 2785b5743acc16b4ca773ab9e6519f9c, type: 3}
+  - m13: {fileID: 2800000, guid: 1663f09f7102c42438912fde55bd1301, type: 3}
+  - m14: {fileID: 2800000, guid: b8de87273bafc2f4398da9882a2a1a51, type: 3}
+  - m15: {fileID: 2800000, guid: 813c458a9a29b8346a922b352104c2a1, type: 3}
+  - m16: {fileID: 2800000, guid: ded9c8975af7f8c4ea959ef7ceaeeb3d, type: 3}
+  - m17: {fileID: 2800000, guid: f8fd107191c72dc429c701a4d7157de2, type: 3}
+  - gameObContainingEnableDisableSceneOverallScript: {fileID: 100000, guid: af6c1d82d375aa54c81180d14d62761e,
+      type: 2}
+  - gameObContainingAnimalEnableDisableScene1Script: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

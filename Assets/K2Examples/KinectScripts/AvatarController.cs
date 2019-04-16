@@ -748,13 +748,13 @@ public class AvatarController : MonoBehaviour
             //initialRotations[12] = Quaternion.AngleAxis(x, Vector3.right);
             //initialRotations[13] = Quaternion.AngleAxis(x, Vector3.right);
 
-            initialRotations[11] = Quaternion.Euler(xRight, yRight, zRight);
-            initialRotations[12] = Quaternion.Euler(xRight, yRight, zRight);
-            initialRotations[13] = Quaternion.Euler(xRight, yRight, zRight);
+            //initialRotations[11] = Quaternion.Euler(xRight, yRight, zRight);
+            //initialRotations[12] = Quaternion.Euler(xRight, yRight, zRight);
+            //initialRotations[13] = Quaternion.Euler(xRight, yRight, zRight);
 
-            initialRotations[5] = Quaternion.Euler(xLeft, yLeft, zLeft);
-            initialRotations[6] = Quaternion.Euler(xLeft, yLeft, zLeft);
-            initialRotations[7] = Quaternion.Euler(xLeft, yLeft, zLeft);
+            //initialRotations[5] = Quaternion.Euler(xLeft, yLeft, zLeft);
+            //initialRotations[6] = Quaternion.Euler(xLeft, yLeft, zLeft);
+            //initialRotations[7] = Quaternion.Euler(xLeft, yLeft, zLeft);
 
             boneTransform.rotation = Quaternion.Slerp(boneInitialRot, newRotation, interpolateValue);
 

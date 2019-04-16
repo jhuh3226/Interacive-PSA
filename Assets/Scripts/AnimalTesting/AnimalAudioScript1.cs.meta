@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 17e334956fed79647b30d94bb99b338c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - clipMonkeyHappy: {fileID: 8300000, guid: 46415f0236d4ed140b12f90e2830773e, type: 3}
+  - clipScene1BrightBg: {instanceID: 0}
+  - clipScene1GloomyBg: {instanceID: 0}
+  - clipScene1LabSound: {instanceID: 0}
+  - clipCage1: {instanceID: 0}
+  - clipMonkeySad: {instanceID: 0}
+  - audioMonkeyHappy: {instanceID: 0}
+  - audioScene1BrightBg: {instanceID: 0}
+  - audioScene1GloomyBg: {instanceID: 0}
+  - audioScene1LabSound: {instanceID: 0}
+  - audioCage1: {instanceID: 0}
+  - audioMonkeySad: {instanceID: 0}
+  - gameObContainingScript: {instanceID: 0}
+  - gameObContainingEnableDisableSceneOverallScript: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

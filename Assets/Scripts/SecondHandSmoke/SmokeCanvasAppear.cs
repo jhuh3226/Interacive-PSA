@@ -28,7 +28,7 @@ public class SmokeCanvasAppear : MonoBehaviour
     void Update()
     {
         //RenderLight RenderLightScript = gameObContainingRenderLightScript.GetComponent<RenderLight>();
-        EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingEnableDisableSceneOverallScript.GetComponent<EnableDisableSceneOverall>();
+        SmokeEnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingEnableDisableSceneOverallScript.GetComponent<SmokeEnableDisableSceneOverall>();
 
         if (EnableDisableSceneOverallScript.canvasOn == true)
         {

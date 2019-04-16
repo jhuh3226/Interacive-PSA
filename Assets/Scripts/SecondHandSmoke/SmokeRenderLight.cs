@@ -8,7 +8,7 @@ public class SmokeRenderLight : MonoBehaviour
 
     public float intensity;
     public float intensityMax = 1f;
-    public float intensityMin = 0.4f;
+    public float intensityMin = 0.0f;
     public float intensityMin2 = 0.0f;
 
     public bool startDecreasing = false;
@@ -23,63 +23,22 @@ public class SmokeRenderLight : MonoBehaviour
     float increaseValue;
 
     //
-    public GameObject gameObContainingCanvasAppear;
     public GameObject gameObContainingEnableDisableSceneOverall;
-    public GameObject gameObContainingEnableDisableScene1;
+
 
     // Update is called once per frame
     void Update()
     {
         //get info from other script
-        CanvasAppear CanvasAppearScript = gameObContainingCanvasAppear.GetComponent<CanvasAppear>();
-        EnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingEnableDisableSceneOverall.GetComponent<EnableDisableSceneOverall>();
-        EnableDisableScene1 EnableDisableScene1Script = gameObContainingEnableDisableScene1.GetComponent<EnableDisableScene1>();
+        SmokeEnableDisableSceneOverall EnableDisableSceneOverallScript = gameObContainingEnableDisableSceneOverall.GetComponent<SmokeEnableDisableSceneOverall>();
 
         //
-
         RenderSettings.ambientIntensity = renderIntensity;
 
         //lighting increasing over time
-        if (CanvasAppearScript.startDecreasing == true || Input.GetKey(KeyCode.DownArrow))
+        if (EnableDisableSceneOverallScript.canvasOn == true)
         {
             startDecrease();
-        }
-
-        else if (EnableDisableSceneOverallScript.scene1BOn == true)
-        {
-            turnOffLight();
-        }
-
-        else if ((EnableDisableSceneOverallScript.timePassed > 22 && EnableDisableSceneOverallScript.timePassed < 25))
-        {
-            startDecreaseFast();
-            fadeOutScene1C = true;
-            //EnableDisableScene1Script.pointLight2.SetActive(false);
-        }
-
-        else if (EnableDisableSceneOverallScript.scene2On == true && !((EnableDisableSceneOverallScript.timePassed > 34 && EnableDisableSceneOverallScript.timePassed < 35)))
-        {
-            startIncreaseFast();
-        }
-
-        else if ((EnableDisableSceneOverallScript.timePassed > 34 && EnableDisableSceneOverallScript.timePassed < 35))
-        {
-            startDecreaseFastHard();
-        }
-
-        else if (EnableDisableSceneOverallScript.scene3On == true && !((EnableDisableSceneOverallScript.timePassed > 44 && EnableDisableSceneOverallScript.timePassed < 45)))
-        {
-            startIncreaseFast2();
-        }
-
-        else if ((EnableDisableSceneOverallScript.timePassed > 44 && EnableDisableSceneOverallScript.timePassed < 45))
-        {
-            startDecreaseFastHard2();
-        }
-
-        else if (EnableDisableSceneOverallScript.scene4AOn == true)
-        {
-            startIncreaseFast3();
         }
 
         else

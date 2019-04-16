@@ -12,11 +12,14 @@ public class SmokeEnableDisableSceneOverall : MonoBehaviour
 
     public bool scene1AOn = false;
     public bool scene1BOn = false;
+    public bool scene1BSmoking = false;
+    public bool scene1BWalkOn = false;
     public bool scene1COn = false;
     public bool scene1CSmokeAroundMouthOn = false;
     public bool scene1CSmokeAroundNeckOn = false;
     public bool scene1CTopLungOn = false;
     public bool scene1COverallSmokeOn = false;
+    public bool canvasOn = false;
 
     //public bool scene2On = false;
     //public bool scene3On = false;
@@ -61,8 +64,23 @@ public class SmokeEnableDisableSceneOverall : MonoBehaviour
             scene1BOn = true;
         }
 
+        else if ((timePassed > 11.5 && timePassed < 11.8) || Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            scene1AOn = false;
+            scene1BOn = false;
+            scene1BSmoking = true;
+        }
+
+        else if ((timePassed > 23.5 && timePassed < 23.7) || Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            scene1AOn = false;
+            scene1BOn = false;
+            scene1BSmoking = false;
+            scene1BWalkOn = true;
+        }
+
         //scene1-c
-        else if ((timePassed > 15 && timePassed < 15.3) || Input.GetKeyUp(KeyCode.DownArrow))
+        else if ((timePassed > 24 && timePassed < 24.3) || Input.GetKeyUp(KeyCode.DownArrow))
         {
             scene1AOn = false;
             scene1BOn = false;
@@ -70,69 +88,27 @@ public class SmokeEnableDisableSceneOverall : MonoBehaviour
             scene1COverallSmokeOn = true;
         }
 
-        else if((timePassed > 18 && timePassed < 18.3) || Input.GetKeyUp(KeyCode.M))
+        else if ((timePassed > 25 && timePassed < 25.3) || Input.GetKeyUp(KeyCode.M))
         {
             scene1CSmokeAroundMouthOn = true;
         }
 
-        else if ((timePassed > 40 && timePassed < 40.3) || Input.GetKeyUp(KeyCode.N))
+        else if((timePassed > 33 && timePassed < 33.3) || Input.GetKeyUp(KeyCode.N))
         {
             scene1CSmokeAroundNeckOn = true;
         }
 
-        else if ((timePassed > 25 && timePassed < 25.3) || Input.GetKeyUp(KeyCode.L))
+        else if((timePassed > 30 && timePassed < 30.3) || Input.GetKeyUp(KeyCode.L))
         {
             scene1CTopLungOn = true;
         }
 
-        ////scene2
-        //else if ((timePassed > 25 && timePassed < 25.3))
-        //{
-        //    scene1AOn = false;
-        //    scene1BOn = false;
-        //    scene1COn = false;
-        //    scene2On = true;
-        //}
-
-        ////scene3
-        //else if ((timePassed > 35 && timePassed < 35.3))
-        //{
-        //    scene1AOn = false;
-        //    scene1BOn = false;
-        //    scene1COn = false;
-        //    scene2On = false;
-        //    scene3On = true;
-        //}
-
-        ////scene4-a
-        //else if ((timePassed > 45 && timePassed < 45.3))
-        //{
-        //    scene1AOn = false;
-        //    scene1BOn = false;
-        //    scene1COn = false;
-        //    scene2On = false;
-        //    scene3On = false;
-        //    scene4AOn = true;
-        //}
-
-        ////scene4-b
-        //else if ((timePassed > 55 && timePassed < 55.3))
-        //{
-        //    scene1AOn = false;
-        //    scene1BOn = false;
-        //    scene1COn = false;
-        //    scene2On = false;
-        //    scene3On = false;
-        //    scene4AOn = false;
-        //    scene4BOn = true;
-        //}
-
-        ////canvas
-        //else if ((timePassed > 65 && timePassed < 65.3))
-        //{
-        //    canvasOn = true;
-        //}
-        ////-----------------------------------------------------------------
+        //canvas
+        else if ((timePassed > 40 && timePassed < 40.3))
+        {
+            canvasOn = true;
+        }
+        //-----------------------------------------------------------------
 
         if (scene1AOn == true)
         {

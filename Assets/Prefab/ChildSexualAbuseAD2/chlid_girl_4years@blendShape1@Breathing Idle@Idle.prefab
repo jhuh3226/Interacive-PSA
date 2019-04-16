@@ -1908,7 +1908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1677434856341240
 GameObject:
   m_ObjectHideFlags: 1
@@ -9639,8 +9639,8 @@ MonoBehaviour:
   - blendShape1.Jaw_Right
   - 
   - 
-  - 
-  - 
+  - blendShape1.Smile_Left
+  - blendShape1.Smile_Right
   - 
   - 
   - blendShape1.CheekPuff_Left
@@ -9706,7 +9706,7 @@ MonoBehaviour:
   HipCenter: {fileID: 0}
   Spine: {fileID: 4479917651272544}
   ShoulderCenter: {fileID: 0}
-  Neck: {fileID: 0}
+  Neck: {fileID: 4979139145961832}
   ClavicleLeft: {fileID: 4814343864207798}
   ShoulderLeft: {fileID: 4970471138663098}
   ElbowLeft: {fileID: 4676655077618830}

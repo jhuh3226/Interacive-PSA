@@ -43,7 +43,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1022852544928886
 GameObject:
   m_ObjectHideFlags: 1
@@ -9527,7 +9527,7 @@ MonoBehaviour:
   limitSpan: 1
   checkNewPosition: {x: 0, y: 0, z: 0}
   BodyRootAvatarController: {fileID: 4586418159324376}
-  interpolateValue: 0.8
+  interpolateValue: 0.2
   maxDegreesDelta: 0
   xRight: 65
   yRight: -23.4
@@ -9554,10 +9554,10 @@ MonoBehaviour:
   flipLeftRight: 0
   verticalOffset: 0
   forwardOffset: 0
-  HipCenter: {fileID: 0}
+  HipCenter: {fileID: 4672620844942392}
   Spine: {fileID: 4202782699049254}
   ShoulderCenter: {fileID: 0}
-  Neck: {fileID: 0}
+  Neck: {fileID: 4788355278746522}
   ClavicleLeft: {fileID: 4970478185009820}
   ShoulderLeft: {fileID: 4241085031173206}
   ElbowLeft: {fileID: 4684704996301090}
@@ -9605,8 +9605,8 @@ MonoBehaviour:
   - blendShape1.Jaw_Right
   - 
   - 
-  - 
-  - 
+  - blendShape1.Smile_Left
+  - blendShape1.Smile_Right
   - 
   - 
   - blendShape1.CheekPuff_Left

@@ -13,6 +13,8 @@ public class EnableDisableScene1 : MonoBehaviour
     //public GameObject childBreathing;
     public GameObject directLightFlicker;
 
+
+
     //isKinemetic turn on and off
     public GameObject frame;
     public GameObject ballHittingBear;

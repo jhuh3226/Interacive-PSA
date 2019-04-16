@@ -499,7 +499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1210722562054300
 GameObject:
   m_ObjectHideFlags: 0
@@ -9569,8 +9569,8 @@ MonoBehaviour:
   - blendShape1.Jaw_Right
   - 
   - 
-  - 
-  - 
+  - blendShape1.Smile_Left
+  - blendShape1.Smile_Right
   - 
   - 
   - blendShape1.CheekPuff_Left
@@ -9595,7 +9595,7 @@ MonoBehaviour:
   limitSpan: 1
   checkNewPosition: {x: 0, y: 0, z: 0}
   BodyRootAvatarController: {fileID: 4253889599253608}
-  interpolateValue: 0.8
+  interpolateValue: 0.2
   maxDegreesDelta: 0
   xRight: 65
   yRight: -23.4
@@ -9622,10 +9622,10 @@ MonoBehaviour:
   flipLeftRight: 0
   verticalOffset: 0
   forwardOffset: 0
-  HipCenter: {fileID: 0}
+  HipCenter: {fileID: 4425023730466572}
   Spine: {fileID: 4276574943741334}
   ShoulderCenter: {fileID: 0}
-  Neck: {fileID: 0}
+  Neck: {fileID: 4213983711552482}
   ClavicleLeft: {fileID: 4355085274981526}
   ShoulderLeft: {fileID: 4541196509884632}
   ElbowLeft: {fileID: 4348765925134184}
@@ -9964,7 +9964,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: f88f07adac934534c802dc660275b1de, type: 2}
+  - {fileID: 2100000, guid: a511f4e59a0aa2c4caa90c6197ac5089, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

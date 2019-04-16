@@ -328,6 +328,15 @@
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\Scripts\AnimalTesting\AnimalAudioScript1.cs" />
+     <Compile Include="Assets\Scripts\AnimalTesting\AnimalBruiseChangeAlphaLevel.cs" />
+     <Compile Include="Assets\Scripts\AnimalTesting\AnimalCanvasAppear.cs" />
+     <Compile Include="Assets\Scripts\AnimalTesting\AnimalChangeAlphaLevel.cs" />
+     <Compile Include="Assets\Scripts\AnimalTesting\AnimalChangeBodyTexture.cs" />
+     <Compile Include="Assets\Scripts\AnimalTesting\AnimalEnableDisableScene1.cs" />
+     <Compile Include="Assets\Scripts\AnimalTesting\AnimalEnableDisableSceneOverall.cs" />
+     <Compile Include="Assets\Scripts\AnimalTesting\AnimalRenderLight.cs" />
+     <Compile Include="Assets\Scripts\AnimalTesting\AnimalUserAvatarMatcher1A.cs" />
      <Compile Include="Assets\Scripts\AnimationHolder.cs" />
      <Compile Include="Assets\Scripts\AudioScript.cs" />
      <Compile Include="Assets\Scripts\AudioScriptScene2.cs" />
@@ -344,6 +353,7 @@
      <Compile Include="Assets\Scripts\EnableDisableScene2.cs" />
      <Compile Include="Assets\Scripts\EnableDisableScene3.cs" />
      <Compile Include="Assets\Scripts\EnableDisableScene4.cs" />
+     <Compile Include="Assets\Scripts\EnableDisableSceneClock.cs" />
      <Compile Include="Assets\Scripts\EnableDisableSceneOverall.cs" />
      <Compile Include="Assets\Scripts\FlickerLight.cs" />
      <Compile Include="Assets\Scripts\FlickerLightScene2.cs" />
@@ -354,11 +364,13 @@
      <Compile Include="Assets\Scripts\RenderLight.cs" />
      <Compile Include="Assets\Scripts\ScriptEnableDisable.cs" />
      <Compile Include="Assets\Scripts\ScriptEnableDisableModify.cs" />
+     <Compile Include="Assets\Scripts\SecondHandSmoke\SmkoeAudioScript.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeAudioScript1.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeCanvasAppear.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeChangeAlphaLevel.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeEnableDisableScene1.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeEnableDisableSceneOverall.cs" />
+     <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeFamilyPhotoDark.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeRenderLight.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeScriptEnableDisableModify.cs" />
      <Compile Include="Assets\Scripts\SecondHandSmoke\SmokeTextureChange.cs" />

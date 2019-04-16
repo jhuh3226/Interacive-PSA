@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: f2e49fa8604941145b21a241946dce18
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arrow_1
+    100002: Arrow_2
+    100004: Arrow_3
+    100006: Bottom
+    100008: //RootNode
+    100010: Frame
+    100012: Glass
+    100014: Pimp
+    100016: Shim_1
+    100018: Shim_2
+    400000: Arrow_1
+    400002: Arrow_2
+    400004: Arrow_3
+    400006: Bottom
+    400008: //RootNode
+    400010: Frame
+    400012: Glass
+    400014: Pimp
+    400016: Shim_1
+    400018: Shim_2
+    2100000: Arrow_1Mat
+    2100002: Arrow_2Mat
+    2100004: Arrow_3Mat
+    2100006: BottomMat
+    2100008: FrameMat
+    2100010: GlassMat
+    2100012: PimpMat
+    2100014: Shim_1Mat
+    2100016: Shim_2Mat
+    2300000: Arrow_1
+    2300002: Arrow_2
+    2300004: Arrow_3
+    2300006: Bottom
+    2300008: Frame
+    2300010: Glass
+    2300012: Pimp
+    2300014: Shim_1
+    2300016: Shim_2
+    3300000: Arrow_1
+    3300002: Arrow_2
+    3300004: Arrow_3
+    3300006: Bottom
+    3300008: Frame
+    3300010: Glass
+    3300012: Pimp
+    3300014: Shim_1
+    3300016: Shim_2
+    4300000: Arrow_1
+    4300002: Arrow_2
+    4300004: Arrow_3
+    4300006: Bottom
+    4300008: Frame
+    4300010: Glass
+    4300012: Pimp
+    4300014: Shim_1
+    4300016: Shim_2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arrow_1Mat
+    second: {fileID: 2100000, guid: 8fb758a6ba6d63a45b93e612d04244c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arrow_2Mat
+    second: {fileID: 2100000, guid: 11b8a4b52450a5145ba489341b0e749d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arrow_3Mat
+    second: {fileID: 2100000, guid: 695349b4eb3356c4e8686fb60d57d599, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BottomMat
+    second: {fileID: 2100000, guid: 661647f4c60ff0941b577205a8622d56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrameMat
+    second: {fileID: 2100000, guid: ea92aba28508e3d4f94bb482efa1f8d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GlassMat
+    second: {fileID: 2100000, guid: 2e757289c6d50354c81f347cb6a348df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PimpMat
+    second: {fileID: 2100000, guid: d51e1e1c112f4454cb485ca92d309196, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shim_1Mat
+    second: {fileID: 2100000, guid: 3e4b82b2f8d318d43bb793414ff9fc98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shim_2Mat
+    second: {fileID: 2100000, guid: 1abb301e4d0ab854b8542b3d7a1a7d41, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,14 +8,16 @@ public class AudioScriptScene4 : MonoBehaviour
     public AudioClip clipScene4BabySound;
     public AudioClip clipScene4BrightBg;
     public AudioClip clipScene4GloomyBg;
-    public AudioClip clipScene4DropDoll;
+    //public AudioClip clipScene4DropDoll;
+    public AudioClip clipScene4MenVoice;
 
 
     public AudioSource audioScene4ChildRunning;
     public AudioSource audioScene4BabySound;
     public AudioSource audioScene4BrightBg;
     public AudioSource audioScene4GloomyBg;
-    public AudioSource audioScene4DropDoll;
+    //public AudioSource audioScene4DropDoll;
+    public AudioSource audioScene4MenVoice;
 
     public GameObject gameObContainingEnableDisableSceneOverallScript;
 
@@ -45,7 +47,8 @@ public class AudioScriptScene4 : MonoBehaviour
         audioScene4BabySound = AddAudio(clipScene4BabySound, false, true, 0.3f);
         audioScene4BrightBg = AddAudio(clipScene4BrightBg, true, true, 0.2f);
         audioScene4GloomyBg = AddAudio(clipScene4GloomyBg, false, true, 1.0f);
-        audioScene4DropDoll = AddAudio(clipScene4DropDoll, false, true, 1.0f);
+        //audioScene4DropDoll = AddAudio(clipScene4DropDoll, false, true, 1.0f);
+        audioScene4MenVoice = AddAudio(clipScene4MenVoice, false, true, 1.0f);
 
     }
 
@@ -75,8 +78,9 @@ public class AudioScriptScene4 : MonoBehaviour
         {
             if (turnOn2nd == false)
             {
+                audioScene4MenVoice.Play();
                 audioScene4GloomyBg.Play();
-                audioScene4DropDoll.Play();
+                //audioScene4DropDoll.Play();
 
                 audioScene4ChildRunning.Stop();
                 audioScene4BabySound.Stop();
