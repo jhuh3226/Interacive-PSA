@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 95080824127233910}
   - component: {fileID: 114824210902040786}
   - component: {fileID: 114183147401799348}
+  - component: {fileID: 114642442416289430}
   m_Layer: 0
   m_Name: child_boy_9years@blendShaped@Breathing Idle
   m_TagString: Untagged
@@ -1247,7 +1248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1556272089680748
 GameObject:
   m_ObjectHideFlags: 1
@@ -2928,8 +2929,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1258722360511234}
   m_LocalRotation: {x: 0.018971685, y: -0.6308827, z: -0.77453876, w: -0.04143532}
-  m_LocalPosition: {x: 0.014089075, y: 0.014147978, z: -0.000086042506}
-  m_LocalScale: {x: 0.2884616, y: 0.28846163, z: 0.28846163}
+  m_LocalPosition: {x: 0.016, y: 0.091, z: 0.016}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4626308535857258}
   m_Father: {fileID: 4974996318168622}
@@ -6148,14 +6149,14 @@ MonoBehaviour:
   limitSpan: 1
   checkNewPosition: {x: 0, y: 0, z: 0}
   BodyRootAvatarController: {fileID: 4323309389732288}
-  interpolateValue: 0.5
+  interpolateValue: 0.9
   maxDegreesDelta: 0
-  xRight: 59.68
-  yRight: -27.7
-  zRight: -117.4
-  xLeft: 59.68
-  yLeft: 27.7
-  zLeft: 117.4
+  xRight: 47.06
+  yRight: -2.8
+  zRight: -97.82
+  xLeft: 47.06
+  yLeft: 2.8
+  zLeft: 97.82
   playerIndex: 0
   mirroredMovement: 1
   verticalMovement: 0
@@ -6200,6 +6201,47 @@ MonoBehaviour:
   KneeRight: {fileID: 0}
   FootRight: {fileID: 0}
   BodyRoot: {fileID: 0}
+--- !u!114 &114642442416289430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1129472750222582}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c52c07402f7274cab64e484b1bddc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limitSpan: 1
+  checkNewPosition: {x: 0, y: 0, z: 0}
+  BodyRootAvatarController: {fileID: 0}
+  interpolateValue: 0
+  maxDegreesDelta: 0
+  xRight: 0
+  yRight: 0
+  zRight: 0
+  xLeft: 0
+  yLeft: 0
+  zLeft: 0
+  playerIndex: 0
+  mirroredMovement: 1
+  verticalMovement: 0
+  externalRootMotion: 0
+  externalHeadRotation: 0
+  externalHandRotations: 0
+  fingerOrientations: 0
+  moveRate: 1
+  smoothFactor: 20
+  offsetNode: {fileID: 0}
+  posRelativeToCamera: {fileID: 0}
+  posRelOverlayColor: 0
+  backgroundPlane: {fileID: 0}
+  posRelInvertedZ: 0
+  groundedFeet: 0
+  applyMuscleLimits: 1
+  flipLeftRight: 0
+  verticalOffset: 0
+  forwardOffset: 0
 --- !u!114 &114824210902040786
 MonoBehaviour:
   m_ObjectHideFlags: 1

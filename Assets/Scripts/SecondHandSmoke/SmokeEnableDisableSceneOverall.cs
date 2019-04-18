@@ -9,6 +9,7 @@ public class SmokeEnableDisableSceneOverall : MonoBehaviour
     //public GameObject scene2;
     //public GameObject scene3;
     //public GameObject scene4;
+    public GameObject canvas;
 
     public bool scene1AOn = false;
     public bool scene1BOn = false;
@@ -58,20 +59,20 @@ public class SmokeEnableDisableSceneOverall : MonoBehaviour
         }
 
         //scene1-b
-        else if ((timePassed > 10 && timePassed < 10.3) || Input.GetKeyUp(KeyCode.UpArrow))
+        else if ((timePassed > 15 && timePassed < 15.3) || Input.GetKeyUp(KeyCode.UpArrow))
         {
             scene1AOn = false;
             scene1BOn = true;
         }
 
-        else if ((timePassed > 11.5 && timePassed < 11.8) || Input.GetKeyUp(KeyCode.LeftArrow))
+        else if ((timePassed > 16.5 && timePassed < 16.8) || Input.GetKeyUp(KeyCode.LeftArrow))
         {
             scene1AOn = false;
             scene1BOn = false;
             scene1BSmoking = true;
         }
 
-        else if ((timePassed > 23.5 && timePassed < 23.7) || Input.GetKeyUp(KeyCode.LeftArrow))
+        else if ((timePassed > 28.5 && timePassed < 28.7) || Input.GetKeyUp(KeyCode.LeftArrow))
         {
             scene1AOn = false;
             scene1BOn = false;
@@ -80,7 +81,7 @@ public class SmokeEnableDisableSceneOverall : MonoBehaviour
         }
 
         //scene1-c
-        else if ((timePassed > 24 && timePassed < 24.3) || Input.GetKeyUp(KeyCode.DownArrow))
+        else if ((timePassed > 29 && timePassed < 29.3) || Input.GetKeyUp(KeyCode.DownArrow))
         {
             scene1AOn = false;
             scene1BOn = false;
@@ -88,24 +89,25 @@ public class SmokeEnableDisableSceneOverall : MonoBehaviour
             scene1COverallSmokeOn = true;
         }
 
-        else if ((timePassed > 25 && timePassed < 25.3) || Input.GetKeyUp(KeyCode.M))
+        else if ((timePassed > 30 && timePassed < 30.3) || Input.GetKeyUp(KeyCode.M))
         {
             scene1CSmokeAroundMouthOn = true;
         }
 
-        else if((timePassed > 33 && timePassed < 33.3) || Input.GetKeyUp(KeyCode.N))
+        else if((timePassed > 38 && timePassed < 38.3) || Input.GetKeyUp(KeyCode.N))
         {
             scene1CSmokeAroundNeckOn = true;
         }
 
-        else if((timePassed > 30 && timePassed < 30.3) || Input.GetKeyUp(KeyCode.L))
+        else if((timePassed > 40 && timePassed < 40.3) || Input.GetKeyUp(KeyCode.L))
         {
             scene1CTopLungOn = true;
         }
 
         //canvas
-        else if ((timePassed > 40 && timePassed < 40.3))
+        else if ((timePassed > 53 && timePassed < 53.3))
         {
+            canvas.SetActive(true);
             canvasOn = true;
         }
         //-----------------------------------------------------------------

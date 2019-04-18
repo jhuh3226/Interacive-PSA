@@ -23,7 +23,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
     float lerpTime = 100f;
     float currentLerpTime = 0;
 
-    float timeBase = 16f;
+    float timeBase = 26;
 
     //
     public GameObject gameObContainingEnableDisableSceneOverallScript;
@@ -62,7 +62,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             bruise1.SetActive(true);
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase && EnableDisableSceneOverallScript.timePassed > timeBase + 0.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase  + 1 && EnableDisableSceneOverallScript.timePassed > timeBase + 1.2f)
         {
             //if (AnimalChangeBodyTextureScript.m2TurnOn == true)
             //{
@@ -70,7 +70,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             //}
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 1f && EnableDisableSceneOverallScript.timePassed > timeBase + 1.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 3f && EnableDisableSceneOverallScript.timePassed > timeBase + 3.2f)
         {
             //if (AnimalChangeBodyTextureScript.m3TurnOn == true)
             //{
@@ -78,7 +78,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             //}
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 2f && EnableDisableSceneOverallScript.timePassed > timeBase + 2.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 5f && EnableDisableSceneOverallScript.timePassed > timeBase + 5.2f)
         {
             //if (AnimalChangeBodyTextureScript.m4TurnOn == true)
             //{
@@ -86,7 +86,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             //}
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 3f && EnableDisableSceneOverallScript.timePassed > timeBase + 3.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 7f && EnableDisableSceneOverallScript.timePassed > timeBase + 7.2f)
         {
             //if (AnimalChangeBodyTextureScript.m5TurnOn == true)
             //{
@@ -94,7 +94,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             //}
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 4f && EnableDisableSceneOverallScript.timePassed > timeBase + 4.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 9f && EnableDisableSceneOverallScript.timePassed > timeBase + 9.2f)
         {
             //if (AnimalChangeBodyTextureScript.m6TurnOn == true)
             // {
@@ -118,7 +118,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             //}
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 7f && EnableDisableSceneOverallScript.timePassed > timeBase + 7.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 11f && EnableDisableSceneOverallScript.timePassed > timeBase + 11.2f)
         {
             //if (AnimalChangeBodyTextureScript.m9TurnOn == true)
             //{
@@ -126,7 +126,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             //}
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 8f && EnableDisableSceneOverallScript.timePassed > timeBase + 8.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 13f && EnableDisableSceneOverallScript.timePassed > timeBase + 13.2f)
         {
             // if (AnimalChangeBodyTextureScript.m10TurnOn == true)
             // {
@@ -134,7 +134,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             //}
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 9f && EnableDisableSceneOverallScript.timePassed > timeBase + 9.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 15f && EnableDisableSceneOverallScript.timePassed > timeBase + 15.2f)
         {
             // if (AnimalChangeBodyTextureScript.m11TurnOn == true)
             //{
@@ -142,7 +142,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             //}
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 10f && EnableDisableSceneOverallScript.timePassed > timeBase + 10.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 17f && EnableDisableSceneOverallScript.timePassed > timeBase + 17.2f)
         {
             //if (AnimalChangeBodyTextureScript.m12TurnOn == true)
             //{
@@ -150,7 +150,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             //}
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 11f && EnableDisableSceneOverallScript.timePassed > timeBase + 11.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 19f && EnableDisableSceneOverallScript.timePassed > timeBase + 19.2f)
         {
             //if (AnimalChangeBodyTextureScript.m13TurnOn == true)
             //{
@@ -158,7 +158,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             //}
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 12f && EnableDisableSceneOverallScript.timePassed > timeBase + 12.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 21f && EnableDisableSceneOverallScript.timePassed > timeBase + 21.2f)
         {
             //if (AnimalChangeBodyTextureScript.m14TurnOn == true)
             //{
@@ -166,7 +166,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             //}
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 13f && EnableDisableSceneOverallScript.timePassed > timeBase + 13.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 23f && EnableDisableSceneOverallScript.timePassed > timeBase + 23.2f)
         {
             //if (AnimalChangeBodyTextureScript.m15TurnOn == true)
             //{
@@ -174,7 +174,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             //}
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 14f && EnableDisableSceneOverallScript.timePassed > timeBase + 14.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 25f && EnableDisableSceneOverallScript.timePassed > timeBase + 25.2f)
         {
             // if (AnimalChangeBodyTextureScript.m16TurnOn == true)
             //{
@@ -182,7 +182,7 @@ public class AnimalEnableDisableScene1 : MonoBehaviour
             // }
         }
 
-        if (EnableDisableSceneOverallScript.timePassed > timeBase + 15f && EnableDisableSceneOverallScript.timePassed > timeBase + 15.2f)
+        if (EnableDisableSceneOverallScript.timePassed > timeBase + 27f && EnableDisableSceneOverallScript.timePassed > timeBase + 27.2f)
         {
             //if (AnimalChangeBodyTextureScript.m17TurnOn == true)
             //{

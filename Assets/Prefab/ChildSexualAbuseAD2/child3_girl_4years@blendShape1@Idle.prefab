@@ -5877,14 +5877,14 @@ MonoBehaviour:
   limitSpan: 1
   checkNewPosition: {x: 0, y: 0, z: 0}
   BodyRootAvatarController: {fileID: 4825738370387336}
-  interpolateValue: 0.8
+  interpolateValue: 0.3
   maxDegreesDelta: 0
-  xRight: 59.68
-  yRight: -27.7
-  zRight: -117.4
-  xLeft: 59.68
-  yLeft: 27.7
-  zLeft: 117.4
+  xRight: 29.8
+  yRight: -64.5
+  zRight: -165.8
+  xLeft: 29.8
+  yLeft: 64.5
+  zLeft: 165.8
   playerIndex: 0
   mirroredMovement: 1
   verticalMovement: 0

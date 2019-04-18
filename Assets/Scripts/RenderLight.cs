@@ -50,37 +50,47 @@ public class RenderLight : MonoBehaviour
             turnOffLight();
         }
 
-        else if ((EnableDisableSceneOverallScript.timePassed > 22 && EnableDisableSceneOverallScript.timePassed < 25))
+        else if ((EnableDisableSceneOverallScript.timePassed > 38 && EnableDisableSceneOverallScript.timePassed < 40))
         {
             startDecreaseFast();
             fadeOutScene1C = true;
             //EnableDisableScene1Script.pointLight2.SetActive(false);
         }
 
-        else if (EnableDisableSceneOverallScript.scene2On == true && !((EnableDisableSceneOverallScript.timePassed > 34 && EnableDisableSceneOverallScript.timePassed < 35)))
+        else if (EnableDisableSceneOverallScript.scene4BOn == true )
         {
             startIncreaseFast();
         }
 
-        else if ((EnableDisableSceneOverallScript.timePassed > 34 && EnableDisableSceneOverallScript.timePassed < 35))
+        else if ((EnableDisableSceneOverallScript.canvasOn == true))
         {
             startDecreaseFastHard();
         }
 
-        else if (EnableDisableSceneOverallScript.scene3On == true && !((EnableDisableSceneOverallScript.timePassed > 44 && EnableDisableSceneOverallScript.timePassed < 45)))
-        {
-            startIncreaseFast2();
-        }
+        //else if (EnableDisableSceneOverallScript.scene2On == true && !((EnableDisableSceneOverallScript.timePassed > 34 && EnableDisableSceneOverallScript.timePassed < 35)))
+        //{
+        //    startIncreaseFast();
+        //}
 
-        else if ((EnableDisableSceneOverallScript.timePassed > 44 && EnableDisableSceneOverallScript.timePassed < 45))
-        {
-            startDecreaseFastHard2();
-        }
+        //else if ((EnableDisableSceneOverallScript.timePassed > 34 && EnableDisableSceneOverallScript.timePassed < 35))
+        //{
+        //    startDecreaseFastHard();
+        //}
 
-        else if (EnableDisableSceneOverallScript.scene4AOn == true)
-        {
-            startIncreaseFast3();
-        }
+        //else if (EnableDisableSceneOverallScript.scene3On == true && !((EnableDisableSceneOverallScript.timePassed > 44 && EnableDisableSceneOverallScript.timePassed < 45)))
+        //{
+        //    startIncreaseFast2();
+        //}
+
+        //else if ((EnableDisableSceneOverallScript.timePassed > 44 && EnableDisableSceneOverallScript.timePassed < 45))
+        //{
+        //    startDecreaseFastHard2();
+        //}
+
+        //else if (EnableDisableSceneOverallScript.scene4AOn == true)
+        //{
+        //    startIncreaseFast3();
+        //}
 
         else
         {

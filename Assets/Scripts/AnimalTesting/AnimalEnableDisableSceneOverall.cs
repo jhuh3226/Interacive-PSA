@@ -8,6 +8,7 @@ public class AnimalEnableDisableSceneOverall : MonoBehaviour {
     //public GameObject scene2;
     //public GameObject scene3;
     //public GameObject scene4;
+    public GameObject canvas;
 
     public bool scene1AOn = false;
     public bool scene1BOn = false;
@@ -52,14 +53,14 @@ public class AnimalEnableDisableSceneOverall : MonoBehaviour {
         }
 
         //scene1-b
-        else if ((timePassed > 15 && timePassed < 15.3) || Input.GetKeyUp(KeyCode.UpArrow))
+        else if ((timePassed > 22 && timePassed < 22.3) || Input.GetKeyUp(KeyCode.UpArrow))
         {
             scene1AOn = false;
             scene1BOn = true;
         }
 
         //scene1-c
-        else if ((timePassed > 18 && timePassed < 18.3) || Input.GetKeyUp(KeyCode.DownArrow))
+        else if ((timePassed > 25 && timePassed < 25.3) || Input.GetKeyUp(KeyCode.DownArrow))
         {
             scene1AOn = false;
             //scene1BOn = false;
@@ -67,15 +68,16 @@ public class AnimalEnableDisableSceneOverall : MonoBehaviour {
             scene1CBruise = true;
         }
 
-        else if ((timePassed > 27 && timePassed < 27.2) || Input.GetKeyUp(KeyCode.M))
+         if ((timePassed > 43 && timePassed < 43.2) || Input.GetKeyUp(KeyCode.M))
         {
             Debug.Log("turn blood on");
             scene1CBlood = true;
         }
 
         //canvas
-        else if ((timePassed > 32 && timePassed < 32.3))
+        else if ((timePassed > 53 && timePassed < 53.3))
         {
+            canvas.SetActive(true);
             canvasOn = true;
         }
         ////-----------------------------------------------------------------

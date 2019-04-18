@@ -40,11 +40,11 @@ public class EnableDisableSceneClock : MonoBehaviour
             timeTaken = currentLerpTime / lerpTime;
         }
 
-        hourRotation = Mathf.Lerp(0, 100, timeTaken);
-        minuteRotation = Mathf.Lerp(0, 800, timeTaken);
-        secondRotation = Mathf.Lerp(0, 4800, timeTaken);
+        hourRotation = Mathf.Lerp(100, 0, timeTaken);
+        minuteRotation = Mathf.Lerp(800, 0, timeTaken);
+        secondRotation = Mathf.Lerp(4800, 0, timeTaken);
 
-        if (EnableDisableSceneOverallScript.sceneClockOn == true || Input.GetKeyDown("T"))
+        if (EnableDisableSceneOverallScript.sceneClockOn == true)
         {
             turnOnClock = true;
         }

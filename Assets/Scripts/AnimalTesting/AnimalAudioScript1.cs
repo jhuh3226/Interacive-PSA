@@ -48,13 +48,13 @@ public class AnimalAudioScript1 : MonoBehaviour
     public void Awake()
     {
         // add the necessary AudioSources:
-        audioMonkeyHappy = AddAudio(clipMonkeyHappy, false, true, 0.7f);
+        audioMonkeyHappy = AddAudio(clipMonkeyHappy, false, true, 1f);
         audioScene1BrightBg = AddAudio(clipScene1BrightBg, false, true, 0.6f);
 
         audioScene1GloomyBg = AddAudio(clipScene1GloomyBg, false, true, 1.0f);
         audioScene1LabSound = AddAudio(clipScene1LabSound, false, true, 0.6f);
         audioCage1 = AddAudio(clipCage1, false, true, 0.6f);
-        audioMonkeySad = AddAudio(clipMonkeySad, false, true, 0.2f);
+        audioMonkeySad = AddAudio(clipMonkeySad, false, true, 0.6f);
         audioBeepSound = AddAudio(clipBeepSound, false, true, 0.08f);
     }
 

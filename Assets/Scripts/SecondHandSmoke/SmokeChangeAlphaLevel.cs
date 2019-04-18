@@ -8,7 +8,7 @@ public class SmokeChangeAlphaLevel : MonoBehaviour
     Renderer m_Renderer;
 
     float newAlpha = 0;
-    float lerpTime = 2f;
+    float lerpTime = 2.5f;
     float currentLerpTime = 0;
     float timeTaken;
 

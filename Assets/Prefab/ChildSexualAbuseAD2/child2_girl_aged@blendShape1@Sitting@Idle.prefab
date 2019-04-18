@@ -9597,12 +9597,12 @@ MonoBehaviour:
   BodyRootAvatarController: {fileID: 4295815267919228}
   interpolateValue: 0.8
   maxDegreesDelta: 0
-  xRight: 65
-  yRight: -23.4
-  zRight: -115.59
-  xLeft: 65
-  yLeft: 23.4
-  zLeft: 115.59
+  xRight: 59.68
+  yRight: -27.7
+  zRight: -117.4
+  xLeft: 59.68
+  yLeft: 27.7
+  zLeft: 117.4
   playerIndex: 0
   mirroredMovement: 1
   verticalMovement: 0

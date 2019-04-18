@@ -347,6 +347,7 @@
      <Compile Include="Assets\Scripts\BodySourceManager.cs" />
      <Compile Include="Assets\Scripts\CanvasAppear.cs" />
      <Compile Include="Assets\Scripts\ChangeTexture.cs" />
+     <Compile Include="Assets\Scripts\ChildAbuseTextureAlphaChange.cs" />
      <Compile Include="Assets\Scripts\CollisionScene1.cs" />
      <Compile Include="Assets\Scripts\CollisionScene2.cs" />
      <Compile Include="Assets\Scripts\EnableDisableScene1.cs" />

@@ -78,12 +78,12 @@ public class AudioScriptScene4 : MonoBehaviour
         {
             if (turnOn2nd == false)
             {
-                audioScene4MenVoice.Play();
-                audioScene4GloomyBg.Play();
+                //audioScene4MenVoice.Play();
+                //audioScene4GloomyBg.Play();
                 //audioScene4DropDoll.Play();
 
-                audioScene4ChildRunning.Stop();
-                audioScene4BabySound.Stop();
+                audioScene4ChildRunning.Play();
+                audioScene4BabySound.Play();
                 //audioScene4BrightBg.Stop();
 
                 turnOn2nd = true;

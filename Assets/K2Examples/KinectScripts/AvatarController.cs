@@ -388,6 +388,7 @@ public class AvatarController : MonoBehaviour
         // Map bones to the points the Kinect tracks
         MapBones();
 
+        //commented
         // Set model's arms to be in T-pose, if needed
         SetModelArmsInTpose();
 
@@ -748,6 +749,7 @@ public class AvatarController : MonoBehaviour
             //initialRotations[12] = Quaternion.AngleAxis(x, Vector3.right);
             //initialRotations[13] = Quaternion.AngleAxis(x, Vector3.right);
 
+            //here
             //initialRotations[11] = Quaternion.Euler(xRight, yRight, zRight);
             //initialRotations[12] = Quaternion.Euler(xRight, yRight, zRight);
             //initialRotations[13] = Quaternion.Euler(xRight, yRight, zRight);
@@ -1146,6 +1148,7 @@ public class AvatarController : MonoBehaviour
         }
     }
 
+    //commented
     // Set model's arms to be in T-pose
     protected void SetModelArmsInTpose()
     {
@@ -1209,6 +1212,7 @@ public class AvatarController : MonoBehaviour
         }
 
     }
+    //commented
 
     //check this code
     // If the bones to be mapped have been declared, map that bone to the model.
